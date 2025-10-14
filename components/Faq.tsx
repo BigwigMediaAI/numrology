@@ -1,10 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import bg from "../assets/yellow-star-bg.png";
 import img1 from "../assets/bg-numerology.png";
 import img2 from "../assets/destiny-num.png";
 import img3 from "../assets/dwednum.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const faqs = [
   {
@@ -26,6 +28,13 @@ const faqs = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
     <section className="relative w-full bg-[#FCFAF8] py-12 overflow-hidden font-['Poppins']">
@@ -54,7 +63,11 @@ export default function FAQSection() {
             />
 
             {/* Numbers Overlay */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <div
+              className="absolute inset-0 flex flex-col items-center justify-center"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <Image
                 src={img3}
                 alt="Number 2"
@@ -68,10 +81,18 @@ export default function FAQSection() {
 
         {/* Right Section: FAQ */}
         <div className="w-full md:w-1/2 text-left">
-          <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
+          <p
+            className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             FAQ
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
+          <h2
+            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             Fell free to ask <br /> more questions
           </h2>
 
@@ -81,6 +102,8 @@ export default function FAQSection() {
               <div
                 key={index}
                 className="border-b border-[#E4E0DB] pb-4 cursor-pointer"
+                data-aos="fade-right"
+                data-aos-delay={index * 200}
               >
                 <div
                   className="flex justify-between items-center"

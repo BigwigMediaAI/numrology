@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,6 +15,8 @@ import birthDayIcon from "../assets/services/moon-3-1536x1536.png";
 import expressionIcon from "../assets/services/sun-dw-1536x1536.png";
 import nameNumerologyIcon from "../assets/services/eye-23-1357x1536.png";
 import forecastIcon from "../assets/services/cwed.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const services = [
   {
@@ -50,6 +52,13 @@ const services = [
 ];
 
 const OurServices = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <section className="relative py-12 bg-[#0d0d0d] text-white overflow-hidden">
       {/* Background pattern */}
@@ -83,6 +92,8 @@ const OurServices = () => {
             <div
               key={index}
               className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#2D2D3C] transition p-8 flex flex-col items-center text-center"
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
             >
               <Image
                 src={item.icon}

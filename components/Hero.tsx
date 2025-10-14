@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 
@@ -14,9 +14,20 @@ import destinyIcon from "../assets/destiny-num.png";
 import pathIcon from "../assets/heart-numerology.png";
 import LeadPopup from "./LeadPopup";
 import ButtonFill from "./Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="relative min-h-screen bg-[#eeeeee] overflow-hidden">
       {/* Background pattern layer */}
@@ -43,22 +54,43 @@ const Hero = () => {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row justify-between items-center py-20 md:py-40">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
-          <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
+          <p
+            className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             Consultation for free
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair">
+          <h1
+            className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             Infinite power of <br /> numerology
           </h1>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p
+            className="text-gray-600 mb-8 text-lg"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <ButtonFill onClick={() => setIsPopupOpen(true)} text="Get started" />
+          <ButtonFill
+            onClick={() => setIsPopupOpen(true)}
+            text="Get started"
+            aos="fade-right"
+            aosDelay="800"
+          />
 
           {/* Mini Features */}
           <div className="flex gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">
             {/* Destiny */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div
+              className="flex flex-col items-center md:items-start text-center md:text-left"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
               <div className="flex items-center gap-3 mb-2">
                 <Image
                   src={destinyIcon}
@@ -79,7 +111,11 @@ const Hero = () => {
             </div>
 
             {/* Life Path */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div
+              className="flex flex-col items-center md:items-start text-center md:text-left"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
               <div className="flex items-center gap-3 mb-2">
                 <Image
                   src={pathIcon}
@@ -102,7 +138,11 @@ const Hero = () => {
         </div>
 
         {/* Right Artwork */}
-        <div className="relative mt-12 md:mt-0 flex justify-center md:justify-end">
+        <div
+          className="relative mt-12 md:mt-0 flex justify-center md:justify-end"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
           <div className="relative w-[280px] md:w-[400px]">
             {/* Bigger Background Shape */}
             <Image

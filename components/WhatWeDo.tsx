@@ -9,9 +9,20 @@ import numbers from "../assets/bumbers-2-768x1399.png";
 import numbersBg from "../assets/bgnbr-2.png";
 import ButtonFill from "./Button";
 import LeadPopup from "./LeadPopup";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhatWeDo = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       {/* WHAT WE DO SECTION */}
@@ -57,13 +68,25 @@ const WhatWeDo = () => {
 
           {/* Right Side Text */}
           <div className="max-w-xl text-center md:text-left w-full md:w-1/2">
-            <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
+            <p
+              className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               What we do
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair">
+            <h2
+              className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               Numerology helps to <br /> transform you
             </h2>
-            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+            <p
+              className="text-gray-600 mb-8 text-lg leading-relaxed"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi
               tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit
               amet velit eleifend, iaculis velit quis, malesuada lacus.
@@ -74,6 +97,8 @@ const WhatWeDo = () => {
             <ButtonFill
               onClick={() => setIsPopupOpen(true)}
               text="Get started"
+              aos="fade-right"
+              aosDelay="800"
             />
           </div>
         </div>
