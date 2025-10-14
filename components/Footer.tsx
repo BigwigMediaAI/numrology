@@ -77,9 +77,6 @@ const Footer = () => {
             Our Team
           </a>
           <a href="#" className="hover:text-[#b7925b] transition">
-            Shop
-          </a>
-          <a href="#" className="hover:text-[#b7925b] transition">
             Blog
           </a>
           <a href="#" className="hover:text-[#b7925b] transition">

@@ -7,49 +7,59 @@ import numBack from "../assets/cta-numbers-q3 (1).png"; // bottom image
 
 const AboutGiftCardSection = () => {
   return (
-    <section
-      className="relative w-full h-[85vh] bg-[#21212c] bg-cover bg-center text-white py-20 px-6 md:px-16 lg:px-24 flex flex-col md:flex-row items-center justify-between"
-      style={{
-        backgroundImage: `url(${bgPattern.src})`,
-      }}
-    >
-      {/* Left Section */}
-      <div className="max-w-xl mb-10 md:mb-0">
-        <p className="text-yellow-400 font-semibold tracking-wider uppercase mb-3">
-          Gift Cards
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-          Free numerological express consultation
-        </h1>
-        <p className="text-gray-300 text-lg leading-relaxed mb-6">
-          Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <a
-          href="#"
-          className="inline-block text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
-        >
-          Learn more
-          <span className="ml-2 border-b border-yellow-400"></span>
-        </a>
-      </div>
+    <section className="relative py-12 h-[80vh] bg-[#0d0d0d] text-white overflow-hidden ">
+      {/* Background pattern */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${bgPattern.src})`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          opacity: 0.3,
+        }}
+      ></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-neutral/60 z-0"></div>
+      <div className="w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between">
+        {/* Left Section */}
+        <div className="max-w-xl mb-10 md:mb-0">
+          <p className="text-[#b19768] font-semibold tracking-wider uppercase mb-3">
+            Gift Cards
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Free numerological express consultation
+          </h1>
+          <p className="text-gray-300 text-lg leading-relaxed mb-6">
+            Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <a
+            href="#"
+            className="inline-block text-[#b19768] font-semibold hover:text-[#b19768] transition-colors"
+          >
+            Learn more
+            <span className="ml-2 border-b border-[#b19768]"></span>
+          </a>
+        </div>
 
-      {/* Right Section */}
-      <div className="relative w-full md:w-1/2 flex justify-center items-center">
-        {/* Enlarged Image Container */}
-        <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[22rem] md:h-[22rem] lg:w-[26rem] lg:h-[26rem]">
-          <Image
-            src={numBack}
-            alt="Number Background"
-            fill
-            className="object-contain opacity-95 animate-slow-bounce z-40"
-          />
-          <Image
-            src={numFront}
-            alt="Number Foreground"
-            fill
-            className="object-contain"
-          />
+        {/* Right Section */}
+        <div className="relative w-full md:w-1/2 flex justify-center items-center">
+          {/* Enlarged Image Container */}
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[22rem] md:h-[22rem] lg:w-[26rem] lg:h-[26rem]">
+            <Image
+              src={numBack}
+              alt="Number Background"
+              fill
+              className="object-contain opacity-95 animate-slow-bounce z-10"
+            />
+            <Image
+              src={numFront}
+              alt="Number Foreground"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>

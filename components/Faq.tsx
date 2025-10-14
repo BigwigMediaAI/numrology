@@ -36,7 +36,7 @@ export default function FAQSection() {
           alt="Background dots"
           fill
           style={{ objectFit: "cover" }}
-          className="pointer-events-none select-none opacity-30"
+          className="pointer-events-none select-none opacity-20"
         />
       </div>
 
