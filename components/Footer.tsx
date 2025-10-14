@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import bgPattern from "../assets/yellow-star-bg.png"; // 👈 add your stars/moon pattern image here
+import bgPattern from "../assets/bg.png"; // 👈 add your stars/moon pattern image here
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           src={bgPattern}
           alt="Background Pattern"
           fill
-          className="object-cover opacity-30 pointer-events-none"
+          className="object-cover opacity-70 pointer-events-none"
         />
       </div>
 
