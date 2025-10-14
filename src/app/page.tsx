@@ -1,3 +1,4 @@
+import AboutGiftCardSection from "../../components/AboutGiftCardSection";
 import FAQSection from "../../components/Faq";
 import WhatsAppButton from "../../components/FloatingBtn";
 import Footer from "../../components/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatWeDo />
       <OurServices />
       <FAQSection />
+      <AboutGiftCardSection />
       <Testimonials />
       <GetInTouch />
       <Footer />
