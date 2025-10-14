@@ -3,6 +3,9 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import popupImage from "../assets/numerology-2024.png";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import ButtonFill from "./Button";
 
 interface LeadPopupProps {
   isOpen: boolean;
@@ -30,9 +33,12 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handlePhoneChange = (value: string | undefined) => {
+    setFormData({ ...formData, phone: value || "" });
+  };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData); // Replace with API call
     alert("Thank you! We'll contact you soon.");
     setFormData({ name: "", email: "", phone: "", message: "" });
     onClose();
@@ -49,67 +55,78 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
             src={popupImage}
             alt="Numerology"
             fill
-            className="object-fill"
+            className="object-cover"
           />
         </div>
 
-        {/* Form */}
-        <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#b19768] mb-4">
+        {/* Form Section */}
+        <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center relative">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#b19768] mb-4 playfair">
             Get Your Free Numerology Guide
           </h2>
-          <p className="text-gray-700 mb-6">
-            Sign up to get your daily number and personalized guidance.
+          <p className="text-gray-600 mb-6 text-sm">
+            Fill in your details to unlock personalized insights.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#b19768]"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#b19768]"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#b19768]"
-              required
-            />
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Message"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#b19768] resize-none"
-              rows={4}
-            />
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Floating Inputs */}
+            {["name", "email"].map((field) => (
+              <div key={field} className="relative group">
+                <input
+                  type={field === "email" ? "email" : "text"}
+                  name={field}
+                  value={formData[field as keyof FormData]}
+                  onChange={handleChange}
+                  placeholder=" "
+                  required
+                  className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer"
+                />
+                <label
+                  className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
+                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
+                  peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768] peer-focus:bg-white peer-focus:px-1"
+                >
+                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                </label>
+              </div>
+            ))}
 
-            <button
-              type="submit"
-              className="w-full bg-[#b19768] text-white font-semibold py-3 rounded-lg hover:bg-[#a5834f] transition-colors"
-            >
-              Get Started
-            </button>
+            {/* Phone Number Input */}
+            <div className="relative group">
+              <PhoneInput
+                international
+                defaultCountry="AU"
+                value={formData.phone}
+                onChange={handlePhoneChange}
+                className="text-sm w-full border-b-2 border-gray-300 focus:border-[#b19768] transition-all pb-1"
+              />
+            </div>
+
+            {/* Textarea */}
+            <div className="relative group">
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder=" "
+                rows={4}
+                className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer resize-none"
+              />
+              <label
+                className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
+                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
+                peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768] peer-focus:bg-white peer-focus:px-1"
+              >
+                Message
+              </label>
+            </div>
+
+            <ButtonFill type="submit" text="Submit" className="w-full" />
           </form>
 
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition text-2xl font-bold"
+            className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
           >
             ✕
           </button>

@@ -70,19 +70,19 @@ const OurServices = () => {
       {/* Content */}
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto text-center">
         {/* Heading */}
-        <p className="text-[#b19768] font-semibold uppercase tracking-wide mb-2">
+        <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
           Our Services
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">
+        <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
           We&apos;ll explain what each <br /> number means
         </h2>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-3 gap-8">
+        <div className="hidden md:grid grid-cols-3 gap-8 ">
           {services.map((item, index) => (
             <div
               key={index}
-              className="bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#2D2D3C] transition p-8 flex flex-col items-center text-center"
+              className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#2D2D3C] transition p-8 flex flex-col items-center text-center"
             >
               <Image
                 src={item.icon}
@@ -91,10 +91,10 @@ const OurServices = () => {
                 height={60}
                 className="mb-4 object-contain"
               />
-              <h3 className="text-lg font-semibold mb-2 text-[#fff]">
+              <h3 className="text-xl font-semibold mb-2 text-[#fff] playfair">
                 {item.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-md leading-relaxed">
                 {item.desc}
               </p>
             </div>

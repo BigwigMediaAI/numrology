@@ -28,7 +28,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative w-full bg-[#FCFAF8] py-20 overflow-hidden font-['Poppins']">
+    <section className="relative w-full bg-[#FCFAF8] py-12 overflow-hidden font-['Poppins']">
       {/* Spotted Background */}
       <div className="absolute inset-0">
         <Image
@@ -40,7 +40,7 @@ export default function FAQSection() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between ">
         {/* Left Section: Numbers & Arched BG */}
         <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           {/* Arched Shape */}
@@ -68,10 +68,10 @@ export default function FAQSection() {
 
         {/* Right Section: FAQ */}
         <div className="w-full md:w-1/2 text-left">
-          <p className="text-[#B1976B] font-semibold tracking-widest mb-2 uppercase text-sm">
+          <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
             FAQ
           </p>
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-[#121212] mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
             Fell free to ask <br /> more questions
           </h2>
 
@@ -88,7 +88,7 @@ export default function FAQSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h3 className="text-lg font-semibold text-[#121212]">
+                  <h3 className="text-xl font-semibold text-[#121212] playfair">
                     {faq.question}
                   </h3>
                   <span className="text-[#F95B2D] text-2xl">
@@ -96,7 +96,7 @@ export default function FAQSection() {
                   </span>
                 </div>
                 {openIndex === index && (
-                  <p className="text-[#5A5A5A] mt-3 text-base leading-relaxed">
+                  <p className="text-[#5A5A5A] mt-3 text-lg leading-relaxed">
                     {faq.answer}
                   </p>
                 )}

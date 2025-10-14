@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 
@@ -12,8 +12,11 @@ import numbersBg from "../assets/bg-numerology.png";
 // New icons for Destiny & Life Path
 import destinyIcon from "../assets/destiny-num.png";
 import pathIcon from "../assets/heart-numerology.png";
+import LeadPopup from "./LeadPopup";
+import ButtonFill from "./Button";
 
 const Hero = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
     <section className="relative min-h-screen bg-[#eeeeee] overflow-hidden">
       {/* Background pattern layer */}
@@ -50,9 +53,7 @@ const Hero = () => {
             Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <button className="bg-[#ff4d00] hover:bg-[#e64400] text-white px-8 py-3 rounded shadow-lg transition text-sm sm:text-base">
-            Get started
-          </button>
+          <ButtonFill onClick={() => setIsPopupOpen(true)} text="Get started" />
 
           {/* Mini Features */}
           <div className="flex gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">
@@ -122,6 +123,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* Popup */}
+      <LeadPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </section>
   );
 };

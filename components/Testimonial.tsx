@@ -79,12 +79,12 @@ export default function Testimonials() {
 
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
-        <p className="text-[#b19768] font-semibold uppercase tracking-wide mb-2 text-center md:text-left">
+        <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
           Testimonials
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center md:text-left">
+        <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
           What People Say
         </h2>
 

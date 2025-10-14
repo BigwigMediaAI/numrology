@@ -7,8 +7,11 @@ import { useInView } from "react-intersection-observer";
 import bgPattern from "../assets/yellow-star-bg.png";
 import numbers from "../assets/bumbers-2-768x1399.png";
 import numbersBg from "../assets/bgnbr-2.png";
+import ButtonFill from "./Button";
+import LeadPopup from "./LeadPopup";
 
 const WhatWeDo = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
     <>
       {/* WHAT WE DO SECTION */}
@@ -68,11 +71,13 @@ const WhatWeDo = () => {
               urna viverra ultrices. Nullam rhoncus elit eget libero varius
               dapibus.
             </p>
-            <button className="bg-[#ff4d00] hover:bg-[#e64400] text-white px-8 py-3 rounded shadow-lg transition text-sm sm:text-base">
-              Get started
-            </button>
+            <ButtonFill
+              onClick={() => setIsPopupOpen(true)}
+              text="Get started"
+            />
           </div>
         </div>
+        <LeadPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       </section>
 
       {/* STATS SECTION */}

@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #b19768;
+  --button-color: #e64400;
 }
 
 @keyframes slowBounce {
