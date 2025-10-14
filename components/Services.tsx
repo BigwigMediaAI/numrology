@@ -74,7 +74,7 @@ const OurServices = () => {
           Our Services
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">
-          We'll explain what each <br /> number means
+          We&apos;ll explain what each <br /> number means
         </h2>
 
         {/* Desktop Grid */}

@@ -12,7 +12,7 @@ const WhatWeDo = () => {
   return (
     <>
       {/* WHAT WE DO SECTION */}
-      <section className="relative pt-20 md:pt-32 bg-[#eeeeee] overflow-hidden">
+      <section className="relative pt-12 bg-[#eeeeee] overflow-hidden">
         {/* Background pattern layer */}
         <div
           className="absolute inset-0 z-0"
@@ -94,7 +94,6 @@ const StatsSection = () => {
 
   useEffect(() => {
     if (inView) {
-      let start = 0;
       const duration = 2000; // ms
       const fps = 60;
       const totalFrames = Math.round((duration / 1000) * fps);
@@ -119,7 +118,7 @@ const StatsSection = () => {
   return (
     <section
       ref={ref}
-      className="relative py-20 bg-[#eeeeee] overflow-hidden flex justify-center"
+      className="relative pt-12 bg-[#eeeeee] overflow-hidden flex justify-center"
     >
       {/* Pattern + Overlay again */}
       <div
