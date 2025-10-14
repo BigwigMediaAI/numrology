@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #b19768;
+}
+
 @keyframes slowBounce {
   0%,
   100% {
@@ -12,4 +16,8 @@
 
 .animate-slow-bounce {
   animation: slowBounce 4s ease-in-out infinite; /* slower & smoother */
+}
+
+.playfair {
+  font-family: var(--font-playfair), serif;
 }

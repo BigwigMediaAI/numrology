@@ -40,13 +40,13 @@ const Hero = () => {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row justify-between items-center py-20 md:py-40">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
-          <p className="text-[#b19768] font-semibold mb-3 uppercase tracking-widest">
+          <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
             Consultation for free
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair">
             Infinite power of <br /> numerology
           </h1>
-          <p className="text-gray-600 mb-8 text-sm sm:text-base">
+          <p className="text-gray-600 mb-8 text-lg">
             Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -67,7 +67,7 @@ const Hero = () => {
                   className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl">
+                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl playfair">
                     Destiny
                   </p>
                   <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
@@ -88,7 +88,7 @@ const Hero = () => {
                   className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl">
+                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl playfair">
                     Life Path
                   </p>
                   <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
