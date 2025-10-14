@@ -1,4 +1,5 @@
 import FAQSection from "../../components/Faq";
+import WhatsAppButton from "../../components/FloatingBtn";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import OurServices from "../../components/Services";
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
       <FAQSection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
