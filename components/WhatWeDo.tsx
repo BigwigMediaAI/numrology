@@ -1,15 +1,127 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import bgPattern from "../assets/yellow-star-bg.png";
-import numbers from "../assets/numbers.png";
-import numbersBg from "../assets/bg-numerology.png";
+import numbers from "../assets/bumbers-2-768x1399.png";
+import numbersBg from "../assets/bgnbr-2.png";
 
 const WhatWeDo = () => {
   return (
-    <section className="relative py-20 md:py-32 bg-[#eeeeee] overflow-hidden">
-      {/* Background pattern layer */}
+    <>
+      {/* WHAT WE DO SECTION */}
+      <section className="relative pt-20 md:pt-32 bg-[#eeeeee] overflow-hidden">
+        {/* Background pattern layer */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${bgPattern.src})`,
+            backgroundRepeat: "repeat",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            opacity: 0.5,
+          }}
+        ></div>
+
+        {/* Soft overlay for smooth background */}
+        <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div>
+
+        {/* Content Container */}
+        <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Left Side Artwork */}
+          <div className="relative flex justify-center md:justify-start w-full md:w-1/2">
+            <div className="relative w-[280px] md:w-[400px]">
+              {/* Background circle */}
+              <Image
+                src={numbersBg}
+                alt="Numbers Background Shape"
+                width={400}
+                height={400}
+                className="absolute top-1/2 left-1/2 w-[140%] h-[130%] -translate-x-1/2 -translate-y-1/2 object-contain"
+              />
+              {/* Foreground numbers */}
+              <Image
+                src={numbers}
+                alt="Numerology Illustration"
+                width={360}
+                height={400}
+                className="relative z-10 object-contain animate-slow-bounce"
+              />
+            </div>
+          </div>
+
+          {/* Right Side Text */}
+          <div className="max-w-xl text-center md:text-left w-full md:w-1/2">
+            <p className="text-[#b19768] font-semibold mb-3 uppercase tracking-wide">
+              What we do
+            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1d] mb-6 leading-tight">
+              Numerology helps to <br /> transform you
+            </h2>
+            <p className="text-gray-600 mb-8 text-sm sm:text-base leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi
+              tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit
+              amet velit eleifend, iaculis velit quis, malesuada lacus.
+              Vestibulum sodales magna a volutpat tempus. Mauris vestibulum id
+              urna viverra ultrices. Nullam rhoncus elit eget libero varius
+              dapibus.
+            </p>
+            <button className="bg-[#ff4d00] hover:bg-[#e64400] text-white px-8 py-3 rounded shadow-lg transition text-sm sm:text-base">
+              Get started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS SECTION */}
+      <StatsSection />
+    </>
+  );
+};
+
+/* ---------------------- STATS SECTION COMPONENT ---------------------- */
+const StatsSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  const [counts, setCounts] = useState({
+    numerologists: 0,
+    experience: 0,
+    projects: 0,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      let start = 0;
+      const duration = 2000; // ms
+      const fps = 60;
+      const totalFrames = Math.round((duration / 1000) * fps);
+
+      const target = { numerologists: 546, experience: 83, projects: 10 };
+
+      let frame = 0;
+      const counter = setInterval(() => {
+        frame++;
+        const progress = frame / totalFrames;
+        setCounts({
+          numerologists: Math.floor(target.numerologists * progress),
+          experience: Math.floor(target.experience * progress),
+          projects: Math.floor(target.projects * progress),
+        });
+
+        if (frame === totalFrames) clearInterval(counter);
+      }, 1000 / fps);
+    }
+  }, [inView]);
+
+  return (
+    <section
+      ref={ref}
+      className="relative py-20 bg-[#eeeeee] overflow-hidden flex justify-center"
+    >
+      {/* Pattern + Overlay again */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -20,53 +132,48 @@ const WhatWeDo = () => {
           opacity: 0.5,
         }}
       ></div>
-
-      {/* Soft overlay for smooth background */}
       <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div>
 
-      {/* Content Container */}
-      <div className="relative z-10 w-11/12 md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* Left Side Artwork */}
-        <div className="relative flex justify-center md:justify-start w-full md:w-1/2">
-          <div className="relative w-[280px] md:w-[400px]">
-            {/* Background circle */}
-            <Image
-              src={numbersBg}
-              alt="Numbers Background Shape"
-              width={400}
-              height={400}
-              className="absolute top-1/2 left-1/2 w-[130%] h-[120%] -translate-x-1/2 -translate-y-1/2 object-contain"
-            />
-            {/* Foreground numbers */}
-            <Image
-              src={numbers}
-              alt="Numerology Illustration"
-              width={360}
-              height={400}
-              className="relative z-10 object-contain animate-slow-bounce"
-            />
-          </div>
-        </div>
+      {/* Stats Content */}
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
+        {/* Stat 1 */}
+        <motion.div
+          animate={controls}
+          className="flex flex-col items-center justify-center"
+        >
+          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+            {counts.numerologists}K
+          </h3>
+          <p className="text-gray-600 mt-2 text-sm sm:text-base">
+            Numerologists in our team
+          </p>
+        </motion.div>
 
-        {/* Right Side Text */}
-        <div className="max-w-xl text-center md:text-left w-full md:w-1/2">
-          <p className="text-[#b19768] font-semibold mb-3 uppercase tracking-wide">
-            What we do
+        {/* Stat 2 */}
+        <motion.div
+          animate={controls}
+          className="flex flex-col items-center justify-center"
+        >
+          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+            {counts.experience}
+          </h3>
+          <p className="text-gray-600 mt-2 text-sm sm:text-base">
+            Years of experience
           </p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1d1d1d] mb-6 leading-tight">
-            Numerology helps to <br /> transform you
-          </h2>
-          <p className="text-gray-600 mb-8 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi
-            tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit amet
-            velit eleifend, iaculis velit quis, malesuada lacus. Vestibulum
-            sodales magna a volutpat tempus. Mauris vestibulum id urna viverra
-            ultrices. Nullam rhoncus elit eget libero varius dapibus.
+        </motion.div>
+
+        {/* Stat 3 */}
+        <motion.div
+          animate={controls}
+          className="flex flex-col items-center justify-center"
+        >
+          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+            {counts.projects}
+          </h3>
+          <p className="text-gray-600 mt-2 text-sm sm:text-base">
+            Global Branches
           </p>
-          <button className="bg-[#ff4d00] hover:bg-[#e64400] text-white px-8 py-3 rounded shadow-lg transition text-sm sm:text-base">
-            Get started
-          </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
