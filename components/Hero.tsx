@@ -15,7 +15,7 @@ import pathIcon from "../assets/heart-numerology.png";
 
 const Hero = () => {
   return (
-    <section className="relative h-[100vh] bg-[#eeeeee] overflow-hidden">
+    <section className="relative min-h-screen bg-[#eeeeee] overflow-hidden">
       {/* Background pattern layer */}
       <div
         className="absolute inset-0 z-0"
@@ -55,20 +55,22 @@ const Hero = () => {
           </button>
 
           {/* Mini Features */}
-          <div className="flex flex-col sm:flex-row gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">
+          <div className="flex gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">
             {/* Destiny */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="flex items-center gap-2 mb-2">
+              <div className="flex items-center gap-3 mb-2">
                 <Image
                   src={destinyIcon}
                   alt="Destiny Icon"
                   width={60}
                   height={60}
-                  className="object-contain"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg">Destiny</p>
-                  <p className="text-gray-600 text-sm max-w-[220px]">
+                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl">
+                    Destiny
+                  </p>
+                  <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
                     Understand current issues in your life
                   </p>
                 </div>
@@ -77,17 +79,19 @@ const Hero = () => {
 
             {/* Life Path */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="flex items-center gap-2 mb-2">
+              <div className="flex items-center gap-3 mb-2">
                 <Image
                   src={pathIcon}
                   alt="Life Path Icon"
                   width={60}
                   height={60}
-                  className="object-contain"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg">Life Path</p>
-                  <p className="text-gray-600 text-sm max-w-[220px]">
+                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl">
+                    Life Path
+                  </p>
+                  <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
                     Discover your innate abilities
                   </p>
                 </div>
