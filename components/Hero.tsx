@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row justify-between items-center py-20 md:py-40">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
-          <p className="text-[#b19768] font-semibold mb-3 uppercase tracking-wide">
+          <p className="text-[#b19768] font-semibold mb-3 uppercase tracking-widest">
             Consultation for free
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6">
