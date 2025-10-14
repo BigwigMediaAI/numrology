@@ -9,6 +9,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Background image
+import bgPattern from "../assets/yellow-star-bg.png";
+
 const testimonials = [
   {
     name: "PULKIT",
@@ -60,16 +63,28 @@ export default function Testimonials() {
       once: true,
     });
   }, []);
+
   return (
-    <section className="w-full py-12 font-raleway relative bg-[#fcfaf8]">
-      <div className="w-11/12 md:w-5/6 mx-auto">
+    <section
+      className="w-full py-12 relative font-raleway overflow-hidden bg-white text-gray-800"
+      style={{
+        backgroundImage: `url(${bgPattern.src})`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay (optional, for subtle dim effect) */}
+      <div className="absolute inset-0 bg-white/80 z-0"></div>
+
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
-        <p className="text-[var(--primary-color)] text-xs tracking-widest uppercase font-semibold">
+        <p className="text-[#b19768] font-semibold uppercase tracking-wide mb-2 text-center md:text-left">
           Testimonials
         </p>
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold mt-2 mb-6 tracking-widest text-[var(--title)]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center md:text-left">
           What People Say
         </h2>
 
@@ -95,23 +110,23 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[var(--desktop-sidebar)] rounded-2xl border border-neutral-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
                 {/* Quote Icon */}
-                <FaQuoteLeft className="text-[var(--primary-color)] text-3xl opacity-30 mb-3" />
+                <FaQuoteLeft className="text-[#b19768] text-3xl opacity-30 mb-3" />
 
                 {/* Message */}
-                <p className="text-base leading-relaxed text-[var(--text)] font-annie line-clamp-5">
+                <p className="text-gray-700 text-base leading-relaxed font-annie line-clamp-5">
                   {testimonial.message}
                 </p>
 
                 {/* Footer */}
                 <div className="mt-6 flex items-center justify-between">
-                  <h3 className="text-sm font-bold uppercase tracking-wide text-[var(--primary-color)]">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-[#b19768]">
                     — {testimonial.name}
                   </h3>
 
                   {/* Initials Avatar */}
-                  <div className="w-10 h-10 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center text-sm font-bold uppercase">
+                  <div className="w-10 h-10 rounded-full bg-[#b19768] text-white flex items-center justify-center text-sm font-bold uppercase">
                     {testimonial.name
                       .split(" ")
                       .map((n) => n[0])
