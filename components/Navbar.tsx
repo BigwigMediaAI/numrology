@@ -2,29 +2,36 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
 import logo from "../assets/logo-mysta.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname(); // ✅ get current route
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   // Check scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Menu items (you can add hrefs based on your routes)
+  const menuItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Team", href: "/team" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <nav
@@ -35,17 +42,25 @@ const Navbar = () => {
       <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-20">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src={logo} alt="Logo" width={80} height={60} />
+          <Link href="/">
+            <Image src={logo} alt="Logo" width={80} height={60} />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-[#1d1d1d] font-medium">
-          {["Home", "About", "Team", "Blogs", "Contact"].map((item) => (
-            <li
-              key={item}
-              className="hover:text-[#b19768] cursor-pointer transition-colors"
-            >
-              {item}
+          {menuItems.map((item) => (
+            <li key={item.name}>
+              <Link
+                href={item.href}
+                className={`transition-colors ${
+                  pathname === item.href
+                    ? "text-[#b19768] border-b-2 border-[#b19768]" // ✅ Active link highlight
+                    : "hover:text-[#b19768]"
+                }`}
+              >
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -65,13 +80,18 @@ const Navbar = () => {
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <ul className="flex flex-col mt-20 space-y-6 text-[#1d1d1d] text-lg font-medium px-6">
-          {["Home", "About", "Team", "Blogs", "Contact"].map((item) => (
-            <li
-              key={item}
-              className="hover:text-[#b19768] cursor-pointer transition-colors"
-              onClick={toggleMenu} // close menu on click
-            >
-              {item}
+          {menuItems.map((item) => (
+            <li key={item.name} onClick={toggleMenu}>
+              <Link
+                href={item.href}
+                className={`transition-colors ${
+                  pathname === item.href
+                    ? "text-[#b19768] border-b-2 border-[#b19768]"
+                    : "hover:text-[#b19768]"
+                }`}
+              >
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
