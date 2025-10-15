@@ -26,7 +26,7 @@ const WhatWeDo = () => {
   return (
     <>
       {/* WHAT WE DO SECTION */}
-      <section className="relative pt-12 bg-[#eeeeee] overflow-hidden">
+      <section className="relative pt-12 bg-[var(--background-color)] overflow-hidden">
         {/* Background pattern layer */}
         <div
           className="absolute inset-0 z-0"
@@ -40,7 +40,7 @@ const WhatWeDo = () => {
         ></div>
 
         {/* Soft overlay for smooth background */}
-        <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div>
+        {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
 
         {/* Content Container */}
         <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
@@ -48,20 +48,20 @@ const WhatWeDo = () => {
           <div className="relative flex justify-center md:justify-start w-full md:w-1/2">
             <div className="relative w-[280px] md:w-[400px]">
               {/* Background circle */}
-              <Image
+              {/* <Image
                 src={numbersBg}
                 alt="Numbers Background Shape"
                 width={400}
                 height={400}
                 className="absolute top-1/2 left-1/2 w-[140%] h-[130%] -translate-x-1/2 -translate-y-1/2 object-contain"
-              />
+              /> */}
               {/* Foreground numbers */}
               <Image
                 src={numbers}
                 alt="Numerology Illustration"
                 width={360}
                 height={400}
-                className="relative z-10 object-contain animate-slow-bounce"
+                className="relative z-10 object-contain animate-slow-bounce invert"
               />
             </div>
           </div>
@@ -76,14 +76,14 @@ const WhatWeDo = () => {
               What we do
             </p>
             <h2
-              className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair"
+              className="text-4xl md:text-6xl font-bold leading-tight text-gray-300 mb-6 playfair"
               data-aos="fade-right"
               data-aos-delay="400"
             >
               Numerology helps to <br /> transform you
             </h2>
             <p
-              className="text-gray-600 mb-8 text-lg leading-relaxed"
+              className="text-gray-300 mb-8 text-lg leading-relaxed"
               data-aos="fade-right"
               data-aos-delay="600"
             >
@@ -155,7 +155,7 @@ const StatsSection = () => {
   return (
     <section
       ref={ref}
-      className="relative py-12 bg-[#eeeeee] overflow-hidden flex justify-center playfair"
+      className="relative py-12 bg-[var(--background-color)] overflow-hidden flex justify-center playfair"
     >
       {/* Pattern + Overlay again */}
       <div
@@ -168,7 +168,7 @@ const StatsSection = () => {
           opacity: 0.5,
         }}
       ></div>
-      <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div>
+      {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
 
       {/* Stats Content */}
       <div className="relative z-10 w-11/12 md:max-w-4xl mx-auto flex flex-wrap  justify-center md:justify-between gap-10 text-center">
@@ -177,10 +177,10 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+          <h3 className="text-5xl font-bold text-gray-300">
             {counts.numerologists}K
           </h3>
-          <p className="text-gray-600 mt-2 text-lg">Happy clients</p>
+          <p className="text-gray-300 mt-2 text-lg">Happy clients</p>
         </motion.div>
 
         {/* Stat 2 */}
@@ -188,8 +188,8 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[#1d1d1d]">{counts.team}</h3>
-          <p className="text-gray-600 mt-2 text-lg">
+          <h3 className="text-5xl font-bold text-gray-300">{counts.team}</h3>
+          <p className="text-gray-300 mt-2 text-lg">
             Numerologists in our team
           </p>
         </motion.div>
@@ -199,10 +199,10 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+          <h3 className="text-5xl font-bold text-gray-300">
             {counts.projects}
           </h3>
-          <p className="text-gray-600 mt-2 text-lg">Global Branches</p>
+          <p className="text-gray-300 mt-2 text-lg">Global Branches</p>
         </motion.div>
 
         {/* Stat 4 */}
@@ -210,10 +210,10 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[#1d1d1d]">
+          <h3 className="text-5xl font-bold text-gray-300">
             {counts.experience}
           </h3>
-          <p className="text-gray-600 mt-2 text-lg">Years of experience</p>
+          <p className="text-gray-300 mt-2 text-lg">Years of experience</p>
         </motion.div>
       </div>
     </section>

@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#eeeeee] shadow-md" : "bg-transparent"
+        scrolled ? "bg-[#032236] shadow-md" : "bg-transparent"
       }`}
     >
       <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-20">
@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-[#1d1d1d] font-medium">
+        <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
           {menuItems.map((item) => (
             <li key={item.name}>
               <Link

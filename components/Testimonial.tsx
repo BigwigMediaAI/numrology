@@ -65,17 +65,20 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section
-      className="w-full py-12 relative font-raleway overflow-hidden bg-white text-gray-800"
-      style={{
-        backgroundImage: `url(${bgPattern.src})`,
-        backgroundRepeat: "repeat",
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative  bg-[var(--background-color)] overflow- py-12">
+      {/* Background pattern layer */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${bgPattern.src})`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          opacity: 0.5,
+        }}
+      ></div>
       {/* Overlay (optional, for subtle dim effect) */}
-      <div className="absolute inset-0 bg-white/80 z-0"></div>
+      {/* <div className="absolute inset-0 bg-white/80 z-0"></div> */}
 
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
@@ -89,7 +92,7 @@ export default function Testimonials() {
 
         {/* Heading */}
         <h2
-          className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair"
+          className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-gray-300"
           data-aos="fade-right"
           data-aos-delay="400"
         >
@@ -118,12 +121,12 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
+              <div className="bg-[#0d2e4a] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
                 {/* Quote Icon */}
-                <FaQuoteLeft className="text-[#b19768] text-3xl opacity-30 mb-3" />
+                <FaQuoteLeft className="text-gray-300 text-3xl opacity-30 mb-3" />
 
                 {/* Message */}
-                <p className="text-gray-700 text-base leading-relaxed font-annie line-clamp-5">
+                <p className="text-gray-300 text-base leading-relaxed font-annie line-clamp-5">
                   {testimonial.message}
                 </p>
 

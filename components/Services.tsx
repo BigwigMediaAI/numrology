@@ -60,7 +60,7 @@ const OurServices = () => {
     });
   }, []);
   return (
-    <section className="relative py-12 bg-[#0d0d0d] text-white overflow-hidden">
+    <section className="relative py-12 bg-[var(--background-color)] text-white overflow-hidden">
       {/* Background pattern */}
       <div
         className="absolute inset-0 z-0"

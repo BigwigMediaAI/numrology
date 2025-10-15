@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[#eeeeee] overflow-hidden">
+    <section className="relative min-h-screen bg-[var(--background-color)] overflow-hidden">
       {/* Background pattern layer */}
       <div
         className="absolute inset-0 z-0"
@@ -43,7 +43,7 @@ const Hero = () => {
       ></div>
 
       {/* Soft overlay */}
-      <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div>
+      {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
 
       {/* Navbar */}
       <div className="relative z-20">
@@ -62,14 +62,14 @@ const Hero = () => {
             Consultation for free
           </p>
           <h1
-            className="text-4xl md:text-6xl font-bold leading-tight text-[#1d1d1d] mb-6 playfair"
+            className="text-4xl md:text-6xl font-bold leading-tight text-gray-300 mb-6 playfair"
             data-aos="fade-right"
             data-aos-delay="400"
           >
             Infinite power of <br /> numerology
           </h1>
           <p
-            className="text-gray-600 mb-8 text-lg"
+            className="text-gray-300 mb-8 text-lg"
             data-aos="fade-right"
             data-aos-delay="600"
           >
@@ -100,10 +100,10 @@ const Hero = () => {
                   className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl playfair">
+                  <p className="font-bold text-gray-300 text-lg sm:text-xl playfair">
                     Destiny
                   </p>
-                  <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
+                  <p className="text-gray-300 text-sm sm:text-base max-w-[220px]">
                     Understand current issues in your life
                   </p>
                 </div>
@@ -125,10 +125,10 @@ const Hero = () => {
                   className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
                 />
                 <div>
-                  <p className="font-bold text-[#1d1d1d] text-lg sm:text-xl playfair">
+                  <p className="font-bold text-gray-300 text-lg sm:text-xl playfair">
                     Life Path
                   </p>
-                  <p className="text-gray-600 text-sm sm:text-base max-w-[220px]">
+                  <p className="text-gray-300 text-sm sm:text-base max-w-[220px]">
                     Discover your innate abilities
                   </p>
                 </div>
@@ -145,20 +145,20 @@ const Hero = () => {
         >
           <div className="relative w-[280px] md:w-[400px]">
             {/* Bigger Background Shape */}
-            <Image
+            {/* <Image
               src={numbersBg}
               alt="Numbers Background Shape"
               width={400}
               height={400}
               className="absolute top-1/2 left-1/2 w-[140%] h-[130%] -translate-x-1/2 -translate-y-1/2 object-contain"
-            />
+            /> */}
             {/* Foreground Numbers */}
             <Image
               src={numbers}
               alt="Numerology Illustration"
               width={360}
               height={400}
-              className="relative z-10 object-contain animate-slow-bounce"
+              className="relative z-10 object-contain animate-slow-bounce invert"
             />
           </div>
         </div>

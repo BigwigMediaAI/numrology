@@ -37,7 +37,7 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <section className="relative w-full bg-[#FCFAF8] py-12 overflow-hidden font-['Poppins']">
+    <section className="relative w-full bg-[var(--background-color)] py-12 overflow-hidden font-['Poppins']">
       {/* Spotted Background */}
       <div className="absolute inset-0">
         <Image
@@ -54,13 +54,13 @@ export default function FAQSection() {
         <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           {/* Arched Shape */}
           <div className="relative w-[320px] md:w-[380px]">
-            <Image
+            {/* <Image
               src={img1} // 🔁 replace with your path
               alt="Numerology background"
               width={400}
               height={600}
               className="w-full h-auto"
-            />
+            /> */}
 
             {/* Numbers Overlay */}
             <div
@@ -73,7 +73,7 @@ export default function FAQSection() {
                 alt="Number 2"
                 width={130}
                 height={130}
-                className="w-full h-auto animate-slow-bounce"
+                className="w-full h-auto animate-slow-bounce invert"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function FAQSection() {
             FAQ
           </p>
           <h2
-            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair"
+            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-gray-300"
             data-aos="fade-right"
             data-aos-delay="400"
           >
@@ -111,7 +111,7 @@ export default function FAQSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h3 className="text-xl font-semibold text-[#121212] playfair">
+                  <h3 className="text-xl font-semibold text-gray-300 playfair">
                     {faq.question}
                   </h3>
                   <span className="text-[#F95B2D] text-2xl">
@@ -119,7 +119,7 @@ export default function FAQSection() {
                   </span>
                 </div>
                 {openIndex === index && (
-                  <p className="text-[#5A5A5A] mt-3 text-lg leading-relaxed">
+                  <p className="text-gray-200 mt-3 text-lg leading-relaxed">
                     {faq.answer}
                   </p>
                 )}

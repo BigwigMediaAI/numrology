@@ -6,7 +6,7 @@ import bgPattern from "../assets/bg.png"; // 👈 add your stars/moon pattern im
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#f6f2ec] text-[#1a1a1a] pt-16 pb-10 overflow-hidden">
+    <footer className="relative bg-[var(--background-color)] text-gray-300 pt-16 pb-10 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0">
         <Image
@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Column 1 */}
         <div>
           <h2 className="text-2xl font-semibold mb-3">Mysta</h2>
-          <p className="text-base leading-relaxed text-gray-700">
+          <p className="text-base leading-relaxed text-gray-300">
             Reinventing the way of creating websites, we aim to create the most
             master-paced WordPress theme available on the market.
           </p>
@@ -33,13 +33,13 @@ const Footer = () => {
           <h3 className="text-sm font-semibold tracking-wider mb-3">
             CONTACT US
           </h3>
-          <p className="text-gray-700 mb-1">
+          <p className="text-gray-300 mb-1">
             202 Helga Springs Rd, Crawford, TN 38554
           </p>
-          <p className="text-gray-700 mb-1">
+          <p className="text-gray-300 mb-1">
             Call Us: <span className="font-semibold">800.275.8777</span>
           </p>
-          <p className="text-gray-700">alex@company.com</p>
+          <p className="text-gray-300">alex@company.com</p>
         </div>
 
         {/* Column 3 */}
@@ -57,7 +57,7 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-          <p className="text-sm italic text-gray-600 mt-2">
+          <p className="text-sm italic text-gray-300 mt-2">
             Sign up with your email address to receive news and updates
           </p>
         </div>
@@ -65,9 +65,11 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="relative border-t border-gray-300 mt-10 pt-6 z-10 w-11/12 md:w-10/12 mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
-        <p>Copyright ©2025 Mysta. All rights reserved.</p>
-        <div className="flex flex-wrap gap-4 justify-center md:justify-end">
-          <a href="#" className="hover:text-[#b7925b] transition">
+        <p className="text-gray-300 transition ">
+          Copyright ©2025 Mysta. All rights reserved.
+        </p>
+        <div className="flex flex-wrap gap-4 justify-center md:justify-end text-gray-300">
+          <a href="#" className="hover:text-[#b7925b] transition ">
             Home
           </a>
           <a href="#" className="hover:text-[#b7925b] transition">
