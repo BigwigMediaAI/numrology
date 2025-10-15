@@ -48,7 +48,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-white rounded-2xl shadow-xl max-w-4xl w-11/12 md:flex overflow-hidden relative">
+      <div className="bg-[var(--background-color)] rounded-2xl shadow-xl max-w-4xl w-11/12 md:flex overflow-hidden relative">
         {/* Left Image */}
         <div className="hidden md:block md:w-1/2 relative">
           <Image
@@ -60,11 +60,11 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Form Section */}
-        <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center relative">
+        <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center relative bg-[var(--background-color)]">
           <h2 className="text-2xl md:text-3xl font-bold text-[#b19768] mb-4 playfair">
             Get Your Free Numerology Guide
           </h2>
-          <p className="text-gray-600 mb-6 text-sm">
+          <p className="text-gray-300 mb-6 text-sm">
             Fill in your details to unlock personalized insights.
           </p>
 
@@ -79,7 +79,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                   onChange={handleChange}
                   placeholder=" "
                   required
-                  className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer"
+                  className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer "
                 />
                 <label
                   className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
@@ -98,7 +98,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 defaultCountry="AU"
                 value={formData.phone}
                 onChange={handlePhoneChange}
-                className="text-sm w-full border-b-2 border-gray-300 focus:border-[#b19768] transition-all pb-1"
+                className="text-sm w-full border-b-2 text-gray-300 border-gray-300 focus:border-[#b19768] transition-all pb-1"
               />
             </div>
 
