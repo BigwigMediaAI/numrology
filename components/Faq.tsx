@@ -64,7 +64,7 @@ export default function FAQSection() {
 
             {/* Numbers Overlay */}
             <div
-              className="absolute inset-0 flex flex-col items-center justify-center"
+              className="hidden md:flex absolute inset-0 flex-col items-center justify-center"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
