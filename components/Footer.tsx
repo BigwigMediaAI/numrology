@@ -72,16 +72,16 @@ const Footer = () => {
           <a href="#" className="hover:text-[#b7925b] transition ">
             Home
           </a>
-          <a href="#" className="hover:text-[#b7925b] transition">
+          <a href="/about-us" className="hover:text-[#b7925b] transition">
             About Us
           </a>
-          <a href="#" className="hover:text-[#b7925b] transition">
+          <a href="/team" className="hover:text-[#b7925b] transition">
             Our Team
           </a>
           <a href="#" className="hover:text-[#b7925b] transition">
             Blog
           </a>
-          <a href="#" className="hover:text-[#b7925b] transition">
+          <a href="/contact-us" className="hover:text-[#b7925b] transition">
             Contact Us
           </a>
         </div>

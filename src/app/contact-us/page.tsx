@@ -19,7 +19,7 @@ export default function ContactPage() {
         <Image
           src={banner}
           alt="Contact Banner"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-35"
         />
 
         {/* Overlay */}
