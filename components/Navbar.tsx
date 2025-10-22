@@ -27,10 +27,10 @@ const Navbar = () => {
   // Menu items (you can add hrefs based on your routes)
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About", href: "/about-us" },
     { name: "Team", href: "/team" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/contact-us" },
   ];
 
   return (
@@ -43,7 +43,13 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
-            <Image src={logo} alt="Logo" width={80} height={60} />
+            <Image
+              src={logo}
+              alt="Logo"
+              width={110}
+              height={110}
+              className="mt-2"
+            />
           </Link>
         </div>
 
