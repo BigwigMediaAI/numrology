@@ -35,29 +35,34 @@ const AboutGiftCardSection = () => {
       <div className="w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="max-w-xl mb-10 md:mb-0">
-          <p
+          {/* <p
             className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
             data-aos="fade-right"
             data-aos-delay="200"
           >
             Gift Cards
-          </p>
+          </p> */}
           <h1
-            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair"
+            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]  "
             data-aos="fade-right"
             data-aos-delay="200"
           >
             Free numerological express consultation
           </h1>
           <p
-            className="text-gray-300 text-lg leading-relaxed mb-6"
+            className="text-[var(--primary-color)] text-lg leading-relaxed mb-6 text-justify"
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            At Destiny By Nummbers, we believe everyone deserves a glimpse into
+            the power of numerology. That’s why we offer a free express
+            consultation — a brief, personalized session designed to give you
+            immediate insights into your core numbers and life patterns. In just
+            a few minutes, you’ll gain clarity, understand your strengths, and
+            see how numerology can guide your next steps toward alignment and
+            success.
           </p>
-          <Link
+          {/* <Link
             href="#"
             className="inline-block text-[#b19768] font-semibold hover:text-[#b19768] transition-colors text-lg cursor-pointer underline"
             data-aos="fade-right"
@@ -65,7 +70,7 @@ const AboutGiftCardSection = () => {
           >
             Learn more
             <span className="ml-2 border-b border-[#b19768]"></span>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Right Section */}

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background-color: #032236;
-  --primary-color: #b19768;
-  --button-color: #b5985d;
+  --background-color: #edd198;
+  --primary-color: #1b2b49;
+  --button-color: #0e2a47;
 }
 
 @keyframes slowBounce {

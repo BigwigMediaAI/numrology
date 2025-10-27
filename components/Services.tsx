@@ -21,33 +21,33 @@ import "aos/dist/aos.css";
 const services = [
   {
     icon: lifePathIcon,
-    title: "Life path number",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    title: "Driver Number",
+    desc: "Your Driver Number is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
   },
   {
     icon: coreNumbersIcon,
-    title: "Your core numbers",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    title: "Conductor Number",
+    desc: "Your Conductor Number is calculated from your full date of birth (DD MM YYY). It reveals the guiding energy that directs your life, showing how your actions, decisions, and experiences are influenced by the patterns of your birth numbers.",
   },
   {
     icon: birthDayIcon,
-    title: "Your birth day number",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    title: "Kua Number",
+    desc: "Your Kua Number is calculated from your year of birth and reveals your personal energy in relation to directions, environment, and life forces. It is often used in Feng Shui and personal guidance to determine your most supportive directions, ideal spaces, and ways to harmonize with the energy around you for health, relationships, and success.",
   },
   {
     icon: expressionIcon,
-    title: "Your expression number",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    title: "Birth Chart",
+    desc: "Your Birth Chart in numerology is based on the Lo Shu Grid — a 3×3 chart mapping numbers 1–9 to different life areas. Each number reveals traits, strengths, and challenges, helping us understand your personality, emotions, and the energies shaping your journey.",
   },
   {
     icon: nameNumerologyIcon,
     title: "Your name numerology",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    desc: "Name Numerology uncovers the hidden vibrations of your name and how they influence your personality, relationships, and life opportunities. Aligning your name with your destiny numbers can harmonize your energy and attract positive experiences.",
   },
   {
     icon: forecastIcon,
-    title: "Annual Forecast",
-    desc: "You have three numbers that are derived from your birth date. We’ll explain what each number means, and how it can assist you with your career.",
+    title: "Personal Year Number",
+    desc: "Your Personal Year Number reveals the themes and energies influencing you in a specific year, helping you anticipate opportunities, challenges, and growth periods. It serves as a guide to make informed decisions and align your actions with the flow of your future years.",
   },
 ];
 
@@ -82,7 +82,7 @@ const OurServices = () => {
         <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
           Our Services
         </p>
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
+        <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]">
           We&apos;ll explain what each <br /> number means
         </h2>
 
@@ -91,7 +91,7 @@ const OurServices = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#2D2D3C] transition p-8 flex flex-col items-center text-center"
+              className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#f5d595] hover: transition p-8 flex flex-col items-center text-center"
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
@@ -102,10 +102,10 @@ const OurServices = () => {
                 height={60}
                 className="mb-4 object-contain"
               />
-              <h3 className="text-xl font-semibold mb-2 text-[#fff] playfair">
+              <h3 className="text-xl font-semibold mb-2 text-[var(--primary-color)] playfair">
                 {item.title}
               </h3>
-              <p className="text-gray-400 text-md leading-relaxed">
+              <p className="text-[var(--primary-color)] text-md leading-relaxed text-justify">
                 {item.desc}
               </p>
             </div>
@@ -125,10 +125,10 @@ const OurServices = () => {
                     height={60}
                     className="mb-4 object-contain"
                   />
-                  <h3 className="text-lg font-semibold mb-2 text-[#fff]">
+                  <h3 className="text-lg font-semibold mb-2 text-[var(--primary-color)]">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-[var(--primary-color)] text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

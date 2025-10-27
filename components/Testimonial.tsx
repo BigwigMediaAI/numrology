@@ -14,44 +14,44 @@ import bgPattern from "../assets/yellow-star-bg.png";
 
 const testimonials = [
   {
-    name: "PULKIT",
+    name: "Pulkit",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut odio nec ligula aliquam fringilla.",
+      "Destiny by Number gave me incredible insights into my life path and career choices. The numerology session helped me understand my strengths and the timing for major decisions. Highly recommend their guidance!",
   },
   {
-    name: "KIRTI BEDI",
+    name: "Kirti Bedi",
     message:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "I was amazed by how accurate the reading was! The team at Destiny by Number explained everything in such a simple yet powerful way. It truly helped me align my goals with my personal numbers.",
   },
   {
-    name: "SAURAV SHARMA",
+    name: "Saurav Sharma",
     message:
-      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+      "I never believed in numerology before, but after my consultation with Destiny by Number, I was blown away. The predictions about my business growth and personal energy cycles were spot on!",
   },
   {
-    name: "ANITA DESAI",
+    name: "Anita Desai",
     message:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Destiny by Number helped me discover clarity during a confusing phase in my life. Their numerology insights about relationships and self-growth were incredibly helpful and eye-opening.",
   },
   {
-    name: "RAHUL VERMA",
+    name: "Rahul Verma",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+      "I’ve had multiple sessions with Destiny by Number, and every time I leave with a new sense of direction and motivation. Their numerology reports are deeply detailed and very accurate.",
   },
   {
-    name: "PRIYA KAPOOR",
+    name: "Priya Kapoor",
     message:
-      "Cras pulvinar mattis nunc sed blandit libero volutpat sed. Nunc non blandit massa enim nec.",
+      "Thanks to Destiny by Number, I made some major life decisions with confidence. Their expert advice based on my birth date and name vibration really made a difference in my personal growth.",
   },
   {
-    name: "RAJ SINGH",
+    name: "Raj Singh",
     message:
-      "Faucibus in ornare quam viverra orci sagittis eu volutpat. Aliquam sem fringilla ut morbi tincidunt.",
+      "Destiny by Number’s guidance completely changed my perspective. I followed their advice for a few months, and I could genuinely see positive changes in my career and relationships.",
   },
   {
-    name: "NEHA GUPTA",
+    name: "Neha Gupta",
     message:
-      "Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec.",
+      "The consultation was so insightful! Destiny by Number explained how my numerology chart connects to my daily life, and it felt like they truly understood my challenges and potential.",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Testimonials() {
 
         {/* Heading */}
         <h2
-          className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-gray-300"
+          className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]"
           data-aos="fade-right"
           data-aos-delay="400"
         >
@@ -121,12 +121,12 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#0d2e4a] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
+              <div className="bg-[#f5d595] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
                 {/* Quote Icon */}
-                <FaQuoteLeft className="text-gray-300 text-3xl opacity-30 mb-3" />
+                <FaQuoteLeft className="text-[var(--primary-color)] text-3xl opacity-30 mb-3" />
 
                 {/* Message */}
-                <p className="text-gray-300 text-base leading-relaxed font-annie line-clamp-5">
+                <p className="text-[var(--primary-color)] text-base leading-relaxed font-annie line-clamp-5">
                   {testimonial.message}
                 </p>
 

@@ -9,7 +9,7 @@ import Button from "./Button";
 const GetInTouch = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
-    <section className="relative py-12 bg-[var(--background-color)] text-white overflow-hidden">
+    <section className="relative py-12 bg-[var(--background-color)] text-[var(--primary-color)] overflow-hidden">
       {/* Background pattern */}
       <div
         className="absolute inset-0 z-0"

@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row justify-between items-center py-20 md:py-40">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center md:items-center justify-between py-28 md:py-32 min-h-[80vh]">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <p
@@ -62,19 +62,29 @@ const Hero = () => {
             Consultation for free
           </p>
           <h1
-            className="text-4xl md:text-6xl font-bold leading-tight text-gray-300 mb-6 playfair"
+            className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
             data-aos="fade-right"
             data-aos-delay="400"
           >
             Infinite power of <br /> numerology
           </h1>
           <p
-            className="text-gray-300 mb-8 text-lg"
+            className="text-[var(--primary-color)] mb-8 text-lg text-justify"
             data-aos="fade-right"
             data-aos-delay="600"
           >
-            Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            At Destiny By Nummbers, we believe numerology is far more than the
+            study of numbers — it’s the sacred language of the universe that
+            reveals the story of who you are and why you are here. Every number
+            vibrates with its own unique energy, shaping your personality,
+            emotions, and the soul journey you’ve chosen in this lifetime. From
+            your date of birth to the letters of your name, these numbers hold
+            the keys to your inner strengths, hidden challenges, and true
+            purpose. Through the art and science of numerology, we guide you to
+            uncover the deeper meaning behind life’s patterns and align with
+            your highest potential. Each reading becomes a transformative
+            journey of self-discovery bringing clarity, healing, and direction,
+            so you can move forward with confidence, peace, and purpose.
           </p>
           <ButtonFill
             onClick={() => setIsPopupOpen(true)}
@@ -97,13 +107,13 @@ const Hero = () => {
                   alt="Destiny Icon"
                   width={60}
                   height={60}
-                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] invert"
                 />
                 <div>
-                  <p className="font-bold text-gray-300 text-lg sm:text-xl playfair">
+                  <p className="font-bold text-[var(--primary-color)] text-lg sm:text-xl playfair">
                     Destiny
                   </p>
-                  <p className="text-gray-300 text-sm sm:text-base max-w-[220px]">
+                  <p className="text-[var(--primary-color)] text-sm sm:text-base max-w-[220px]">
                     Understand current issues in your life
                   </p>
                 </div>
@@ -122,13 +132,13 @@ const Hero = () => {
                   alt="Life Path Icon"
                   width={60}
                   height={60}
-                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] invert"
                 />
                 <div>
-                  <p className="font-bold text-gray-300 text-lg sm:text-xl playfair">
+                  <p className="font-bold text-[var(--primary-color)] text-lg sm:text-xl playfair">
                     Life Path
                   </p>
-                  <p className="text-gray-300 text-sm sm:text-base max-w-[220px]">
+                  <p className="text-[var(--primary-color)] text-sm sm:text-base max-w-[220px]">
                     Discover your innate abilities
                   </p>
                 </div>
@@ -139,7 +149,7 @@ const Hero = () => {
 
         {/* Right Artwork */}
         <div
-          className="relative mt-12 md:mt-0 flex justify-center md:justify-end"
+          className="relative mt-12 md:mt-0 flex justify-center md:justify-end md:items-center"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -158,7 +168,7 @@ const Hero = () => {
               alt="Numerology Illustration"
               width={360}
               height={400}
-              className="relative z-10 object-contain animate-slow-bounce invert"
+              className="relative z-10 object-contain animate-slow-bounce"
             />
           </div>
         </div>

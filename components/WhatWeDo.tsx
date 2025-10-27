@@ -61,7 +61,7 @@ const WhatWeDo = () => {
                 alt="Numerology Illustration"
                 width={360}
                 height={400}
-                className="relative z-10 object-contain animate-slow-bounce invert"
+                className="relative z-10 object-contain animate-slow-bounce "
               />
             </div>
           </div>
@@ -76,23 +76,27 @@ const WhatWeDo = () => {
               What we do
             </p>
             <h2
-              className="text-4xl md:text-6xl font-bold leading-tight text-gray-300 mb-6 playfair"
+              className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
               data-aos="fade-right"
               data-aos-delay="400"
             >
               Numerology helps to <br /> transform you
             </h2>
             <p
-              className="text-gray-300 mb-8 text-lg leading-relaxed"
+              className="text-[var(--primary-color)] mb-8 text-lg leading-relaxed"
               data-aos="fade-right"
               data-aos-delay="600"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi
-              tellus, pulvinar vel tempus eget, finibus vitae ante. Fusce sit
-              amet velit eleifend, iaculis velit quis, malesuada lacus.
-              Vestibulum sodales magna a volutpat tempus. Mauris vestibulum id
-              urna viverra ultrices. Nullam rhoncus elit eget libero varius
-              dapibus.
+              At Destiny By Nummbers, we begin by decoding your core numbers
+              derived from your full name and date of birth — revealing your
+              unique personality, life path, and purpose. Each session uncovers
+              how these energies shape your relationships, career, and personal
+              growth, offering practical insights for real-world transformation.
+              When your name’s vibration conflicts with your birth numbers, we
+              identify and correct these imbalances through precise name tuning.
+              This sacred process realigns your frequency with your destiny,
+              helping life flow more smoothly and attract harmony, success, and
+              fulfillment.
             </p>
             <ButtonFill
               onClick={() => setIsPopupOpen(true)}
@@ -177,10 +181,12 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-gray-300">
+          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
             {counts.numerologists}K
           </h3>
-          <p className="text-gray-300 mt-2 text-lg">Happy clients</p>
+          <p className="text-[var(--primary-color)] mt-2 text-lg">
+            Happy clients
+          </p>
         </motion.div>
 
         {/* Stat 2 */}
@@ -188,8 +194,10 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-gray-300">{counts.team}</h3>
-          <p className="text-gray-300 mt-2 text-lg">
+          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
+            {counts.team}
+          </h3>
+          <p className="text-[var(--primary-color)] mt-2 text-lg">
             Numerologists in our team
           </p>
         </motion.div>
@@ -199,10 +207,12 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-gray-300">
+          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
             {counts.projects}
           </h3>
-          <p className="text-gray-300 mt-2 text-lg">Global Branches</p>
+          <p className="text-[var(--primary-color)] mt-2 text-lg">
+            Global Branches
+          </p>
         </motion.div>
 
         {/* Stat 4 */}
@@ -210,10 +220,12 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-gray-300">
+          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
             {counts.experience}
           </h3>
-          <p className="text-gray-300 mt-2 text-lg">Years of experience</p>
+          <p className="text-[var(--primary-color)] mt-2 text-lg">
+            Years of experience
+          </p>
         </motion.div>
       </div>
     </section>
