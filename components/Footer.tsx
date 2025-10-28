@@ -37,18 +37,20 @@ const Footer = () => {
           {/* Social Media */}
           <div className="flex gap-4 mt-5">
             <a
-              href="#"
+              href="https://www.facebook.com/destinybynummbers"
               className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+              target="_blank"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/destinybynummbers/"
               className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+              target="_blank"
             >
               <FaInstagram />
             </a>
-            <a
+            {/* <a
               href="#"
               className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
             >
@@ -59,7 +61,7 @@ const Footer = () => {
               className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
             >
               <FaYoutube />
-            </a>
+            </a> */}
           </div>
         </div>
 
