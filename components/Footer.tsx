@@ -2,7 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import bgPattern from "../assets/bg.png"; // 👈 add your stars/moon pattern image here
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import bgPattern from "../assets/bg.png";
 
 const Footer = () => {
   return (
@@ -18,58 +24,67 @@ const Footer = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative w-11/12 md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 z-10">
-        {/* Column 1 */}
+      <div className="relative w-11/12 md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 z-10">
+        {/* Left Column - Logo & Description */}
         <div>
           <h2 className="text-2xl font-semibold mb-3">Destiny By Numbers</h2>
           <p className="text-base leading-relaxed text-[var(--primary-color)] md:text-justify">
-            Reinventing the way of creating websites, we aim to create the most
-            master-paced WordPress theme available on the market.
+            Discover the power of numbers with Destiny By Numbers <br /> and
+            unlock the path to your true potential through <br /> personalized
+            numerology insights and guidance.
           </p>
+
+          {/* Social Media */}
+          <div className="flex gap-4 mt-5">
+            <a
+              href="#"
+              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="#"
+              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="#"
+              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="#"
+              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
+            >
+              <FaYoutube />
+            </a>
+          </div>
         </div>
 
-        {/* Column 2 */}
-        <div>
+        {/* Right Column - Address */}
+        <div className="text-left md:text-right">
           <h3 className="text-sm font-semibold tracking-wider mb-3">
             CONTACT US
           </h3>
-          <p className="text-[var(--primary-color)] mb-1">
-            202 Helga Springs Rd, Crawford, TN 38554
+          <p className="text-[var(--primary-color)] mb-2 font-semibold">
+            Head Office:
+          </p>
+          <p className="text-[var(--primary-color)] mb-2">
+            Melbourne, Australia <br />
+            21 Cuttlefish Circuit, Tarneit, VIC, 3029, Australia
           </p>
           <p className="text-[var(--primary-color)] mb-1">
-            Call Us: <span className="font-semibold">800.275.8777</span>
-          </p>
-          <p className="text-[var(--primary-color)]">alex@company.com</p>
-        </div>
-
-        {/* Column 3 */}
-        <div>
-          <h3 className="text-sm font-semibold tracking-wider mb-3">
-            SIGN UP FOR EMAIL UPDATES
-          </h3>
-          <div className="flex">
-            <input
-              type="email"
-              placeholder="Your e-mail address"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg outline-none text-sm placeholder-gray-500"
-            />
-            <button className="bg-[#b7925b] text-white px-6 rounded-r-lg font-medium hover:bg-[#a47f45] transition">
-              Subscribe
-            </button>
-          </div>
-          <p className="text-sm italic text-[var(--primary-color)] mt-2">
-            Sign up with your email address to receive news and updates
+            <span className="font-semibold">Phone:</span> +61 457 733 000
           </p>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="relative border-t border-gray-300 mt-10 pt-6 z-10 w-11/12 md:w-10/12 mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
-        <p className="text-[var(--primary-color)] transition ">
-          Copyright ©2025 Mysta. All rights reserved.
-        </p>
-        <div className="flex flex-wrap gap-4 justify-center md:justify-end text-[var(--primary-color)]">
-          <a href="#" className="hover:text-[#b7925b] transition ">
+      {/* Bottom Links */}
+      <div className="relative border-t border-gray-300 mt-10 pt-6 z-10 w-11/12 md:w-10/12 mx-auto flex flex-col items-center text-sm text-[var(--primary-color)] gap-4">
+        <div className="flex flex-wrap justify-center gap-5">
+          <a href="#" className="hover:text-[#b7925b] transition">
             Home
           </a>
           <a href="/about-us" className="hover:text-[#b7925b] transition">
@@ -85,6 +100,9 @@ const Footer = () => {
             Contact Us
           </a>
         </div>
+        <p className="text-center text-[var(--primary-color)] mt-2">
+          Copyright ©2025 Mysta. All rights reserved.
+        </p>
       </div>
     </footer>
   );
