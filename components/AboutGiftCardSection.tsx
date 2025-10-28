@@ -43,14 +43,14 @@ const AboutGiftCardSection = () => {
             Gift Cards
           </p> */}
           <h1
-            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]  "
+            className="text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]  "
             data-aos="fade-right"
             data-aos-delay="200"
           >
             Free numerological express consultation
           </h1>
           <p
-            className="text-[var(--primary-color)] text-lg leading-relaxed mb-6 text-justify"
+            className="text-[var(--primary-color)] text-base md:text-lg leading-relaxed mb-6 text-justify"
             data-aos="fade-right"
             data-aos-delay="200"
           >

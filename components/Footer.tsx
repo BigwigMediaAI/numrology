@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Column 1 */}
         <div>
           <h2 className="text-2xl font-semibold mb-3">Destiny By Numbers</h2>
-          <p className="text-base leading-relaxed text-[var(--primary-color)]">
+          <p className="text-base leading-relaxed text-[var(--primary-color)] md:text-justify">
             Reinventing the way of creating websites, we aim to create the most
             master-paced WordPress theme available on the market.
           </p>

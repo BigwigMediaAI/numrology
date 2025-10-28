@@ -76,14 +76,14 @@ const WhatWeDo = () => {
               What we do
             </p>
             <h2
-              className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
+              className="text-3xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
               data-aos="fade-right"
               data-aos-delay="400"
             >
               Numerology helps to <br /> transform you
             </h2>
             <p
-              className="text-[var(--primary-color)] mb-8 text-lg leading-relaxed"
+              className="text-[var(--primary-color)] mb-8 text-base md:text-lg leading-relaxed text-justify"
               data-aos="fade-right"
               data-aos-delay="600"
             >
@@ -181,7 +181,7 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
+          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
             {counts.numerologists}K
           </h3>
           <p className="text-[var(--primary-color)] mt-2 text-lg">
@@ -194,7 +194,7 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
+          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
             {counts.team}
           </h3>
           <p className="text-[var(--primary-color)] mt-2 text-lg">
@@ -207,7 +207,7 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
+          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
             {counts.projects}
           </h3>
           <p className="text-[var(--primary-color)] mt-2 text-lg">
@@ -220,7 +220,7 @@ const StatsSection = () => {
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
-          <h3 className="text-5xl font-bold text-[var(--primary-color)]">
+          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
             {counts.experience}
           </h3>
           <p className="text-[var(--primary-color)] mt-2 text-lg">

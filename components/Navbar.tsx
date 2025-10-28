@@ -34,18 +34,19 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#edd198] shadow-md" : "bg-transparent"
+        scrolled ? "bg-[#e8d5b7] shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-24 md:h-20">
+      <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-28 md:h-28">
         {/* Logo */}
-        <div className="flex items-center">
+        {/* Logo */}
+        <div className="flex items-center py-2">
           <Link href="/">
             <Image
               src={logo}
               alt="Destiny By Nummbers Logo"
-              width={90}
-              height={90}
+              width={110} // ⬅️ increased from 90
+              height={110} // ⬅️ increased from 90
               className="object-contain"
               priority
             />

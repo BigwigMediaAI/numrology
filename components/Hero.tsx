@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center md:items-center justify-between py-28 md:py-32 min-h-[80vh]">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center md:items-center justify-between mt-5 py-28  md:py-28 min-h-[80vh]">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <p
@@ -69,7 +69,7 @@ const Hero = () => {
             Infinite power of <br /> numerology
           </h1>
           <p
-            className="text-[var(--primary-color)] mb-8 text-lg text-justify"
+            className="text-[var(--primary-color)] mb-8 text-base md:text-lg text-justify"
             data-aos="fade-right"
             data-aos-delay="600"
           >

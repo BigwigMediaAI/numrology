@@ -28,10 +28,10 @@ const GetInTouch = () => {
         <h2 className="text-[#b19768] font-semibold uppercase tracking-wide mb-2">
           Get in Touch
         </h2>
-        <p className="max-w-4xl text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair">
+        <p className="max-w-4xl text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair">
           Unlock the power hidden in your numbers.
         </p>
-        <p className="text-lg  mb-8 max-w-xl">
+        <p className="text-base md:text-lg  mb-8 max-w-xl">
           Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>

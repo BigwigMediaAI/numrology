@@ -67,7 +67,7 @@ export default function FAQSection() {
   }, []);
 
   return (
-    <section className="relative w-full bg-[var(--background-color)] py-12 overflow-hidden font-['Poppins']">
+    <section className="relative w-full bg-[var(--background-color)]  overflow-hidden font-['Poppins']">
       {/* Spotted Background */}
       <div className="absolute inset-0">
         <Image
@@ -141,7 +141,7 @@ export default function FAQSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h3 className="text-xl font-semibold text-[var(--primary-color)] playfair">
+                  <h3 className="text-lg md:text-xl font-semibold text-[var(--primary-color)] playfair">
                     {faq.question}
                   </h3>
                   <span className="text-[#F95B2D] text-2xl">
@@ -149,7 +149,7 @@ export default function FAQSection() {
                   </span>
                 </div>
                 {openIndex === index && (
-                  <p className="text-[var(--primary-color)] mt-3 text-lg leading-relaxed">
+                  <p className="text-[var(--primary-color)] mt-3 text-base md:text-lg leading-relaxed text-justify">
                     {faq.answer}
                   </p>
                 )}

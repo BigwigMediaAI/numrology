@@ -82,7 +82,7 @@ const OurServices = () => {
         <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
           Our Services
         </p>
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]">
+        <h2 className="text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]">
           We&apos;ll explain what each <br /> number means
         </h2>
 
@@ -128,7 +128,7 @@ const OurServices = () => {
                   <h3 className="text-lg font-semibold mb-2 text-[var(--primary-color)]">
                     {item.title}
                   </h3>
-                  <p className="text-[var(--primary-color)] text-sm leading-relaxed">
+                  <p className="text-[var(--primary-color)] text-sm leading-relaxed text-justify">
                     {item.desc}
                   </p>
                 </div>
