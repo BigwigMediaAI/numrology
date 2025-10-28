@@ -56,7 +56,7 @@ const AboutGiftCardSection = () => {
           >
             At Destiny By Nummbers, we believe everyone deserves a glimpse into
             the power of numerology. That’s why we offer a free express
-            consultation — a brief, personalized session designed to give you
+            consultation. a brief, personalized session designed to give you
             immediate insights into your core numbers and life patterns. In just
             a few minutes, you’ll gain clarity, understand your strengths, and
             see how numerology can guide your next steps toward alignment and

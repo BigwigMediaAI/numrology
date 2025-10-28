@@ -37,7 +37,7 @@ const services = [
   {
     icon: expressionIcon,
     title: "Birth Chart",
-    desc: "Your Birth Chart in numerology is based on the Lo Shu Grid — a 3×3 chart mapping numbers 1–9 to different life areas. Each number reveals traits, strengths, and challenges, helping us understand your personality, emotions, and the energies shaping your journey.",
+    desc: "Your Birth Chart in numerology is based on the Lo Shu Grid , A 3×3 chart mapping numbers 1–9 to different life areas. Each number reveals traits, strengths, and challenges, helping us understand your personality, emotions, and the energies shaping your journey.",
   },
   {
     icon: nameNumerologyIcon,
