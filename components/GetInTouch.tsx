@@ -31,9 +31,11 @@ const GetInTouch = () => {
         <p className="max-w-4xl text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair">
           Unlock the power hidden in your numbers.
         </p>
-        <p className="text-base md:text-lg  mb-8 max-w-xl">
-          Fusce sit amet velit eleifend, iaculis velit quis, malesuada lacus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p className="text-base md:text-lg  mb-8 max-w-xl text-justify">
+          Every number tells a story about who you are, the journey you’re on,
+          and the opportunities that await. By uncovering the hidden messages in
+          your numbers, you can gain clarity, embrace your strengths, and step
+          confidently onto the path your soul is meant to follow
         </p>
         <Button onClick={() => setIsPopupOpen(true)} text="Get started" />
       </div>
