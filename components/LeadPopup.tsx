@@ -64,7 +64,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#b19768] mb-4 playfair">
             Get Your Free Numerology Guide
           </h2>
-          <p className="text-gray-300 mb-6 text-sm">
+          <p className=" mb-6 text-sm text-[var(--primary-color)]">
             Fill in your details to unlock personalized insights.
           </p>
 
@@ -84,7 +84,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 <label
                   className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
                   peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
-                  peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768] peer-focus:bg-white peer-focus:px-1"
+                  peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768]  peer-focus:px-1"
                 >
                   {field.charAt(0).toUpperCase() + field.slice(1)}
                 </label>
@@ -115,7 +115,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
               <label
                 className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
                 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
-                peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768] peer-focus:bg-white peer-focus:px-1"
+                peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768]  peer-focus:px-1"
               >
                 Message
               </label>

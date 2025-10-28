@@ -121,7 +121,7 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#f5d595] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
+              <div className="bg-[#e5d6e0] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
                 {/* Quote Icon */}
                 <FaQuoteLeft className="text-[var(--primary-color)] text-3xl opacity-30 mb-3" />
 
