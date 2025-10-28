@@ -7,7 +7,7 @@ import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-
+import amit from "../../../assets/amit.png";
 const teamMembers = [
   {
     name: "John Doe",
@@ -105,55 +105,91 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <section className="w-11/12 md:w-5/6 mx-auto py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          {teamMembers.map((member, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center text-center rounded-xl p-6 shadow-md shadow-gray-300 hover:shadow-lg hover:shadow-gray-400 transition"
-            >
-              {/* Circular Image */}
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-32 h-32 md:w-36 md:h-36 object-cover rounded-full mb-4"
-              />
+      <section className="w-11/12 md:w-5/6 mx-auto py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          {/* Founder Image */}
+          <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
+            <Image
+              src={amit}
+              alt="Founder of Destiny by Numbers"
+              width={600}
+              height={530}
+              className="w-full h-[530px] object-cover"
+            />
+          </div>
 
-              {/* Name and Role */}
-              <h3 className="text-xl font-semibold text-[var(--primary-color)]">
-                {member.name}
-              </h3>
-              <p className="text-gray-500 text-sm mb-3">{member.role}</p>
-
-              {/* Social Icons */}
-              <div className="flex space-x-4">
-                <a
-                  href={member.socials.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-blue-600 transition"
-                >
-                  <FaFacebookF />
-                </a>
-                <a
-                  href={member.socials.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-blue-400 transition"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href={member.socials.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-blue-700 transition"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </div>
-            </div>
-          ))}
+          {/* Founder Statement */}
+          <div className="flex flex-col col-span-2 justify-center text-gray-800">
+            <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+              Amit Paal Siingh (he/him)
+            </span>
+            <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+              “ <strong>Amit</strong> is a certified numerologist with a rich
+              and diverse background. Born in India and having lived in
+              New Zealand and Australia since his early twenties, he brings a
+              global perspective to his work. With a successful corporate career
+              spanning many years, he combined his analytical skills and life
+              experience with a deep passion for numerology, studying under an
+              expert in the field. He{" "}
+              <strong>specialises in name correction</strong>, helping clients
+              realign their name vibrations to match their life path for greater
+              clarity, success, and fulfillment. Today, he uses his knowledge to
+              guide clients toward personal growth and to unlock the true
+              potential hidden within their numbers.”
+            </p>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Location – Face to Face Consultations - Melbourne
+              <br />{" "}
+            </span>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Online - Worldwide
+            </span>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Languages Spoken – English, Hindi & Punjabi
+            </span>
+          </div>
+        </div>
+      </section>
+      <section className="w-11/12 md:w-5/6 mx-auto py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          {/* Founder Statement */}
+          <div className="flex flex-col col-span-2 justify-center text-gray-800">
+            <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+              Kamal Chauhan (she/her)
+            </span>
+            <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+              “ <strong>Kamal</strong> brings a wealth of experience and insight
+              to <strong>Destiny By Nummbers</strong>. After a distinguished
+              career in a senior government position, she retired with a
+              reputation for leadership, precision, and integrity. Guided by a
+              lifelong curiosity about the deeper patterns in life, she embraced
+              numerology and became a certified practitioner, combining
+              professional expertise with spiritual insight. Today, Kamal helps
+              clients uncover the hidden energies in their numbers, offering
+              guidance that is both practical and transformative, empowering
+              them to align with their true purpose.”
+            </p>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Location – Face to Face Consultations - Melbourne and Delhi{" "}
+              <br />{" "}
+            </span>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Online - Worldwide
+            </span>
+            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Languages Spoken – English, Hindi & Punjabi
+            </span>
+          </div>
+          {/* Founder Image */}
+          <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
+            <Image
+              src={amit}
+              alt="Founder of Destiny by Numbers"
+              width={600}
+              height={530}
+              className="w-full h-[530px] object-cover"
+            />
+          </div>
         </div>
       </section>
 
