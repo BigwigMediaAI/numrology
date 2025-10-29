@@ -64,7 +64,7 @@ export default function ContactPage() {
             Get in Touch
           </h2>
           <hr />
-          <p className="mb-4 text-gray-400 font-sans">
+          <p className="mb-4 text-gray-800 font-sans">
             Please contact us via phone or email below, or visit us at our Head
             or Branch Office during operating hours.
           </p>

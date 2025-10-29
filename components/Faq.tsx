@@ -123,7 +123,7 @@ export default function FAQSection() {
             data-aos="fade-right"
             data-aos-delay="400"
           >
-            Fell free to ask <br /> more questions
+            Feel free to ask <br /> more questions
           </h2>
 
           {/* Accordion FAQ */}

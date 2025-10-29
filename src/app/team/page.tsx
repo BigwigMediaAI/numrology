@@ -108,15 +108,16 @@ export default function ContactPage() {
 
       <section className="w-11/12 md:w-5/6 mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {/* Founder Image */}
-          <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
-            <Image
-              src={amit}
-              alt="Founder of Destiny by Numbers"
-              width={600}
-              height={530}
-              className="w-full lg:h-[400px] 2xl:h-[450px] object-cover"
-            />
+          <div className="flex justify-center">
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-[var(--primary-color)] hover:scale-105 transition-transform duration-300">
+              <Image
+                src={amit}
+                alt="Founder of Destiny by Numbers"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Founder Statement */}
@@ -125,10 +126,10 @@ export default function ContactPage() {
               Amit Paal Siingh (he/him)
             </span>
             <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
-              “ <strong>Amit</strong> is a certified numerologist with a rich
-              and diverse background. Born in India and having lived in
-              New Zealand and Australia since his early twenties, he brings a
-              global perspective to his work. With a successful corporate career
+              <strong>Amit</strong> is a certified numerologist with a rich and
+              diverse background. Born in India and having lived in New Zealand
+              and Australia since his early twenties, he brings a global
+              perspective to his work. With a successful corporate career
               spanning many years, he combined his analytical skills and life
               experience with a deep passion for numerology, studying under an
               expert in the field. He{" "}
@@ -136,7 +137,7 @@ export default function ContactPage() {
               realign their name vibrations to match their life path for greater
               clarity, success, and fulfillment. Today, he uses his knowledge to
               guide clients toward personal growth and to unlock the true
-              potential hidden within their numbers.”
+              potential hidden within their numbers.
             </p>
             <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Location – Face to Face Consultations - Melbourne
@@ -159,7 +160,7 @@ export default function ContactPage() {
               Kamal Chauhan (she/her)
             </span>
             <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
-              “ <strong>Kamal</strong> brings a wealth of experience and insight
+              <strong>Kamal</strong> brings a wealth of experience and insight
               to <strong>Destiny By Nummbers</strong>. After a distinguished
               career in a senior government position, she retired with a
               reputation for leadership, precision, and integrity. Guided by a
@@ -168,7 +169,7 @@ export default function ContactPage() {
               professional expertise with spiritual insight. Today, Kamal helps
               clients uncover the hidden energies in their numbers, offering
               guidance that is both practical and transformative, empowering
-              them to align with their true purpose.”
+              them to align with their true purpose.
             </p>
             <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Location – Face to Face Consultations - Melbourne and Delhi{" "}
@@ -182,14 +183,16 @@ export default function ContactPage() {
             </span>
           </div>
           {/* Founder Image */}
-          <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
-            <Image
-              src={kamal}
-              alt="Founder of Destiny by Numbers"
-              width={600}
-              height={530}
-              className="w-full lg:h-[400px] 2xl:h-[450px] object-cover"
-            />
+          <div className="flex justify-center">
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-[var(--primary-color)] hover:scale-105 transition-transform duration-300">
+              <Image
+                src={kamal}
+                alt="Founder of Destiny by Numbers"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

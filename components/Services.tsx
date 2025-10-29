@@ -27,7 +27,7 @@ const services = [
   {
     icon: coreNumbersIcon,
     title: "Conductor Number",
-    desc: "Your Conductor Number is calculated from your full date of birth (DD MM YYY). It reveals the guiding energy that directs your life, showing how your actions, decisions, and experiences are influenced by the patterns of your birth numbers.",
+    desc: "Your Conductor Number is calculated from your full date of birth (DD MM YYYY). It reveals the guiding energy that directs your life, showing how your actions, decisions, and experiences are influenced by the patterns of your birth numbers.",
   },
   {
     icon: birthDayIcon,
