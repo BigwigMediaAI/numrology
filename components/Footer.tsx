@@ -87,21 +87,21 @@ const Footer = () => {
           <a href="#" className="hover:text-[#b7925b] transition">
             Home
           </a>
-          <a href="/about-us" className="hover:text-[#b7925b] transition">
-            About Us
+          <a href="/our-services" className="hover:text-[#b7925b] transition">
+            Our Services
           </a>
           <a href="/team" className="hover:text-[#b7925b] transition">
-            Our Team
+            Team
           </a>
-          <a href="#" className="hover:text-[#b7925b] transition">
-            Blog
-          </a>
+          {/* <a href="#" className="hover:text-[#b7925b] transition">
+            Blogs
+          </a> */}
           <a href="/contact-us" className="hover:text-[#b7925b] transition">
-            Contact Us
+            Contact
           </a>
         </div>
         <p className="text-center text-[var(--primary-color)] mt-2">
-          Copyright ©2025 Mysta. All rights reserved.
+          Copyright ©2025 Destiny By Numbers. All rights reserved.
         </p>
       </div>
     </footer>
