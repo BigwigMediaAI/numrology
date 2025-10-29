@@ -78,10 +78,6 @@ const OurServices = () => {
 
       {/* Content */}
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto text-center">
-        {/* Heading */}
-        {/* <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
-          Our Services
-        </p> */}
         <h2 className="text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]">
           We&apos;ll explain what each <br /> number means
         </h2>

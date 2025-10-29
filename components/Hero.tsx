@@ -42,9 +42,6 @@ const Hero = () => {
         }}
       ></div>
 
-      {/* Soft overlay */}
-      {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
-
       {/* Navbar */}
       <div className="relative z-20">
         <Navbar />
@@ -54,13 +51,6 @@ const Hero = () => {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-16 md:mt-5  py-12 lg:pt-24 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
-          {/* <p
-            className="text-[var(--primary-color)] text-lg font-bold mb-3 mt-5 uppercase tracking-widest"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            Consultation for free
-          </p> */}
           <h1
             className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
             data-aos="fade-right"
@@ -86,12 +76,6 @@ const Hero = () => {
             journey of self-discovery bringing clarity, healing, and direction,
             so you can move forward with confidence, peace, and purpose.
           </p>
-          {/* <ButtonFill
-            onClick={() => setIsPopupOpen(true)}
-            text="Get started"
-            aos="fade-right"
-            aosDelay="800"
-          /> */}
 
           {/* Mini Features */}
           <div className="flex gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">
@@ -154,15 +138,6 @@ const Hero = () => {
           data-aos-delay="500"
         >
           <div className="relative w-[280px] md:w-[400px]">
-            {/* Bigger Background Shape */}
-            {/* <Image
-              src={numbersBg}
-              alt="Numbers Background Shape"
-              width={400}
-              height={400}
-              className="absolute top-1/2 left-1/2 w-[140%] h-[130%] -translate-x-1/2 -translate-y-1/2 object-contain"
-            /> */}
-            {/* Foreground Numbers */}
             <Image
               src={numbers}
               alt="Numerology Illustration"
@@ -173,7 +148,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* Popup */}
       <LeadPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </section>
   );

@@ -4,11 +4,11 @@ import React from "react";
 
 interface ButtonFillProps {
   text: React.ReactNode;
-  href?: string; // if provided, renders as Link
-  onClick?: () => void; // optional click handler
-  className?: string; // extra Tailwind classes
-  aos?: string; // optional AOS animation type
-  aosDelay?: string; // optional AOS delay
+  href?: string;
+  onClick?: () => void;
+  className?: string;
+  aos?: string;
+  aosDelay?: string;
   type?: "button" | "submit" | "reset";
 }
 
@@ -31,7 +31,6 @@ const ButtonFill: React.FC<ButtonFillProps> = ({
       transition-all duration-700 ease-out group font-semibold uppercase tracking-widest
       ${className}`}
     >
-      {/* Skewed background animation */}
       <span
         className="absolute top-0 left-[-18px] h-full w-0 transform skew-x-[25deg] transition-all duration-700 ease-out group-hover:w-[130%] z-0"
         style={{ background: "var(--button-color)" }}

@@ -77,8 +77,6 @@ export default function Testimonials() {
           opacity: 0.5,
         }}
       ></div>
-      {/* Overlay (optional, for subtle dim effect) */}
-      {/* <div className="absolute inset-0 bg-white/80 z-0"></div> */}
 
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}

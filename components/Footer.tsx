@@ -43,18 +43,6 @@ const Footer = () => {
             >
               <FaInstagram />
             </a>
-            {/* <a
-              href="#"
-              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="#"
-              className="p-2 bg-[#b7925b] text-white rounded-full hover:bg-[#a47f45] transition"
-            >
-              <FaYoutube />
-            </a> */}
           </div>
         </div>
 

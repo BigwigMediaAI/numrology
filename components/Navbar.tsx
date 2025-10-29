@@ -27,7 +27,6 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Our Services", href: "/our-services" },
     { name: "Team", href: "/team" },
-    // { name: "Blogs", href: "/blogs" },
     { name: "Contact", href: "/contact-us" },
   ];
 
@@ -39,14 +38,13 @@ const Navbar = () => {
     >
       <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-28 md:h-28">
         {/* Logo */}
-        {/* Logo */}
         <div className="flex items-center py-2">
           <Link href="/">
             <Image
               src={logo}
               alt="Destiny By Nummbers Logo"
-              width={110} // ⬅️ increased from 90
-              height={110} // ⬅️ increased from 90
+              width={110}
+              height={110}
               className="object-contain"
               priority
             />
@@ -79,13 +77,25 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#FFF6E0] shadow-lg transform ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#c9cdcf] shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        <ul className="flex flex-col mt-24 space-y-6 text-[#1B2B49] text-lg font-medium px-6">
+        {/* Close Button */}
+        <div className="flex justify-end p-4">
+          <button
+            onClick={toggleMenu}
+            aria-label="Close Menu"
+            className="text-[#1B2B49] hover:text-[#b19768] transition-colors"
+          >
+            <HiX size={28} />
+          </button>
+        </div>
+
+        {/* Menu Items */}
+        <ul className="flex flex-col mt-8 space-y-6 text-[#1B2B49] text-lg font-medium px-6">
           {menuItems.map((item) => (
             <li key={item.name} onClick={toggleMenu}>
               <Link

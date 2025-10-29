@@ -84,14 +84,6 @@ export default function FAQSection() {
         <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           {/* Arched Shape */}
           <div className="relative w-[320px] md:w-[380px]">
-            {/* <Image
-              src={img1} // 🔁 replace with your path
-              alt="Numerology background"
-              width={400}
-              height={600}
-              className="w-full h-auto"
-            /> */}
-
             {/* Numbers Overlay */}
             <div
               className="hidden md:flex absolute inset-0 flex-col items-center justify-center"

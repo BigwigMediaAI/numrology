@@ -29,65 +29,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* About Numerology Section */}
-      {/* <section className="w-11/12 md:w-5/6 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="grid grid-cols-2 grid-rows-2 gap-4">
-          <div className="col-span-2">
-            <img
-              src="https://mysta.peerduck.com/wp-content/uploads/2022/02/adult-man-woman-sit-together-after-practicing-asana-yoga-concept-energy-practices-mixed-media.png"
-              alt="Team main"
-              className="w-full md:h-80 object-cover rounded-xl shadow-md"
-            />
-          </div>
-          <img
-            src="https://mysta.peerduck.com/wp-content/uploads/2022/02/w-about.png"
-            alt="Numerologist"
-            className="w-full h-40 md:h-48 object-cover rounded-xl shadow-md"
-          />
-          <img
-            src="https://mysta.peerduck.com/wp-content/uploads/2022/02/Group-1035.png"
-            alt="Cards"
-            className="w-full h-40 md:h-48 object-cover rounded-xl shadow-md"
-          />
-        </div>
-
-        <div>
-          <p className="text-gray-400 uppercase font-semibold tracking-wide">
-            What We Do
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--primary-color)] leading-tight">
-            We know everything about numerology
-          </h2>
-          <p className="text-gray-500 mb-6 leading-relaxed">
-            Discover the fascinating world of numerology and how numbers subtly
-            influence every aspect of your life. Our expert numerologists blend
-            ancient wisdom with modern insight to illuminate your unique path
-            and guide you toward balance, clarity, and fulfillment.
-          </p>
-
-          <div className="mt-10 grid grid-cols-3 text-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[var(--primary-color)]">
-                546K
-              </h3>
-              <p className="text-sm text-gray-500">Happy Clients</p>
-            </div>
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[var(--primary-color)]">
-                83
-              </h3>
-              <p className="text-sm text-gray-500">Numerologists</p>
-            </div>
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-[var(--primary-color)]">
-                10
-              </h3>
-              <p className="text-sm text-gray-500">Years of Experience</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Services Section */}
       <section className="bg-[var(--bg-color2)] py-10">
         <div className="w-11/12 md:w-5/6 mx-auto">
@@ -184,7 +125,7 @@ export default function ContactPage() {
             </div>
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
-                Vehicle & House Number Compatibility
+                Vehicle, House & Mobile Number Compatibility
               </h3>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Your surroundings carry powerful vibrations. We help you assess
