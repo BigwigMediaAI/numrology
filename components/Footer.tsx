@@ -2,12 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import bgPattern from "../assets/bg.png";
 
 const Footer = () => {
