@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="relative w-11/12 md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 z-10">
         {/* Left Column - Logo & Description */}
         <div>
-          <h2 className="text-2xl font-semibold mb-3">Destiny By Numbers</h2>
+          <h2 className="text-2xl font-semibold mb-3">Destiny By Nummbers</h2>
           <p className="text-base leading-relaxed text-[var(--primary-color)] md:text-justify">
             Through Numbers, We Shape Destiny.
           </p>
@@ -96,7 +96,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-center text-[var(--primary-color)] mt-2">
-          Copyright ©2025 Destiny By Numbers. All rights reserved.
+          Copyright ©2025 Destiny By Nummbers. All rights reserved.
         </p>
       </div>
     </footer>

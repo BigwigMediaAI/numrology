@@ -80,7 +80,7 @@ const WhatWeDo = () => {
               data-aos="fade-right"
               data-aos-delay="400"
             >
-              Numerology helps to <br /> transform you
+              Numerology helps to transform you
             </h2>
             <p
               className="text-[var(--primary-color)] mb-8 text-base md:text-lg leading-relaxed text-justify"

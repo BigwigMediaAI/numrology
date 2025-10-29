@@ -52,7 +52,7 @@ export default function ContactPage() {
           </h2>
           <hr />
           <p className="mb-1 text-lg font-semibold">Delhi, India</p>
-          <p className="mb-4">A-121, Sector 8, Rohini, Delhi 110085</p>
+          <p className="mb-4">A1/97, Sector 8, Rohini, Delhi 110085</p>
           {/* <p className="text-gray-400 mt-8">
             Our business operating hours are as follows:
           </p>

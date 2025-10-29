@@ -74,7 +74,7 @@ const Hero = () => {
             data-aos-delay="600"
           >
             At Destiny By Nummbers, we believe numerology is far more than the
-            study of numbers it’s the sacred language of the universe that
+            study of numbers. It’s the sacred language of the universe that
             reveals the story of who you are and why you are here. Every number
             vibrates with its own unique energy, shaping your personality,
             emotions, and the soul journey you’ve chosen in this lifetime. From
