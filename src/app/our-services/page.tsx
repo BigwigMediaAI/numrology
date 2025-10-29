@@ -12,7 +12,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative h-[40vh] lg:h-[30vh]  2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
+      <div className="relative h-[40vh] lg:h-[30vh] 2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
         <Image
           src={banner}
           alt="Contact Banner"
