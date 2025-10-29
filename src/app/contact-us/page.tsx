@@ -78,6 +78,13 @@ export default function ContactPage() {
               <Phone className="w-6 h-6" />
               <span className="text-sm">+61 457 733 000</span>
             </Link>
+            <Link
+              href="tel:+919871229094"
+              className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
+            >
+              <Phone className="w-6 h-6" />
+              <span className="text-sm">+91 9871229094</span>
+            </Link>
 
             {/* WhatsApp Button */}
             <Link
@@ -91,13 +98,13 @@ export default function ContactPage() {
             </Link>
 
             {/* Email Button */}
-            {/* <Link
-              href="mailto:info@eipl.co"
+            <Link
+              href="mailto:destinybynummbers@gmail.com"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm hover:bg-gray-200 transition font-sans"
             >
               <Mail className="w-6 h-6" />
-              <span className="text-sm">info@eipl.co</span>
-            </Link> */}
+              <span className="text-sm">destinybynummbers@gmail.com</span>
+            </Link>
           </div>
         </div>
       </section>
