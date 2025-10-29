@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[var(--background-color)] overflow-hidden">
+    <section className="relative bg-[var(--background-color)] overflow-hidden">
       {/* Background pattern layer */}
       <div
         className="absolute inset-0 z-0"
@@ -51,16 +51,16 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center md:items-center justify-between mt-5 py-28  md:py-28 min-h-[80vh]">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-16 md:mt-5  py-12 lg:pt-24 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
-          <p
-            className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+          {/* <p
+            className="text-[var(--primary-color)] text-lg font-bold mb-3 mt-5 uppercase tracking-widest"
             data-aos="fade-right"
             data-aos-delay="200"
           >
             Consultation for free
-          </p>
+          </p> */}
           <h1
             className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
             data-aos="fade-right"
@@ -86,12 +86,12 @@ const Hero = () => {
             journey of self-discovery bringing clarity, healing, and direction,
             so you can move forward with confidence, peace, and purpose.
           </p>
-          <ButtonFill
+          {/* <ButtonFill
             onClick={() => setIsPopupOpen(true)}
             text="Get started"
             aos="fade-right"
             aosDelay="800"
-          />
+          /> */}
 
           {/* Mini Features */}
           <div className="flex gap-10 sm:gap-12 mt-12 sm:mt-16 justify-center md:justify-start">

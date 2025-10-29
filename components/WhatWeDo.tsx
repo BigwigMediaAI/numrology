@@ -26,7 +26,7 @@ const WhatWeDo = () => {
   return (
     <>
       {/* WHAT WE DO SECTION */}
-      <section className="relative pt-12 bg-[var(--background-color)] overflow-hidden">
+      <section className="relative bg-[var(--background-color)] overflow-hidden">
         {/* Background pattern layer */}
         <div
           className="absolute inset-0 z-0"
@@ -43,7 +43,7 @@ const WhatWeDo = () => {
         {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
 
         {/* Content Container */}
-        <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+        <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-10 ">
           {/* Left Side Artwork */}
           <div className="relative flex justify-center md:justify-start w-full md:w-1/2">
             <div className="relative w-[280px] md:w-[400px]">
@@ -177,7 +177,7 @@ const StatsSection = () => {
       {/* Stats Content */}
       <div className="relative z-10 w-11/12 md:max-w-4xl mx-auto flex flex-wrap  justify-center md:justify-between gap-10 text-center">
         {/* Stat 1 */}
-        <motion.div
+        {/* <motion.div
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
@@ -187,10 +187,10 @@ const StatsSection = () => {
           <p className="text-[var(--primary-color)] mt-2 text-lg">
             Happy clients
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Stat 2 */}
-        <motion.div
+        {/* <motion.div
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
@@ -200,10 +200,10 @@ const StatsSection = () => {
           <p className="text-[var(--primary-color)] mt-2 text-lg">
             Numerologists in our team
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Stat 3 */}
-        <motion.div
+        {/* <motion.div
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
@@ -213,10 +213,10 @@ const StatsSection = () => {
           <p className="text-[var(--primary-color)] mt-2 text-lg">
             Global Branches
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Stat 4 */}
-        <motion.div
+        {/* <motion.div
           animate={controls}
           className="flex flex-col items-center justify-center"
         >
@@ -226,7 +226,7 @@ const StatsSection = () => {
           <p className="text-[var(--primary-color)] mt-2 text-lg">
             Years of experience
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

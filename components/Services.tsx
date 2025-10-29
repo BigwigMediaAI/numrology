@@ -60,7 +60,7 @@ const OurServices = () => {
     });
   }, []);
   return (
-    <section className="relative py-12 bg-[var(--background-color)] text-white overflow-hidden">
+    <section className="relative  bg-[var(--background-color)] text-white overflow-hidden">
       {/* Background pattern */}
       <div
         className="absolute inset-0 z-0"
@@ -79,9 +79,9 @@ const OurServices = () => {
       {/* Content */}
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto text-center">
         {/* Heading */}
-        <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
+        {/* <p className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest">
           Our Services
-        </p>
+        </p> */}
         <h2 className="text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]">
           We&apos;ll explain what each <br /> number means
         </h2>
@@ -95,16 +95,19 @@ const OurServices = () => {
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={60}
-                height={60}
-                className="mb-4 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2 text-[var(--primary-color)] playfair">
+              <div className="h-[100px] flex items-center justify-center mb-4">
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={60}
+                  height={60}
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[var(--primary-color)] playfair min-h-[56px] flex items-center justify-center">
                 {item.title}
               </h3>
+
               <p className="text-[var(--primary-color)] text-md leading-relaxed text-justify">
                 {item.desc}
               </p>

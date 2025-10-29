@@ -29,9 +29,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Destiny By Numbers</h2>
           <p className="text-base leading-relaxed text-[var(--primary-color)] md:text-justify">
-            Discover the power of numbers with Destiny By Numbers <br /> and
-            unlock the path to your true potential through <br /> personalized
-            numerology insights and guidance.
+            Through Numbers, We Shape Destiny.
           </p>
 
           {/* Social Media */}

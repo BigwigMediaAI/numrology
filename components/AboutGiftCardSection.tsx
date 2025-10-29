@@ -18,7 +18,7 @@ const AboutGiftCardSection = () => {
   }, []);
 
   return (
-    <section className="relative py-12 h-[80vh] bg-[var(--background-color)] text-white overflow-hidden ">
+    <section className="relative py-12  bg-[var(--background-color)] text-white overflow-hidden ">
       {/* Background pattern */}
       <div
         className="absolute inset-0 z-0"

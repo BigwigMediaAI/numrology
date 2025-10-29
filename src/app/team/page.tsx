@@ -8,6 +8,7 @@ import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import amit from "../../../assets/amit.png";
+import kamal from "../../../assets/kamal (1).jpg";
 const teamMembers = [
   {
     name: "John Doe",
@@ -114,7 +115,7 @@ export default function ContactPage() {
               alt="Founder of Destiny by Numbers"
               width={600}
               height={530}
-              className="w-full h-[530px] object-cover"
+              className="w-full lg:h-[400px] 2xl:h-[450px] object-cover"
             />
           </div>
 
@@ -183,11 +184,11 @@ export default function ContactPage() {
           {/* Founder Image */}
           <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
             <Image
-              src={amit}
+              src={kamal}
               alt="Founder of Destiny by Numbers"
               width={600}
               height={530}
-              className="w-full h-[530px] object-cover"
+              className="w-full lg:h-[400px] 2xl:h-[450px] object-cover"
             />
           </div>
         </div>

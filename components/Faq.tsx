@@ -79,7 +79,7 @@ export default function FAQSection() {
         />
       </div>
 
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-10">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between md:mt-10">
         {/* Left Section: Numbers & Arched BG */}
         <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           {/* Arched Shape */}

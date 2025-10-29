@@ -12,7 +12,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative h-[70vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
+      <div className="relative h-[40vh] lg:h-[30vh]  2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
         <Image
           src={banner}
           alt="Contact Banner"
@@ -89,7 +89,7 @@ export default function ContactPage() {
       </section> */}
 
       {/* Services Section */}
-      <section className="bg-[var(--bg-color2)] py-16">
+      <section className="bg-[var(--bg-color2)] py-10">
         <div className="w-11/12 md:w-5/6 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--primary-color)] mb-12">
             Explore Our Services
@@ -98,22 +98,22 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Digital Report */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Digital Only Report (7–8 pages)
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-justify">
                 Get a detailed digital report analyzing your core numbers,
-                personality traits, and life patterns — perfect for self-guided
+                personality traits, and life patterns perfect for self-guided
                 insight into your numerology chart.
               </p>
             </div>
 
             {/* Relationship Report */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
-                Relationship Compatibility Report
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Relationship Compatibility
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-justify">
                 Understand relationship dynamics with your partner, family, or
                 friends. Learn about compatibility, challenges, and how to build
                 deeper harmony through numerology.
@@ -122,10 +122,10 @@ export default function ContactPage() {
 
             {/* Basic Consultation */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
-                Basic Consultation
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Essential Consultation
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-justify">
                 A personalized session reviewing your key numbers and offering
                 practical guidance for career, relationships, and growth.
                 Includes a 1-year life reflection to help you stay aligned.
@@ -134,8 +134,8 @@ export default function ContactPage() {
 
             {/* Full Consultation */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 md:col-span-2 lg:col-span-1">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
-                Full Consultation
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Comprehensive Consultation
               </h3>
               <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
                 <li>In-depth numerology reading</li>
@@ -151,10 +151,10 @@ export default function ContactPage() {
 
             {/* Name Correction */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Name Correction – Personal & Business
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-justify">
                 Optimize your personal or business name vibrations to attract
                 success, harmony, and prosperity through numerology-based name
                 correction.
@@ -163,10 +163,10 @@ export default function ContactPage() {
 
             {/* New Born Baby Dates */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 New Born Baby Dates
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-justify">
                 Choose the most auspicious date for your baby’s arrival.
                 Numerology ensures the chosen date aligns with a happy,
                 successful life path.
@@ -175,12 +175,34 @@ export default function ContactPage() {
 
             {/* Foreign Settlement */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-xl font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Foreign Settlement Advice
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed  text-justify">
                 Considering a move abroad? Discover if foreign settlement aligns
                 with your numerological chart and what opportunities await you.
+              </p>
+            </div>
+            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Vehicle & House Number Compatibility
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                Your surroundings carry powerful vibrations. We help you assess
+                whether your vehicle or house number harmonizes with your
+                personal numerology ensuring your space and possessions support
+                luck, peace, and prosperity.
+              </p>
+            </div>
+            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Colours Compatibility
+              </h3>
+              <p className="text-gray-600 leading-relaxed  text-justify">
+                Every colour carries its own frequency and energy. Discover
+                which colours resonate best with your personal numbers to
+                enhance confidence, positivity, and success in
+                all areas of life.
               </p>
             </div>
           </div>
