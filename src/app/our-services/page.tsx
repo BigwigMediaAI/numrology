@@ -96,6 +96,34 @@ export default function ContactPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Full Consultation */}
+            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 md:col-span-2 lg:col-span-1">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Comprehensive Consultation
+              </h3>
+              <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
+                <li>In-depth numerology reading</li>
+                <li>Name correction & personalized remedies</li>
+                <li>5-year life reflection & ideal profession</li>
+                <li>Vastu recommendations aligned with numerology</li>
+              </ul>
+              <p className="mt-3 text-gray-600">
+                Receive actionable insights to align with your life’s purpose
+                and unlock your true potential.
+              </p>
+            </div>
+
+            {/* Basic Consultation */}
+            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+                Essential Consultation
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                A personalized session reviewing your key numbers and offering
+                practical guidance for career, relationships, and growth.
+                Includes a 1-year life reflection to help you stay aligned.
+              </p>
+            </div>
             {/* Digital Report */}
             <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
@@ -117,35 +145,6 @@ export default function ContactPage() {
                 Understand relationship dynamics with your partner, family, or
                 friends. Learn about compatibility, challenges, and how to build
                 deeper harmony through numerology.
-              </p>
-            </div>
-
-            {/* Basic Consultation */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
-                Essential Consultation
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
-                A personalized session reviewing your key numbers and offering
-                practical guidance for career, relationships, and growth.
-                Includes a 1-year life reflection to help you stay aligned.
-              </p>
-            </div>
-
-            {/* Full Consultation */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 md:col-span-2 lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
-                Comprehensive Consultation
-              </h3>
-              <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
-                <li>In-depth numerology reading</li>
-                <li>Name correction & personalized remedies</li>
-                <li>5-year life reflection & ideal profession</li>
-                <li>Vastu recommendations aligned with numerology</li>
-              </ul>
-              <p className="mt-3 text-gray-600">
-                Receive actionable insights to align with your life’s purpose
-                and unlock your true potential.
               </p>
             </div>
 
