@@ -79,7 +79,7 @@ const teamMembers = [
 
 export default function ContactPage() {
   return (
-    <div className="  min-h-screen  bg-[var(--background-color)]">
+    <div className="  min-h-screen  bg-[var(--background-color)] py-20 md:py-0">
       <Navbar />
 
       {/* Hero Section */}
