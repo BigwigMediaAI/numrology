@@ -91,13 +91,13 @@ export default function ContactPage() {
             </Link>
 
             {/* Email Button */}
-            <Link
+            {/* <Link
               href="mailto:info@eipl.co"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm hover:bg-gray-200 transition font-sans"
             >
               <Mail className="w-6 h-6" />
               <span className="text-sm">info@eipl.co</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
