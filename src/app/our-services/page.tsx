@@ -5,6 +5,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
+import bgPattern from "../../../assets/bg.png";
 
 export default function ContactPage() {
   return (
@@ -33,15 +34,20 @@ export default function ContactPage() {
       {/* Services Section */}
       <section className="bg-[var(--bg-color2)] py-10">
         <div className="w-11/12 md:w-5/6 mx-auto">
-          {/* <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--primary-color)] mb-12">
-            Explore Our Services
-          </h2> */}
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Full Consultation */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 md:col-span-2 lg:col-span-1">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
-                Comprehensive Consultation
+                Comprehensive Consultation
               </h3>
               <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
                 <li>In-depth numerology reading</li>
@@ -49,14 +55,19 @@ export default function ContactPage() {
                 <li>5-year life reflection & ideal profession</li>
                 <li>Vastu recommendations aligned with numerology</li>
               </ul>
-              <p className="mt-3 text-gray-600">
-                Receive actionable insights to align with your life’s purpose
-                and unlock your true potential.
-              </p>
             </div>
 
             {/* Basic Consultation */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Essential Consultation
               </h3>
@@ -67,7 +78,16 @@ export default function ContactPage() {
               </p>
             </div>
             {/* Digital Report */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Digital Only Report (7–8 pages)
               </h3>
@@ -79,7 +99,16 @@ export default function ContactPage() {
             </div>
 
             {/* Relationship Report */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Relationship Compatibility
               </h3>
@@ -91,7 +120,16 @@ export default function ContactPage() {
             </div>
 
             {/* Name Correction */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Name Correction – Personal & Business
               </h3>
@@ -103,7 +141,16 @@ export default function ContactPage() {
             </div>
 
             {/* New Born Baby Dates */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 New Born Baby Dates
               </h3>
@@ -115,7 +162,16 @@ export default function ContactPage() {
             </div>
 
             {/* Foreign Settlement */}
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Foreign Settlement Advice
               </h3>
@@ -124,7 +180,16 @@ export default function ContactPage() {
                 with your numerological chart and what opportunities await you.
               </p>
             </div>
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Vehicle, House & Mobile Number Compatibility
               </h3>
@@ -135,7 +200,16 @@ export default function ContactPage() {
                 luck, peace, and prosperity.
               </p>
             </div>
-            <div className="bg-[#d3dde1] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+            <div
+              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              style={{
+                backgroundImage: `url(${bgPattern.src})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                opacity: 0.95,
+              }}
+            >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
                 Colours Compatibility
               </h3>
@@ -161,7 +235,7 @@ export default function ContactPage() {
             Call Us
           </a>
         </div>
-        <div className="w-1/2 bg-[#d3dde1] text-green-500 text-center py-3 border-l border-white">
+        <div className="w-1/2 bg-[#f6f5f3] text-green-500 text-center py-3 border-l border-white">
           <a
             href="https://wa.me/+61457733000"
             target="_blank"

@@ -87,7 +87,7 @@ const OurServices = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#d3dde1] hover: transition p-8 flex flex-col items-center text-center"
+              className="rounded-xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#f6f5f3] hover: transition p-8 flex flex-col items-center text-center"
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
