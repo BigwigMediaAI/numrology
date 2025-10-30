@@ -12,7 +12,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative h-[40vh] lg:h-[30vh] 2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
+      <div className="relative h-[40vh] lg:h-[20vh] 2xl:h-[40vh]  flex flex-col justify-center items-center text-center px-6 tracking-widest">
         <Image
           src={banner}
           alt="Contact Banner"
@@ -22,9 +22,10 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
             Our Services
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-            Unlock the power of numbers to understand yourself and shape your
-            destiny.
+          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto">
+            Let us help you decode your numbers through the science of
+            numerology shaping your destiny for greater health, wealth and
+            harmonious relationships.
           </p>
         </div>
       </div>
@@ -32,9 +33,9 @@ export default function ContactPage() {
       {/* Services Section */}
       <section className="bg-[var(--bg-color2)] py-10">
         <div className="w-11/12 md:w-5/6 mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--primary-color)] mb-12">
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--primary-color)] mb-12">
             Explore Our Services
-          </h2>
+          </h2> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Full Consultation */}

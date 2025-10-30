@@ -15,7 +15,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative h-[40vh] lg:h-[30vh] 2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
+      <div className="relative h-[40vh] lg:h-[20vh] 2xl:h-[40vh]  flex flex-col justify-center items-center text-center px-6 tracking-widest">
         {/* Background Image */}
         <Image
           src={banner}
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
             Get in Touch With Us
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto">
             Have questions or need assistance? Our team is here to help you with
             all your numerology needs. Let’s connect and guide you on your
             destiny journey.

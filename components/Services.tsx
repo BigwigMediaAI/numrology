@@ -22,12 +22,12 @@ const services = [
   {
     icon: lifePathIcon,
     title: "Driver Number",
-    desc: "Your Driver Number is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
+    desc: "Your Driver Number (also knows as Physic Number or Mulank) is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
   },
   {
     icon: coreNumbersIcon,
     title: "Conductor Number",
-    desc: "Your Conductor Number is calculated from your full date of birth (DD MM YYYY). It reveals the guiding energy that directs your life, showing how your actions, decisions, and experiences are influenced by the patterns of your birth numbers.",
+    desc: "Your Conductor Number (also known as Life Path Number, Destiny Number or Bhagyank) is calculated from your full date of birth (DD MM YYYY). It reveals the guiding energy that directs your life, showing how your actions, decisions, and experiences are influenced by the patterns of your birth numbers.",
   },
   {
     icon: birthDayIcon,
@@ -42,7 +42,7 @@ const services = [
   {
     icon: nameNumerologyIcon,
     title: "Your name numerology",
-    desc: "Name Numerology uncovers the hidden vibrations of your name and how they influence your personality, relationships, and life opportunities. Aligning your name with your destiny numbers can harmonize your energy and attract positive experiences.",
+    desc: "Name Numerology uncovers the hidden vibrations of your name and how they influence your personality, relationships, and life opportunities. Aligning your name with your Driver and Conductor numbers can harmonise your energy and attract positive experiences.",
   },
   {
     icon: forecastIcon,
@@ -112,28 +112,31 @@ const OurServices = () => {
         </div>
 
         {/* Mobile Swiper */}
-        <div className="md:hidden">
-          <Swiper spaceBetween={20} slidesPerView={1} loop>
-            {services.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-transparent border border-gray-700 hover:border-[#b19768] transition rounded-xl p-8 flex flex-col items-center text-center">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={60}
-                    height={60}
-                    className="mb-4 object-contain"
-                  />
-                  <h3 className="text-lg font-semibold mb-2 text-[var(--primary-color)]">
-                    {item.title}
-                  </h3>
-                  <p className="text-[var(--primary-color)] text-sm leading-relaxed text-justify">
-                    {item.desc}
-                  </p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        {/* Mobile View (Stacked Cards) */}
+        <div className="md:hidden flex flex-col gap-6 mt-6">
+          {services.map((item, index) => (
+            <div
+              key={index}
+              className="bg-transparent border border-gray-700 hover:border-[#b19768] transition rounded-xl p-8 flex flex-col items-center text-center"
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
+              <Image
+                src={item.icon}
+                alt={item.title}
+                width={60}
+                height={60}
+                className="mb-4 object-contain"
+              />
+              {/* Fixed height heading */}
+              <h3 className="text-lg font-semibold mb-2 text-[var(--primary-color)] playfair min-h-[56px] flex items-center justify-center">
+                {item.title}
+              </h3>
+              <p className="text-[var(--primary-color)] text-sm leading-relaxed text-justify">
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

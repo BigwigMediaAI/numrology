@@ -43,25 +43,17 @@ const WhatWeDo = () => {
         {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
 
         {/* Content Container */}
-        <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-10 ">
-          {/* Left Side Artwork */}
-          <div className="relative flex justify-center md:justify-start w-full md:w-1/2">
+        {/* Content Container */}
+        <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col-reverse md:flex-row items-center justify-between mt-10">
+          {/* Left Side Artwork (Image Section) */}
+          <div className="relative flex justify-center md:justify-start w-full md:w-1/2 mt-8 md:mt-0">
             <div className="relative w-[280px] md:w-[400px]">
-              {/* Background circle */}
-              {/* <Image
-                src={numbersBg}
-                alt="Numbers Background Shape"
-                width={400}
-                height={400}
-                className="absolute top-1/2 left-1/2 w-[140%] h-[130%] -translate-x-1/2 -translate-y-1/2 object-contain"
-              /> */}
-              {/* Foreground numbers */}
               <Image
                 src={numbers}
                 alt="Numerology Illustration"
                 width={360}
                 height={400}
-                className="relative z-10 object-contain animate-slow-bounce "
+                className="relative z-10 object-contain animate-slow-bounce"
               />
             </div>
           </div>
@@ -106,6 +98,7 @@ const WhatWeDo = () => {
             />
           </div>
         </div>
+
         <LeadPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       </section>
 

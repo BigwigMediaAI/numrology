@@ -83,7 +83,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative h-[40vh] lg:h-[30vh] 2xl:h-[50vh] flex flex-col justify-center items-center text-center px-6 tracking-widest">
+      <div className="relative h-[40vh] lg:h-[20vh] 2xl:h-[40vh]   flex flex-col justify-center items-center text-center px-6 tracking-widest">
         {/* Background Image */}
         <Image
           src={banner}
@@ -98,7 +98,7 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
             Meet our team
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto ">
             Our team of expert numerologists and spiritual advisors bring years
             of experience and profound insights to guide you on your journey
             towards clarity, balance, and purpose.
@@ -125,7 +125,7 @@ export default function ContactPage() {
             <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
               Amit Paal Siingh (he/him)
             </span>
-            <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
               <strong>Amit</strong> is a certified numerologist with a rich and
               diverse background. Born in India and having lived in New Zealand
               and Australia since his early twenties, he brings a global
@@ -159,7 +159,7 @@ export default function ContactPage() {
             <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
               Kamal Chauhan (she/her)
             </span>
-            <p className="text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
               <strong>Kamal</strong> brings a wealth of experience and insight
               to <strong>Destiny By Nummbers</strong>. After a distinguished
               career in a senior government position, she retired with a

@@ -35,7 +35,7 @@ export default function Home() {
       <GetInTouch />
       <Footer />
       <WhatsAppButton />
-      <LeadPopup isOpen={isPopupOpen} onClose={closePopup} />
+      {/* <LeadPopup isOpen={isPopupOpen} onClose={closePopup} /> */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
         <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
           <a
