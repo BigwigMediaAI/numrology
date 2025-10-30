@@ -154,9 +154,22 @@ export default function ContactPage() {
       </section>
       <section className="w-11/12 md:w-5/6 mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {/* Founder Statement */}
-          <div className="flex flex-col col-span-2 justify-center text-gray-800">
-            <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+          {/* Founder Image — Show First on Mobile */}
+          <div className="flex justify-center order-1 md:order-2">
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-[var(--primary-color)] hover:scale-105 transition-transform duration-300">
+              <Image
+                src={kamal}
+                alt="Founder of Destiny by Numbers"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Founder Statement — Show Second on Mobile */}
+          <div className="flex flex-col col-span-2 justify-center text-gray-800 order-2 md:order-1">
+            <span className="block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
               Kamal Chauhan (she/her)
             </span>
             <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
@@ -171,28 +184,15 @@ export default function ContactPage() {
               guidance that is both practical and transformative, empowering
               them to align with their true purpose.
             </p>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
-              Location – Face to Face Consultations - Melbourne and Delhi{" "}
-              <br />{" "}
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+              Location – Face to Face Consultations - Melbourne and Delhi
             </span>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Online - Worldwide
             </span>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Languages Spoken – English, Hindi & Punjabi
             </span>
-          </div>
-          {/* Founder Image */}
-          <div className="flex justify-center">
-            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-[var(--primary-color)] hover:scale-105 transition-transform duration-300">
-              <Image
-                src={kamal}
-                alt="Founder of Destiny by Numbers"
-                width={400}
-                height={400}
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
