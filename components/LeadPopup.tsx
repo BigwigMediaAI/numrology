@@ -83,7 +83,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 />
                 <label
                   className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
-                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
+                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-sm
                   peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768]  peer-focus:px-1"
                 >
                   {field.charAt(0).toUpperCase() + field.slice(1)}
@@ -98,7 +98,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 defaultCountry="AU"
                 value={formData.phone}
                 onChange={handlePhoneChange}
-                className="text-sm w-full border-b-2 text-gray-300 border-gray-300 focus:border-[#b19768] transition-all pb-1"
+                className="text-sm w-full border-b-2 text-gray-600 border-gray-300 focus:border-[#b19768] transition-all pb-1"
               />
             </div>
 
@@ -113,8 +113,8 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer resize-none"
               />
               <label
-                className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
-                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm
+                className="absolute left-2 text-gray-600 text-sm top-1/2 transform -translate-y-1/2 transition-all 
+                peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-sm
                 peer-focus:top-0 peer-focus:text-xs peer-focus:text-[#b19768]  peer-focus:px-1"
               >
                 Message

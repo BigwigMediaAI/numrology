@@ -24,19 +24,8 @@ export default function AdminLayout({
 
   const navItems = [
     { icon: <Gauge size={18} />, label: "Dashboard", to: "/admin" },
-    // { icon: <Users size={18} />, label: "Leads", to: "/admin/leads" },
-    // {
-    //   icon: <Users2 size={18} />,
-    //   label: "Brochure Leads",
-    //   to: "/admin/brochure-leads",
-    // },
+
     { icon: <NotebookPen size={18} />, label: "Blogs", to: "/admin/blogs" },
-    // {
-    //   icon: <Building size={18} />,
-    //   label: "Properties",
-    //   to: "/admin/properties",
-    // },
-    // { icon: <Handshake />, label: "Sell Requests", to: "/admin/sell-requests" },
   ];
 
   return (

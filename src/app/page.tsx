@@ -11,6 +11,7 @@ import OurServices from "../../components/Services";
 import Testimonials from "../../components/Testimonial";
 import WhatWeDo from "../../components/WhatWeDo";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 export default function Home() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function Home() {
       <GetInTouch />
       <Footer />
       <WhatsAppButton />
+      <ScrollToTopButton />
       {/* <LeadPopup isOpen={isPopupOpen} onClose={closePopup} /> */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
         <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">

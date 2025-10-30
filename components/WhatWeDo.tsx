@@ -165,62 +165,6 @@ const StatsSection = () => {
           opacity: 0.5,
         }}
       ></div>
-      {/* <div className="absolute inset-0 bg-[#f9f7f3]/70 z-0"></div> */}
-
-      {/* Stats Content */}
-      <div className="relative z-10 w-11/12 md:max-w-4xl mx-auto flex flex-wrap  justify-center md:justify-between gap-10 text-center">
-        {/* Stat 1 */}
-        {/* <motion.div
-          animate={controls}
-          className="flex flex-col items-center justify-center"
-        >
-          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
-            {counts.numerologists}K
-          </h3>
-          <p className="text-[var(--primary-color)] mt-2 text-lg">
-            Happy clients
-          </p>
-        </motion.div> */}
-
-        {/* Stat 2 */}
-        {/* <motion.div
-          animate={controls}
-          className="flex flex-col items-center justify-center"
-        >
-          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
-            {counts.team}
-          </h3>
-          <p className="text-[var(--primary-color)] mt-2 text-lg">
-            Numerologists in our team
-          </p>
-        </motion.div> */}
-
-        {/* Stat 3 */}
-        {/* <motion.div
-          animate={controls}
-          className="flex flex-col items-center justify-center"
-        >
-          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
-            {counts.projects}
-          </h3>
-          <p className="text-[var(--primary-color)] mt-2 text-lg">
-            Global Branches
-          </p>
-        </motion.div> */}
-
-        {/* Stat 4 */}
-        {/* <motion.div
-          animate={controls}
-          className="flex flex-col items-center justify-center"
-        >
-          <h3 className="text-4xl mb:text-5xl font-bold text-[var(--primary-color)]">
-            {counts.experience}
-          </h3>
-          <p className="text-[var(--primary-color)] mt-2 text-lg">
-            Years of experience
-          </p>
-        </motion.div> */}
-      </div>
     </section>
   );
 };
