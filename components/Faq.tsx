@@ -4,7 +4,7 @@ import Image from "next/image";
 import bg from "../assets/yellow-star-bg.png";
 import img1 from "../assets/bg-numerology.png";
 import img2 from "../assets/destiny-num.png";
-import img3 from "../assets/dwednum.png";
+import img3 from "../assets/faq.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
