@@ -22,7 +22,7 @@ const services = [
   {
     icon: lifePathIcon,
     title: "Driver Number",
-    desc: "Your Driver Number (also knows as Physic Number or Mulank) is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
+    desc: "Your Driver Number (also known as Physic Number or Mulank) is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
   },
   {
     icon: coreNumbersIcon,
