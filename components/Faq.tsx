@@ -7,6 +7,8 @@ import img2 from "../assets/destiny-num.png";
 import img3 from "../assets/dwednum.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import outer from "../assets/outer.png";
+import inner from "../assets/inner.png";
 
 const faqs = [
   {
@@ -83,20 +85,27 @@ export default function FAQSection() {
         {/* Left Section: Numbers & Arched BG */}
         <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
           {/* Arched Shape */}
-          <div className="relative w-[320px] md:w-[380px]">
-            {/* Numbers Overlay */}
-            <div
-              className="hidden md:flex absolute inset-0 flex-col items-center justify-center"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
+          <div className="relative w-[300px] md:w-[500px] aspect-square mx-auto mt-5 md:mt-0">
+            {/* Rotating Outer Ring */}
+            <div className="absolute inset-0 z-20 animate-[spin_40s_linear_infinite]">
               <Image
-                src={img3}
-                alt="Number 2"
-                width={130}
-                height={130}
-                className="w-full h-auto animate-slow-bounce "
+                src={outer} // your outer ring image
+                alt="Rotating Ring"
+                fill
+                className="object-contain"
               />
+            </div>
+
+            {/* Smaller Static Inner Image */}
+            <div className="absolute inset-0 flex items-center justify-center z-30">
+              <div className="w-[75%] md:w-[85%] relative aspect-square">
+                <Image
+                  src={inner} // your inner (center) image
+                  alt="Zodiac Center"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
