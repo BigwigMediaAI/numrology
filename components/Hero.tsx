@@ -66,15 +66,16 @@ const Hero = () => {
             At Destiny By Nummbers, we believe numerology is far more than the
             study of numbers. It’s the sacred language of the universe that
             reveals the story of who you are and why you are here. Every number
-            vibrates with its own unique energy, shaping your personality,
-            emotions, and the soul journey you’ve chosen in this lifetime. From
-            your date of birth to the letters of your name, these numbers hold
-            the keys to your inner strengths, hidden challenges, and true
-            purpose. Through the art and science of numerology, we guide you to
-            uncover the deeper meaning behind life’s patterns and align with
-            your highest potential. Each reading becomes a transformative
-            journey of self-discovery bringing clarity, healing, and direction,
-            so you can move forward with confidence, peace, and purpose.
+            resonates with planetary energies and vibrates with its own unique
+            energy, shaping your personality, emotions, and the soul journey
+            you’ve chosen in this lifetime. From your date of birth to the
+            letters of your name, these numbers hold the keys to your inner
+            strengths, hidden challenges, and true purpose. Through the art and
+            science of numerology, we guide you to uncover the deeper meaning
+            behind life’s patterns and align with your highest potential. Each
+            reading becomes a transformative journey of self-discovery bringing
+            clarity, healing, and direction, so you can move forward with
+            confidence, peace, and purpose.
           </p>
 
           {/* Mini Features */}
