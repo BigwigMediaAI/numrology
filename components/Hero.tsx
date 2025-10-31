@@ -48,11 +48,11 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between mt-16 md:mt-5  py-12 lg:pt-24 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between mt-16 lg:mt-5  py-12 lg:pt-24 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <h1
-            className="text-4xl md:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
+            className="text-4xl md:text-6xl text-left font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
             data-aos="fade-right"
             data-aos-delay="400"
           >

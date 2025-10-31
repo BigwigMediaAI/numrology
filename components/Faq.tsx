@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import bg from "../assets/yellow-star-bg.png";
-import img1 from "../assets/bg-numerology.png";
-import img2 from "../assets/destiny-num.png";
 import img3 from "../assets/faq.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +10,7 @@ const faqs = [
   {
     question: "What is numerology and how can it help me?",
     answer:
-      "Numerology is the study of numbers and their influence on our lives. By analysing your birth date and name, numerology provides insights into your personality, life path, strengths, and challenges. It helps you make informed decisions, align with your purpose, and attract positive energy",
+      "Numerology is the study of numbers and their influence on our lives. By analysing your birth date and name, numerology provides insights into your personality, life path, strengths, and challenges. It helps you make informed decisions, align with your purpose, and attract positive energy.",
   },
   {
     question: "How do consultations work?",
@@ -52,31 +50,32 @@ const faqs = [
   {
     question: "How long are consultations?",
     answer:
-      "Consultation durations vary depending on the service. A Essential Consult typically lasts 15–30 minutes, while a Full Comprehensive Consultation may take 45–60 minutes, giving ample time for detailed readings and discussion.",
+      "Consultation durations vary depending on the service. A Essential Consult typically lasts 15–30 minutes, while a Full Comprehensive Consultation may take 45–60 minutes, giving ample time for detailed readings and discussion.",
   },
   {
     question: "What happens when my numbers are not aligned?",
     answer:
-      "When your core numbers such as your Driver & Conductor numbers are not in alignment, it can create inner conflict and life challenges. You may feel stuck, face repeated obstacles, or struggle to achieve balance in areas like career, relationships, or health.Through the science of numerology, we identify these misalignments and help restore harmony using name correction and simple, practical remedies. Once your numbers are aligned, you begin to attract clarity, confidence, and opportunities that naturally support your true path and purpose.",
+      "When your core numbers such as your Driver & Conductor numbers are not in alignment, it can create inner conflict and life challenges. You may feel stuck, face repeated obstacles, or struggle to achieve balance in areas like career, relationships, or health. Through the science of numerology, we identify these misalignments and help restore harmony using name correction and simple, practical remedies. Once your numbers are aligned, you begin to attract clarity, confidence, and opportunities that naturally support your true path and purpose.",
   },
 ];
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       easing: "ease-in-out",
       once: true,
     });
   }, []);
 
   return (
-    <section className="relative w-full bg-[var(--background-color)]  overflow-hidden font-['Poppins']">
-      {/* Spotted Background */}
+    <section className="relative w-full bg-[var(--background-color)] overflow-hidden font-['Poppins'] py-12">
+      {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src={bg} // 🔁 replace with your path
+          src={bg}
           alt="Background dots"
           fill
           style={{ objectFit: "cover" }}
@@ -84,41 +83,38 @@ export default function FAQSection() {
         />
       </div>
 
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between md:mt-10">
-        {/* Left Section: Numbers & Arched BG */}
-        <div className="relative w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
-          {/* Arched Shape */}
-          <div className="relative w-[320px] md:w-[380px]">
-            {/* Numbers Overlay */}
-            <div
-              className="hidden md:flex absolute inset-0 flex-col items-center justify-center"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <Image
-                src={img3}
-                alt="Number 2"
-                width={130}
-                height={130}
-                className="w-full h-auto animate-slow-bounce "
-              />
-            </div>
+      {/* Content Container */}
+      <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between">
+        {/* Left Section (Image) – Visible only on Desktop */}
+        <div className="hidden lg:flex w-1/2 justify-center items-center">
+          <div
+            className="relative w-[320px] lg:w-[380px]"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <Image
+              src={img3}
+              alt="FAQ Illustration"
+              width={380}
+              height={380}
+              className="w-full h-auto animate-slow-bounce"
+            />
           </div>
         </div>
 
         {/* Right Section: FAQ */}
-        <div className="w-full md:w-1/2 text-left">
+        <div className="w-full lg:w-1/2 text-left mt-8 lg:mt-0">
           <p
             className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
             data-aos="fade-right"
-            data-aos-delay="200"
           >
             FAQ
           </p>
+
           <h2
-            className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 playfair text-[var(--primary-color)]"
             data-aos="fade-right"
-            data-aos-delay="400"
+            data-aos-delay="200"
           >
             Feel free to ask <br /> more questions
           </h2>
@@ -130,7 +126,7 @@ export default function FAQSection() {
                 key={index}
                 className="border-b border-[#E4E0DB] pb-4 cursor-pointer"
                 data-aos="fade-right"
-                data-aos-delay={index * 200}
+                data-aos-delay={index * 150}
               >
                 <div
                   className="flex justify-between items-center"
@@ -138,15 +134,16 @@ export default function FAQSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h3 className="text-lg md:text-xl font-semibold text-[var(--primary-color)] playfair">
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[var(--primary-color)] playfair">
                     {faq.question}
                   </h3>
-                  <span className="text-[#F95B2D] text-2xl">
+                  <span className="text-[#F95B2D] text-xl sm:text-2xl">
                     {openIndex === index ? "▾" : "▸"}
                   </span>
                 </div>
+
                 {openIndex === index && (
-                  <p className="text-[var(--primary-color)] mt-3 text-base md:text-lg leading-relaxed text-justify">
+                  <p className="text-[var(--primary-color)] mt-3 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
                     {faq.answer}
                   </p>
                 )}
