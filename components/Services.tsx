@@ -22,7 +22,7 @@ const services = [
   {
     icon: lifePathIcon,
     title: "Driver Number",
-    desc: "Your Driver Number (also known as Physic Number or Mulank) is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals the driving force behind your actions and the true essence of who you are.",
+    desc: "Your Driver Number (also known as Physic Number or Mulank) is derived from your date of birth (DD) and represents your core personality, natural talents, and the way you approach life. It reveals which planets’ vibration is behind your driving force and the true essence of who you are.",
   },
   {
     icon: coreNumbersIcon,
@@ -36,8 +36,8 @@ const services = [
   },
   {
     icon: expressionIcon,
-    title: "Birth Chart",
-    desc: "Your Birth Chart in numerology is based on the Lo Shu Grid , A 3×3 chart mapping numbers 1–9 to different life areas. Each number reveals traits, strengths, and challenges, helping us understand your personality, emotions, and the energies shaping your journey.",
+    title: "Birth Chart / Numeroscope",
+    desc: "Your Birth Chart in numerology is based on the Lo Shu Grid , A 3×3 chart mapping numbers 1–9 to different life areas. Each number reveals traits, strengths, and challenges, helping us understand your personality, emotions, and the energies shaping your journey.",
   },
   {
     icon: nameNumerologyIcon,
@@ -46,8 +46,8 @@ const services = [
   },
   {
     icon: forecastIcon,
-    title: "Personal Year Number",
-    desc: "Your Personal Year Number reveals the themes and energies influencing you in a specific year, helping you anticipate opportunities, challenges, and growth periods. It serves as a guide to make informed decisions and align your actions with the flow of your future years.",
+    title: "Personal Year/Month/Day Number",
+    desc: "Your Personal Year Number reveals the themes and energies influencing you in a specific year, helping you anticipate opportunities, challenges, and growth periods. It serves as a guide to make informed decisions and align your actions with the flow of your future years.",
   },
 ];
 

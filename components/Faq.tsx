@@ -52,7 +52,12 @@ const faqs = [
   {
     question: "How long are consultations?",
     answer:
-      "Consultation durations vary depending on the service. A Basic Consult typically lasts 15–30 minutes, while a Full Consultation may take 45–60 minutes, giving ample time for detailed readings and discussion.",
+      "Consultation durations vary depending on the service. A Essential Consult typically lasts 15–30 minutes, while a Full Comprehensive Consultation may take 45–60 minutes, giving ample time for detailed readings and discussion.",
+  },
+  {
+    question: "What happens when my numbers are not aligned?",
+    answer:
+      "When your core numbers such as your Driver & Conductor numbers are not in alignment, it can create inner conflict and life challenges. You may feel stuck, face repeated obstacles, or struggle to achieve balance in areas like career, relationships, or health.Through the science of numerology, we identify these misalignments and help restore harmony using name correction and simple, practical remedies. Once your numbers are aligned, you begin to attract clarity, confidence, and opportunities that naturally support your true path and purpose.",
   },
 ];
 

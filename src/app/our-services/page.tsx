@@ -89,7 +89,7 @@ export default function ContactPage() {
               }}
             >
               <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
-                Digital Only Report (7–8 pages)
+                Digital Report (7–8 pages)
               </h3>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Get a detailed digital report analyzing your core numbers,
@@ -176,8 +176,9 @@ export default function ContactPage() {
                 Foreign Settlement Advice
               </h3>
               <p className="text-gray-600 leading-relaxed  text-justify">
-                Considering a move abroad? Discover if foreign settlement aligns
-                with your numerological chart and what opportunities await you.
+                Considering a move to another country? Discover if foreign
+                settlement aligns with your numerological chart and which
+                country is most suitable for you.
               </p>
             </div>
             <div

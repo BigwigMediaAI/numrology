@@ -88,7 +88,7 @@ export default function ContactPage() {
 
             {/* WhatsApp Button */}
             <Link
-              href="https://wa.me/61457733000"
+              href="https://wa.me/+61490405145"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
