@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import bg from "../assets/yellow-star-bg.png";
-import img3 from "../assets/faq.png";
+import img3 from "../assets/planets.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
