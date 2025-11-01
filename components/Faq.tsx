@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import bg from "../assets/yellow-star-bg.png";
-import img3 from "../assets/planets.png";
+import img3 from "../assets/planet2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -84,26 +84,26 @@ export default function FAQSection() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between">
-        {/* Left Section (Image) – Visible only on Desktop */}
-        <div className="hidden lg:flex w-1/2 justify-center items-center">
-          <div
-            className="relative w-[320px] lg:w-[380px]"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
+      <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+        {/* Image Section — now visible on all devices */}
+        <div
+          className="flex justify-center items-center w-full lg:w-1/2"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div className="relative w-[280px] sm:w-[350px] md:w-[400px] lg:w-[480px] xl:w-[520px]">
             <Image
               src={img3}
               alt="FAQ Illustration"
-              width={380}
-              height={380}
+              width={500}
+              height={500}
               className="w-full h-auto animate-slow-bounce"
             />
           </div>
         </div>
 
-        {/* Right Section: FAQ */}
-        <div className="w-full lg:w-1/2 text-left mt-8 lg:mt-0">
+        {/* FAQ Section */}
+        <div className="w-full lg:w-1/2 text-left">
           <p
             className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
             data-aos="fade-right"
