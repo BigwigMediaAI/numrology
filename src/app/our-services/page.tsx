@@ -25,7 +25,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto">
             Let us help you decode your numbers through the science of
-            numerology shaping your destiny for greater health, wealth and
+            numerology and shaping your destiny for greater health, wealth and
             harmonious relationships.
           </p>
         </div>
