@@ -61,10 +61,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
 
         {/* Form Section */}
         <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center relative bg-[var(--background-color)]">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#b19768] mb-4 playfair">
-            Get Your Free Numerology Guide
-          </h2>
-          <p className=" mb-6 text-sm text-[var(--primary-color)]">
+          <p className=" mb-6 text-lg text-[#b19768] font-semibold">
             Fill in your details and we will reach out to you as soon as
             possible.
           </p>
