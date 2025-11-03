@@ -122,12 +122,12 @@ export default function ContactPage() {
 
           {/* Founder Statement */}
           <div className="flex flex-col col-span-2 justify-center text-gray-800">
-            <span className=" block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+            <span className="block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
               Amit Paal Siingh (he/him)
             </span>
             <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
               <strong>Amit</strong> is a certified numerologist with a rich and
-              diverse background. Born in India and having lived in New Zealand
+              diverse background. Born in India and having lived in New Zealand
               and Australia since his early twenties, he brings a global
               perspective to his work. With a successful corporate career
               spanning many years, he combined his analytical skills and life
@@ -139,19 +139,37 @@ export default function ContactPage() {
               guide clients toward personal growth and to unlock the true
               potential hidden within their numbers.
             </p>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Location – Face to Face Consultations - Melbourne
-              <br />{" "}
             </span>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Online - Worldwide
             </span>
-            <span className=" block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
+            <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Languages Spoken – English, Hindi & Punjabi
             </span>
+
+            {/* WhatsApp Contact Button */}
+            <a
+              href="https://wa.me/+61457733000" // 🔁 Replace with actual WhatsApp number (with country code)
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 mt-8 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform transform hover:scale-105 w-fit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="w-6 h-6"
+              >
+                <path d="M20.52 3.48A11.74 11.74 0 0012.04 0C5.55 0 .32 5.23.32 11.71a11.6 11.6 0 001.56 5.8L0 24l6.69-1.73a11.8 11.8 0 005.36 1.32h.01c6.49 0 11.72-5.23 11.72-11.72 0-3.13-1.22-6.06-3.26-8.1zM12.04 21.5c-1.73 0-3.42-.45-4.9-1.3l-.35-.2-3.97 1.02 1.06-3.87-.23-.4a9.5 9.5 0 01-1.44-5c0-5.26 4.28-9.54 9.54-9.54 2.55 0 4.95.99 6.76 2.79a9.45 9.45 0 012.78 6.75c0 5.26-4.28 9.55-9.54 9.55zm5.37-7.16c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.73.94-.89 1.13-.16.19-.33.21-.62.07-.29-.14-1.22-.45-2.32-1.45-.86-.76-1.44-1.7-1.61-1.98-.17-.29-.02-.45.12-.59.13-.13.29-.33.43-.49.14-.16.19-.27.29-.45.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36 0 1.39 1.01 2.73 1.15 2.92.14.19 1.99 3.05 4.82 4.28.67.29 1.19.46 1.6.59.67.21 1.27.18 1.75.11.53-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.11-.26-.18-.55-.32z" />
+              </svg>
+              Message on WhatsApp
+            </a>
           </div>
         </div>
       </section>
+
       <section className="w-11/12 md:w-5/6 mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Founder Image — Show First on Mobile */}
@@ -193,6 +211,23 @@ export default function ContactPage() {
             <span className="block font-light italic text-[var(--primary-color)] text-lg md:text-xl mt-6">
               Languages Spoken – English, Hindi & Punjabi
             </span>
+            {/* WhatsApp Contact Button */}
+            <a
+              href="https://wa.me/+61490405145" // 🔁 Replace with actual WhatsApp number (with country code)
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 mt-8 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform transform hover:scale-105 w-fit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="w-6 h-6"
+              >
+                <path d="M20.52 3.48A11.74 11.74 0 0012.04 0C5.55 0 .32 5.23.32 11.71a11.6 11.6 0 001.56 5.8L0 24l6.69-1.73a11.8 11.8 0 005.36 1.32h.01c6.49 0 11.72-5.23 11.72-11.72 0-3.13-1.22-6.06-3.26-8.1zM12.04 21.5c-1.73 0-3.42-.45-4.9-1.3l-.35-.2-3.97 1.02 1.06-3.87-.23-.4a9.5 9.5 0 01-1.44-5c0-5.26 4.28-9.54 9.54-9.54 2.55 0 4.95.99 6.76 2.79a9.45 9.45 0 012.78 6.75c0 5.26-4.28 9.55-9.54 9.55zm5.37-7.16c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.73.94-.89 1.13-.16.19-.33.21-.62.07-.29-.14-1.22-.45-2.32-1.45-.86-.76-1.44-1.7-1.61-1.98-.17-.29-.02-.45.12-.59.13-.13.29-.33.43-.49.14-.16.19-.27.29-.45.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36 0 1.39 1.01 2.73 1.15 2.92.14.19 1.99 3.05 4.82 4.28.67.29 1.19.46 1.6.59.67.21 1.27.18 1.75.11.53-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.11-.26-.18-.55-.32z" />
+              </svg>
+              Message on WhatsApp
+            </a>
           </div>
         </div>
       </section>
