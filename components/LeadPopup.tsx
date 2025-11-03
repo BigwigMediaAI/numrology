@@ -65,7 +65,8 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
             Get Your Free Numerology Guide
           </h2>
           <p className=" mb-6 text-sm text-[var(--primary-color)]">
-            Fill in your details to unlock personalized insights.
+            Fill in your details and we will reach out to you as soon as
+            possible.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">

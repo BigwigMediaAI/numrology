@@ -94,7 +94,7 @@ export default function ContactPage() {
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <FaWhatsapp className="w-6 h-6 text-green-600" />
-              <span className="text-sm">+61 457 733 000</span>
+              <span className="text-sm">+61 490 405 145</span>
             </Link>
 
             {/* Email Button */}
