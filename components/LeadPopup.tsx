@@ -61,7 +61,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
 
         {/* Form Section */}
         <div className="w-full md:w-1/2 p-8 sm:p-10 flex flex-col justify-center relative bg-[var(--background-color)]">
-          <p className=" mb-6 text-lg text-[#b19768] font-semibold">
+          <p className=" mb-6 text-base md:text-xl text-[#b19768] font-semibold">
             Fill in your details and we will reach out to you as soon as
             possible.
           </p>
