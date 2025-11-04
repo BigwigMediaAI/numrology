@@ -196,9 +196,9 @@ export default function ContactPage() {
               </h3>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Your surroundings carry powerful vibrations. We help you assess
-                whether your vehicle or house number harmonizes with your
-                personal numerology ensuring your space and possessions support
-                luck, peace, and prosperity.
+                whether your vehicle, house or mobile number harmonises with
+                your personal numerology ensuring your space and possessions
+                support luck, peace and prosperity.
               </p>
             </div>
             <div
