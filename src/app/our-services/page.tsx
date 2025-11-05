@@ -19,11 +19,11 @@ export default function ContactPage() {
           alt="Contact Banner"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-35"
         />
-        <div className="relative text-[var(--primary-color)] z-20 mt-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
+        <div className="relative text-[var(--title)] montserrat leading-tight  tracking-widest z-20 mt-16">
+          <h1 className="text-4xl md:text-5xl montserrat leading-tight  tracking-widest">
             Our Services
           </h1>
-          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 font-thin text-[var(--text)] md:text-xl max-w-2xl mx-auto">
             Let us help you decode your numbers through the science of
             numerology and shaping your destiny for greater health, wealth and
             harmonious relationships.
@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Full Consultation */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -46,10 +46,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Comprehensive Consultation
               </h3>
-              <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-1">
+              <ul className=" leading-relaxed list-disc pl-5 space-y-1">
                 <li>In-depth numerology reading</li>
                 <li>Name correction & personalized remedies</li>
                 <li>5-year life reflection & ideal profession</li>
@@ -59,7 +59,7 @@ export default function ContactPage() {
 
             {/* Basic Consultation */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -68,10 +68,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Essential Consultation
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 A personalized session reviewing your key numbers and offering
                 practical guidance for career, relationships, and growth.
                 Includes a 1-year life reflection to help you stay aligned.
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </div>
             {/* Digital Report */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -88,10 +88,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Digital Report (7–8 pages)
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Get a detailed digital report analyzing your core numbers,
                 personality traits, and life patterns perfect for self-guided
                 insight into your numerology chart.
@@ -100,7 +100,7 @@ export default function ContactPage() {
 
             {/* Relationship Report */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -109,10 +109,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Relationship Compatibility
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Understand relationship dynamics with your partner, family, or
                 friends. Learn about compatibility, challenges, and how to build
                 deeper harmony through numerology.
@@ -121,7 +121,7 @@ export default function ContactPage() {
 
             {/* Name Correction */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -130,10 +130,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Name Correction – Personal & Business
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Optimize your personal or business name vibrations to attract
                 success, harmony, and prosperity through numerology-based name
                 correction.
@@ -142,7 +142,7 @@ export default function ContactPage() {
 
             {/* New Born Baby Dates */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -151,10 +151,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 New Born Baby Dates
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Choose the most auspicious date for your baby’s arrival.
                 Numerology ensures the chosen date aligns with a happy,
                 successful life path.
@@ -163,7 +163,7 @@ export default function ContactPage() {
 
             {/* Foreign Settlement */}
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -172,17 +172,17 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Foreign Settlement Advice
               </h3>
-              <p className="text-gray-600 leading-relaxed  text-justify">
+              <p className=" leading-relaxed  text-justify">
                 Considering a move to another country? Discover if foreign
                 settlement aligns with your numerological chart and which
                 country is most suitable for you.
               </p>
             </div>
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -191,10 +191,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Vehicle, House & Mobile Number Compatibility
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Your surroundings carry powerful vibrations. We help you assess
                 whether your vehicle, house or mobile number harmonises with
                 your personal numerology ensuring your space and possessions
@@ -202,7 +202,7 @@ export default function ContactPage() {
               </p>
             </div>
             <div
-              className="bg-[#f6f5f3] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
+              className="border border-[var(--title)] text-[var(--text)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 relative overflow-hidden"
               style={{
                 backgroundImage: `url(${bgPattern.src})`,
                 backgroundRepeat: "repeat",
@@ -211,10 +211,10 @@ export default function ContactPage() {
                 opacity: 0.95,
               }}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[var(--primary-color)]">
+              <h3 className="text-lg font-semibold mb-3 text-[var(--title)]">
                 Colours Compatibility
               </h3>
-              <p className="text-gray-600 leading-relaxed  text-justify">
+              <p className=" leading-relaxed  text-justify">
                 Every colour carries its own frequency and energy. Discover
                 which colours resonate best with your personal numbers to
                 enhance confidence, positivity, and success in
@@ -227,7 +227,7 @@ export default function ContactPage() {
 
       {/* Mobile Floating Buttons */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
-        <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
+        <div className="w-1/2 bg-[var(--title)] text-white text-center py-3">
           <a
             href="tel:+61457733000"
             className="w-full flex items-center justify-center gap-2"

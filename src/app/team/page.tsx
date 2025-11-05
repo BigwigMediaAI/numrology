@@ -94,11 +94,11 @@ export default function ContactPage() {
         {/* Overlay */}
 
         {/* Content */}
-        <div className="relative text-[var(--primary-color)] z-20 mt-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
+        <div className="relative text-[var(--title)] montserrat leading-tight  tracking-widest z-20 mt-16">
+          <h1 className="text-4xl md:text-5xl tracking-widest">
             Meet our team
           </h1>
-          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto ">
+          <p className="mt-4 font-thin text-[var(--text)] md:text-xl max-w-2xl mx-auto">
             Our team of expert numerologists and spiritual advisors bring years
             of experience and profound insights to guide you on your journey
             towards clarity, balance, and purpose.
@@ -122,10 +122,10 @@ export default function ContactPage() {
 
           {/* Founder Statement */}
           <div className="flex flex-col col-span-2 justify-center text-gray-800">
-            <span className="block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+            <span className="block font-semibold text-[var(--title)] text-lg md:text-xl">
               Amit Paal Siingh (he/him)
             </span>
-            <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed italic font-light text-[var(--text)] mt-6 text-justify">
               <strong>Amit</strong> is a certified numerologist with a rich and
               diverse background. Born in India and having lived in New Zealand
               and Australia since his early twenties, he brings a global
@@ -187,10 +187,10 @@ export default function ContactPage() {
 
           {/* Founder Statement — Show Second on Mobile */}
           <div className="flex flex-col col-span-2 justify-center text-gray-800 order-2 md:order-1">
-            <span className="block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+            <span className="block font-semibold text-[var(--title)] text-lg md:text-xl">
               Kamal Chauhan (she/her)
             </span>
-            <p className="text-lg md:text-xl leading-relaxed italic font-light text-gray-800 mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed italic font-light text-[var(--text)] mt-6 text-justify">
               <strong>Kamal</strong> brings a wealth of experience and insight
               to <strong>Destiny By Nummbers</strong>. After a distinguished
               career in a senior government position, she retired with a

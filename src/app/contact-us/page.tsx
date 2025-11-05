@@ -24,11 +24,11 @@ export default function ContactPage() {
         />
 
         {/* Content */}
-        <div className="relative text-[var(--primary-color)] z-20 mt-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-widest">
+        <div className="relative text-[var(--title)] montserrat   z-20 mt-16">
+          <h1 className="text-4xl md:text-5xl  tracking-widest">
             Get in Touch With Us
           </h1>
-          <p className="mt-4 text-base md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 font-thin text-[var(--text)] md:text-xl max-w-2xl mx-auto">
             Have questions or need assistance? Our team is here to help you with
             all your numerology needs. Let’s connect and guide you on your
             destiny journey.
@@ -39,7 +39,7 @@ export default function ContactPage() {
       {/* Contact Info Section */}
       <section className="w-11/12 md:w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-8 text-[var(--primary-color)]">
         <div className="pt-4">
-          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--primary-color)] font-amatic border-l-4 border-[var(--primary-color)] pl-3">
+          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--title)] font-amatic border-l-4 border-[var(--title)] pl-3">
             Head Office
           </h2>
           <hr />
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <p className="mb-4">
             21 Cuttlefish Circuit, Tarneit, VIC, 3029, Australia
           </p>
-          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--primary-color)] font-amatic border-l-4 border-[var(--primary-color)] pl-3 mt-6">
+          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--title)] font-amatic border-l-4 border-[var(--title)] pl-3 mt-6">
             Branch Office
           </h2>
           <hr />
@@ -60,11 +60,11 @@ export default function ContactPage() {
         </div>
 
         <div className="pt-4">
-          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--primary-color)] font-amatic border-l-4 border-[var(--primary-color)] pl-3">
+          <h2 className="text-xl md:text-2xl mb-2 font-bold text-[var(--title)] font-amatic border-l-4 border-[var(--title)] pl-3">
             Get in Touch
           </h2>
           <hr />
-          <p className="mb-4 text-gray-800 font-sans">
+          <p className="mb-4 text-[var(--text)] font-sans">
             Please contact us via phone or email below, or visit us at our Head
             or Branch Office during operating hours.
           </p>
