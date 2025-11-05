@@ -39,7 +39,7 @@ export default function Home() {
       <ScrollToTopButton />
       {/* <LeadPopup isOpen={isPopupOpen} onClose={closePopup} /> */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
-        <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
+        <div className="w-1/2 bg-[var(--title)] text-white text-center py-3">
           <a
             href="tel:+61457733000"
             className="w-full flex items-center justify-center gap-2"
