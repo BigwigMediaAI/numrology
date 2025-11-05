@@ -29,6 +29,17 @@ const Navbar = () => {
     { name: "Team", href: "/team" },
     { name: "Contact", href: "/contact-us" },
   ];
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   return (
     <nav
@@ -70,7 +81,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="md:hidden text-[var(--primary-color)]">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
           </button>
@@ -79,23 +90,23 @@ const Navbar = () => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#c9cdcf] shadow-lg transform ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[var(--background-color)] shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden`}
+        } transition-transform duration-300 ease-in-out md:hidden z-[9999]`}
       >
         {/* Close Button */}
         <div className="flex justify-end p-4">
           <button
             onClick={toggleMenu}
             aria-label="Close Menu"
-            className="text-[#1B2B49] hover:text-[#b19768] transition-colors"
+            className="text-[var(--text)] hover:text-[#b19768] transition-colors"
           >
             <HiX size={28} />
           </button>
         </div>
 
         {/* Menu Items */}
-        <ul className="flex flex-col mt-8 space-y-6 text-[#1B2B49] text-lg font-medium px-6">
+        <ul className="flex flex-col mt-8 space-y-6 text-[var(--text)] text-lg font-medium px-6">
           {menuItems.map((item) => (
             <li key={item.name} onClick={toggleMenu}>
               <Link

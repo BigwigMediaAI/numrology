@@ -81,7 +81,7 @@ export default function Testimonials() {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
         <p
-          className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+          className="text-[var(--primary-color)] text-lg  mb-3 uppercase tracking-widest"
           data-aos="fade-right"
           data-aos-delay="200"
         >

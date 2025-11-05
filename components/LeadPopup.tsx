@@ -77,7 +77,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                   onChange={handleChange}
                   placeholder=" "
                   required
-                  className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer "
+                  className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer text-[var(--text)]"
                 />
                 <label
                   className="absolute left-2 text-gray-500 text-sm top-1/2 transform -translate-y-1/2 transition-all 
@@ -96,7 +96,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 defaultCountry="AU"
                 value={formData.phone}
                 onChange={handlePhoneChange}
-                className="text-sm w-full border-b-2 text-gray-600 border-gray-300 focus:border-[#b19768] transition-all pb-1"
+                className="text-sm w-full border-b-2  border-gray-300 focus:border-[#b19768] transition-all pb-1 text-[var(--text)]"
               />
             </div>
 
@@ -108,7 +108,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
                 onChange={handleChange}
                 placeholder=" "
                 rows={4}
-                className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer resize-none"
+                className="w-full border-b-2 border-gray-300 bg-transparent text-sm px-2 pt-5 pb-2 outline-none focus:border-[#b19768] transition-all peer resize-none text-[var(--text)]"
               />
               <label
                 className="absolute left-2 text-gray-600 text-sm top-1/2 transform -translate-y-1/2 transition-all 
