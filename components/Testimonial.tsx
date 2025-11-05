@@ -81,7 +81,7 @@ export default function Testimonials() {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
         <p
-          className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+          className="text-[var(--title)] text-lg font-bold mb-3 uppercase tracking-widest"
           data-aos="fade-right"
           data-aos-delay="200"
         >
@@ -90,7 +90,7 @@ export default function Testimonials() {
 
         {/* Heading */}
         <h2
-          className="text-4xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]"
+          className="text-4xl md:text-6xl leading-tight  mb-6 playfair text-[var(--title)]"
           data-aos="fade-right"
           data-aos-delay="400"
         >
@@ -119,12 +119,12 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#f6f5f3] rounded-2xl border border-gray-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
+              <div className=" rounded-2xl border border-[var(--title)] p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
                 {/* Quote Icon */}
-                <FaQuoteLeft className="text-[var(--primary-color)] text-3xl opacity-30 mb-3" />
+                <FaQuoteLeft className="text-[var(--text)] text-3xl opacity-30 mb-3" />
 
                 {/* Message */}
-                <p className="text-[var(--primary-color)] text-base leading-relaxed font-annie line-clamp-5">
+                <p className="text-[var(--text)] text-base leading-relaxed font-annie line-clamp-5">
                   {testimonial.message}
                 </p>
 
@@ -135,7 +135,7 @@ export default function Testimonials() {
                   </h3>
 
                   {/* Initials Avatar */}
-                  <div className="w-10 h-10 rounded-full bg-[#b19768] text-white flex items-center justify-center text-sm font-bold uppercase">
+                  <div className="w-10 h-10 rounded-full bg-[var(--title)] text-white flex items-center justify-center text-sm font-bold uppercase">
                     {testimonial.name
                       .split(" ")
                       .map((n) => n[0])

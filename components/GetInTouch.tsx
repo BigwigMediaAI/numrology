@@ -28,10 +28,10 @@ const GetInTouch = () => {
         <h2 className="text-[#b19768] font-semibold uppercase tracking-wide mb-2">
           Get in Touch
         </h2>
-        <p className="max-w-4xl text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair">
+        <p className="max-w-4xl text-3xl md:text-6xl text-[var(--title)] leading-tight  mb-6 playfair">
           Unlock the power hidden in your numbers.
         </p>
-        <p className="text-base md:text-lg  mb-8 max-w-xl text-justify">
+        <p className="text-base md:text-lg  mb-8 max-w-xl text-[var(--text)]">
           Every number tells a story about who you are, the journey you’re on,
           and the opportunities that await. By uncovering the hidden messages in
           your numbers, you can gain clarity, embrace your strengths, and step
