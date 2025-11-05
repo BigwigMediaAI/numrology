@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <h1
-            className="text-4xl md:text-5xl text-left leading-tight text-[var(--title)] mb-6 montserrat tracking-widest"
+            className="text-4xl md:text-5xl text-left leading-tight text-[var(--title)] mb-6 montserrat "
             data-aos="fade-right"
             data-aos-delay="400"
           >

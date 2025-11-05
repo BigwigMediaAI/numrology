@@ -90,7 +90,7 @@ export default function Testimonials() {
 
         {/* Heading */}
         <h2
-          className="text-4xl md:text-5xl leading-tight  mb-6 montserrat text-[var(--title)] tracking-widest"
+          className="text-4xl md:text-5xl leading-tight  mb-6 montserrat text-[var(--title)] "
           data-aos="fade-right"
           data-aos-delay="400"
         >
