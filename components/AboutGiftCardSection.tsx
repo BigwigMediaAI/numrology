@@ -36,14 +36,14 @@ const AboutGiftCardSection = () => {
         {/* Left Section */}
         <div className="max-w-xl mb-10 md:mb-0">
           <h1
-            className="text-3xl md:text-6xl font-bold leading-tight  mb-6 playfair text-[var(--primary-color)]  "
+            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat "
             data-aos="fade-right"
             data-aos-delay="200"
           >
             Free numerological express consultation
           </h1>
           <p
-            className="text-[var(--primary-color)] text-base md:text-lg leading-relaxed mb-6 text-justify"
+            className="text-[var(--text)] mb-8 montserrat text-justify"
             data-aos="fade-right"
             data-aos-delay="200"
           >

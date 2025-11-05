@@ -106,7 +106,7 @@ const OurServices = () => {
                 {item.title}
               </h3>
 
-              <p className="text-[var(--primary-color)] text-sm sm:text-base leading-relaxed text-justify">
+              <p className="text-[var(--text)] text-sm leading-relaxed text-justify montserrat">
                 {item.desc}
               </p>
             </div>

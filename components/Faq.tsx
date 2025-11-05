@@ -84,7 +84,7 @@ export default function FAQSection() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between gap-5">
         {/* Image Section — now visible on all devices */}
         <div
           className="flex justify-center items-center w-full lg:w-1/2"
@@ -104,15 +104,15 @@ export default function FAQSection() {
 
         {/* FAQ Section */}
         <div className="w-full lg:w-1/2 text-left">
-          <p
+          {/* <p
             className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
             data-aos="fade-right"
           >
             FAQ
-          </p>
+          </p> */}
 
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 playfair text-[var(--primary-color)]"
+            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat"
             data-aos="fade-right"
             data-aos-delay="200"
           >
@@ -134,16 +134,16 @@ export default function FAQSection() {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[var(--primary-color)] playfair">
+                  <h3 className="text-base md:text-lg font-semibold text-[var(--primary-color)] montserrat">
                     {faq.question}
                   </h3>
-                  <span className="text-[#F95B2D] text-xl sm:text-2xl">
+                  <span className="text-[var(--title)] text-xl sm:text-2xl">
                     {openIndex === index ? "▾" : "▸"}
                   </span>
                 </div>
 
                 {openIndex === index && (
-                  <p className="text-[var(--primary-color)] mt-3 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+                  <p className="text-[var(--text)] mt-3 text-sm sm:text-base text-justify montserrat">
                     {faq.answer}
                   </p>
                 )}
