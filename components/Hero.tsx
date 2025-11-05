@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative bg-[var(--background-color)] overflow-hidden">
+    <section className="relative bg-[var(--background-color)] overflow-hidden ">
       {/* Background pattern layer */}
       <div
         className="absolute inset-0 z-0"
@@ -38,7 +38,7 @@ const Hero = () => {
           backgroundRepeat: "repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",
-          opacity: 0.5,
+          opacity: 0.3,
         }}
       ></div>
 
@@ -52,14 +52,14 @@ const Hero = () => {
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <h1
-            className="text-4xl md:text-6xl text-left font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
+            className="text-4xl md:text-5xl text-left leading-tight text-[var(--title)] mb-6 montserrat tracking-widest"
             data-aos="fade-right"
             data-aos-delay="400"
           >
             Infinite power of <br /> numerology
           </h1>
           <p
-            className="text-[var(--primary-color)] mb-8 text-base md:text-lg text-justify"
+            className="text-[var(--text)] mb-8 montserrat text-justify"
             data-aos="fade-right"
             data-aos-delay="600"
           >
@@ -92,13 +92,13 @@ const Hero = () => {
                   alt="Destiny Icon"
                   width={60}
                   height={60}
-                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] invert"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] "
                 />
                 <div>
-                  <p className="font-bold text-[var(--primary-color)] text-lg sm:text-xl playfair">
+                  <p className="font-bold text-[var(--title)] text-lg sm:text-xl montserrat tracking-widest">
                     Destiny
                   </p>
-                  <p className="text-[var(--primary-color)] text-sm sm:text-base max-w-[220px]">
+                  <p className="text-[var(--text)] text-sm sm:text-base max-w-[220px]">
                     Understand current issues in your life
                   </p>
                 </div>
@@ -117,13 +117,13 @@ const Hero = () => {
                   alt="Life Path Icon"
                   width={60}
                   height={60}
-                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] invert"
+                  className="object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px] "
                 />
                 <div>
-                  <p className="font-bold text-[var(--primary-color)] text-lg sm:text-xl playfair">
+                  <p className="font-bold text-[var(--title)] text-lg sm:text-xl montserrat tracking-widest">
                     Life Path
                   </p>
-                  <p className="text-[var(--primary-color)] text-sm sm:text-base max-w-[220px]">
+                  <p className="text-[var(--text)] text-sm sm:text-base max-w-[220px]">
                     Discover your innate abilities
                   </p>
                 </div>
@@ -144,7 +144,7 @@ const Hero = () => {
               alt="Numerology Illustration"
               width={360}
               height={400}
-              className="relative z-10 object-contain animate-slow-bounce"
+              className="relative z-10 object-contain animate-slow-bounce "
             />
           </div>
         </div>

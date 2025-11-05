@@ -34,7 +34,7 @@ const WhatWeDo = () => {
             backgroundRepeat: "repeat",
             backgroundSize: "contain",
             backgroundPosition: "center",
-            opacity: 0.5,
+            opacity: 0.3,
           }}
         ></div>
 
@@ -58,22 +58,22 @@ const WhatWeDo = () => {
           </div>
           {/* Left Side Text */}
           <div className="max-w-xl text-start lg:text-left w-full lg:w-1/2 order-1 lg:order-1">
-            <p
-              className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
+            {/* <p
+              className="text-[var(--title)] text-lg font-bold mb-3 uppercase tracking-widest"
               data-aos="fade-right"
               data-aos-delay="200"
             >
               What we do
-            </p>
+            </p> */}
             <h2
-              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-[var(--primary-color)] mb-6 playfair"
+              className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat"
               data-aos="fade-right"
               data-aos-delay="400"
             >
               Numerology helps to transform you
             </h2>
             <p
-              className="text-[var(--primary-color)] mb-8 text-base md:text-lg leading-relaxed text-justify"
+              className="text-[var(--text)] mb-8 montserrat text-justify"
               data-aos="fade-right"
               data-aos-delay="600"
             >
@@ -150,7 +150,7 @@ const WhatWeDo = () => {
 //   return (
 //     <section
 //       ref={ref}
-//       className="relative py-12 bg-[var(--background-color)] overflow-hidden flex justify-center playfair"
+//       className="relative py-12 bg-[var(--background-color)] overflow-hidden flex justify-center montserrat"
 //     >
 //       {/* Pattern background */}
 //       <div

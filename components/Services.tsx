@@ -66,7 +66,7 @@ const OurServices = () => {
           backgroundRepeat: "repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",
-          opacity: 0.25,
+          opacity: 0.3,
         }}
       ></div>
 
@@ -76,7 +76,7 @@ const OurServices = () => {
       {/* Content */}
       <div className="relative z-10 w-11/12 md:w-10/12 lg:w-4/5 mx-auto text-center">
         <h2
-          className="text-3xl md:text-5xl lg:text-6xl text-left  font-bold mb-10 playfair text-[var(--primary-color)] leading-tight"
+          className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat text-left"
           data-aos="fade-up"
         >
           We&apos;ll explain what each <br className="hidden sm:block" /> number
@@ -88,7 +88,7 @@ const OurServices = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-transparent border border-gray-700 hover:border-[#b19768] hover:bg-[#f6f5f3] transition-all duration-300 p-6 sm:p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg"
+              className="rounded-2xl bg-transparent border border-[var(--title)] hover:border-[#b19768]  transition-all duration-300 p-6 sm:p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg"
               data-aos="fade-up"
               data-aos-delay={index * 150}
             >

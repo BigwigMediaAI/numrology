@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background-color: #faf6ed;
-  --primary-color: #1b2b49;
-  --button-color: #0e2a47;
+  --background-color: #0a0f1c;
+  --primary-color: #9fb2b8;
+  --button-color: #b0985e;
+  --title: #b49960;
+  --text: #9ca3af;
 }
 
 @keyframes slowBounce {
@@ -22,6 +24,10 @@
 
 .playfair {
   font-family: var(--font-playfair), serif;
+}
+
+.montserrat {
+  font-family: var(--font-montserrat), serif;
 }
 
 @keyframes spin {
