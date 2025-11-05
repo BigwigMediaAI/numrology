@@ -74,7 +74,7 @@ export default function Testimonials() {
           backgroundRepeat: "repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",
-          opacity: 0.5,
+          opacity: 0.3,
         }}
       ></div>
 

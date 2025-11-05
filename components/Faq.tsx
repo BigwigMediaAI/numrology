@@ -112,7 +112,7 @@ export default function FAQSection() {
           </p>
 
           <h2
-            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat tracking-widest"
+            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat"
             data-aos="fade-right"
             data-aos-delay="200"
           >
