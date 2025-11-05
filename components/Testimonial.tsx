@@ -81,7 +81,7 @@ export default function Testimonials() {
       <div className="relative z-10 w-11/12 md:w-4/5 mx-auto">
         {/* Section Label */}
         <p
-          className="text-[var(--title)] text-lg font-bold mb-3 uppercase tracking-widest"
+          className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
           data-aos="fade-right"
           data-aos-delay="200"
         >
@@ -90,7 +90,7 @@ export default function Testimonials() {
 
         {/* Heading */}
         <h2
-          className="text-4xl md:text-6xl leading-tight  mb-6 playfair text-[var(--title)]"
+          className="text-4xl md:text-5xl leading-tight  mb-6 montserrat text-[var(--title)] tracking-widest"
           data-aos="fade-right"
           data-aos-delay="400"
         >

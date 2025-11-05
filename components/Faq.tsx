@@ -104,15 +104,15 @@ export default function FAQSection() {
 
         {/* FAQ Section */}
         <div className="w-full lg:w-1/2 text-left">
-          {/* <p
+          <p
             className="text-[var(--primary-color)] text-lg font-bold mb-3 uppercase tracking-widest"
             data-aos="fade-right"
           >
             FAQ
-          </p> */}
+          </p>
 
           <h2
-            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat"
+            className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat tracking-widest"
             data-aos="fade-right"
             data-aos-delay="200"
           >
