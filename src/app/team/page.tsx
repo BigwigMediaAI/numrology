@@ -7,8 +7,8 @@ import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import amit from "../../../assets/Untitled design (26).png";
-import kamal from "../../../assets/Untitled design (25).png";
+import amit from "../../../assets/Untitled design (23).png";
+import kamal from "../../../assets/Untitled design (24).png";
 const teamMembers = [
   {
     name: "John Doe",
@@ -243,7 +243,7 @@ export default function ContactPage() {
             Call Us
           </a>
         </div>
-        <div className="w-1/2 bg-[var(--whatsapp)] text-white text-center py-3 border-l border-white">
+        <div className="w-1/2 bg-[var(--whatsapp)] text-green-500 text-center py-3 border-l border-white">
           <a
             href="https://wa.me/+61457733000"
             target="_blank"
