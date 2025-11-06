@@ -45,7 +45,7 @@ const WhatWeDo = () => {
           <div
             className="relative flex justify-center lg:justify-start items-center w-full lg:w-1/2 order-2 lg:order-1"
             data-aos="zoom-in"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <div className="relative w-[280px] md:w-[400px]">
               <Image
@@ -69,14 +69,14 @@ const WhatWeDo = () => {
             <h2
               className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat"
               data-aos="fade-right"
-              data-aos-delay="400"
+              data-aos-delay="100"
             >
               Numerology helps to transform you
             </h2>
             <p
               className="text-[var(--text)] mb-8 montserrat text-justify"
               data-aos="fade-right"
-              data-aos-delay="600"
+              data-aos-delay="200"
             >
               At Destiny By Nummbers, we begin by decoding your core numbers
               derived from your full name and date of birth revealing your
@@ -93,7 +93,7 @@ const WhatWeDo = () => {
               onClick={() => setIsPopupOpen(true)}
               text="Get started"
               aos="fade-right"
-              aosDelay="800"
+              aosDelay="300"
             />
           </div>
         </div>

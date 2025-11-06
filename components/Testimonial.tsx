@@ -84,7 +84,7 @@ export default function Testimonials() {
         <p
           className="text-[var(--primary-color)] text-lg  mb-3 uppercase tracking-widest"
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           Testimonials
         </p>
@@ -93,7 +93,7 @@ export default function Testimonials() {
         <h2
           className="text-4xl md:text-5xl leading-tight  mb-6 montserrat text-[var(--title)] "
           data-aos="fade-right"
-          data-aos-delay="400"
+          data-aos-delay="200"
         >
           What People Say
         </h2>

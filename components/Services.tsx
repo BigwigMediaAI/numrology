@@ -91,7 +91,7 @@ const OurServices = () => {
               key={index}
               className="rounded-2xl bg-transparent border border-[var(--title)] hover:border-[#b19768]  transition-all duration-300 p-6 sm:p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg"
               data-aos="fade-up"
-              data-aos-delay={index * 150}
+              data-aos-delay={index * 100}
             >
               <div className="h-[90px] sm:h-[100px] flex items-center justify-center mb-4">
                 <Image

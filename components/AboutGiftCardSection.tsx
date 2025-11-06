@@ -39,7 +39,7 @@ const AboutGiftCardSection = () => {
           <h1
             className="text-3xl md:text-5xl leading-tight text-[var(--title)] mb-6 montserrat "
             data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             Free numerological express consultation
           </h1>
@@ -62,7 +62,7 @@ const AboutGiftCardSection = () => {
         <div
           className="relative w-full md:w-1/2 flex justify-center items-center"
           data-aos="zoom-in"
-          data-aos-delay="400"
+          data-aos-delay="300"
         >
           {/* Enlarged Image Container */}
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[22rem] md:h-[22rem] lg:w-[26rem] lg:h-[26rem]">

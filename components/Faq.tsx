@@ -90,7 +90,7 @@ export default function FAQSection() {
         <div
           className="flex justify-center items-center w-full lg:w-1/2"
           data-aos="zoom-in"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <div className="relative w-[280px] sm:w-[350px] md:w-[400px] lg:w-[480px] xl:w-[520px]">
             <Image
@@ -127,7 +127,7 @@ export default function FAQSection() {
                 key={index}
                 className="border-b border-[#E4E0DB] pb-4 cursor-pointer"
                 data-aos="fade-right"
-                data-aos-delay={index * 150}
+                data-aos-delay={index * 100}
               >
                 <div
                   className="flex justify-between items-center"

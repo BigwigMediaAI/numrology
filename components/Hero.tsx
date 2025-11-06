@@ -55,14 +55,14 @@ const Hero = () => {
           <h1
             className="text-4xl md:text-5xl text-left leading-tight text-[var(--title)] mb-6 montserrat "
             data-aos="fade-right"
-            data-aos-delay="400"
+            data-aos-delay="100"
           >
             Infinite power of <br /> numerology
           </h1>
           <p
             className="text-[var(--text)] mb-8 montserrat text-justify"
             data-aos="fade-right"
-            data-aos-delay="600"
+            data-aos-delay="200"
           >
             At Destiny By Nummbers, we believe numerology is far more than the
             study of numbers. It’s the sacred language of the universe that
@@ -85,7 +85,7 @@ const Hero = () => {
             <div
               className="flex flex-col items-center md:items-start text-center md:text-left"
               data-aos="fade-up"
-              data-aos-delay="1000"
+              data-aos-delay="300"
             >
               <div className="flex items-center gap-3 mb-2">
                 <Image
@@ -110,7 +110,7 @@ const Hero = () => {
             <div
               className="flex flex-col items-center md:items-start text-center md:text-left"
               data-aos="fade-up"
-              data-aos-delay="1200"
+              data-aos-delay="200"
             >
               <div className="flex items-center gap-3 mb-2">
                 <Image
@@ -137,7 +137,7 @@ const Hero = () => {
         <div
           className="relative mt-12 md:mt-0 flex justify-center md:justify-end md:items-center"
           data-aos="zoom-in"
-          data-aos-delay="500"
+          data-aos-delay="200"
         >
           <div className="relative w-[280px] md:w-[400px]">
             <Image
