@@ -7,7 +7,7 @@ import bgPattern from "../assets/bg.png";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[var(--background-color)] text-[var(--primary-color)] pt-16 pb-10 overflow-hidden">
+    <footer className="relative bg-[var(--background-color)] text-[var(--primary-color)] pt-16 pb-20 md:pb-10 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0">
         <Image

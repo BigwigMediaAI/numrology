@@ -22,14 +22,15 @@ const Hero = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
+      duration: 600, // ⏩ faster animation (from 1000 → 600ms)
+      easing: "ease-out", // snappier easing
+      once: true, // animate only once
+      offset: 80, // trigger a bit earlier (default is 120)
     });
   }, []);
 
   return (
-    <section className="relative bg-[var(--background-color)] overflow-hidden ">
+    <section className="relative bg-[var(--background-color)] overflow-hidden">
       {/* Background pattern layer */}
       <div
         className="absolute inset-0 z-0"
@@ -48,7 +49,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between mt-16 lg:mt-5  py-12 lg:pt-24 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
+      <div className="relative z-10 w-11/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between mt-16 lg:mt-5  py-12 lg:pt-28 min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] ">
         {/* Left Section */}
         <div className="max-w-xl z-10 text-center md:text-left">
           <h1

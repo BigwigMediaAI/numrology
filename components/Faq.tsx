@@ -64,9 +64,10 @@ export default function FAQSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: true,
+      duration: 600, // ⏩ faster animation (from 1000 → 600ms)
+      easing: "ease-out", // snappier easing
+      once: true, // animate only once
+      offset: 80, // trigger a bit earlier (default is 120)
     });
   }, []);
 
