@@ -7,8 +7,8 @@ import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import amit from "../../../assets/Untitled design (23).png";
-import kamal from "../../../assets/Untitled design (24).png";
+import amit from "../../../assets/Untitled design (26).png";
+import kamal from "../../../assets/Untitled design (25).png";
 const teamMembers = [
   {
     name: "John Doe",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
-import logo from "../assets/new DBN-1.png";
+import logo from "../assets/new DBN1.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
