@@ -236,7 +236,7 @@ export default function ContactPage() {
             Call Us
           </a>
         </div>
-        <div className="w-1/2 bg-[#f6f5f3] text-green-500 text-center py-3 border-l border-white">
+        <div className="w-1/2 bg-[var(--whatsapp)] text-white text-center py-3 border-l border-white">
           <a
             href="https://wa.me/+61457733000"
             target="_blank"

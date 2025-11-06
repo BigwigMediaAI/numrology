@@ -110,7 +110,7 @@ export default function ContactPage() {
             {/* Email Button */}
             <Link
               href="mailto:destinybynummbers@gmail.com"
-              className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm hover:bg-gray-200 transition font-sans"
+              className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <Mail className="w-6 h-6" />
               <span className="text-sm">destinybynummbers@gmail.com</span>
@@ -138,7 +138,7 @@ export default function ContactPage() {
 
       {/* Mobile Quick Buttons */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
-        <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
+        <div className="w-1/2 bg-[var(--title)] text-white text-center py-3">
           <a
             href="tel:+61457733000"
             className="w-full flex items-center justify-center gap-2"
@@ -147,7 +147,7 @@ export default function ContactPage() {
             Call Us
           </a>
         </div>
-        <div className="w-1/2 bg-white text-green-500 text-center py-3 border-l border-white">
+        <div className="w-1/2 bg-[var(--whatsapp)] text-white text-center py-3 border-l border-white">
           <a
             href="https://wa.me/61457733000"
             target="_blank"
