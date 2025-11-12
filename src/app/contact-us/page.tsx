@@ -83,7 +83,7 @@ export default function ContactPage() {
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <Phone className="w-6 h-6" />
-              <span className="text-sm">+91 9871229094</span>
+              <span className="text-sm">+91 98712 29094</span>
             </Link>
 
             {/* WhatsApp Button */}
