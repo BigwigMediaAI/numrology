@@ -57,8 +57,8 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 src={logo}
-                alt="Destiny By Nummbers Logo"
-                width={220}
+                alt="Destiny By Numberrs"
+                width={280}
                 height={110}
                 className="object-contain"
                 priority
