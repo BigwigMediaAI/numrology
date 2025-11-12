@@ -59,7 +59,7 @@ const Footer = () => {
             21 Cuttlefish Circuit, Tarneit, VIC, 3029, Australia
           </p>
           <p className="text-[var(--primary-color)] mb-1">
-            <span className="font-semibold">Phone:</span> +61 457 733 000
+            <span className="font-semibold">Phone:</span> +61 491 153 284
           </p>
         </div>
       </div>

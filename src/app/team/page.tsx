@@ -151,7 +151,7 @@ export default function ContactPage() {
 
             {/* WhatsApp Contact Button */}
             <a
-              href="https://wa.me/+61457733000" // 🔁 Replace with actual WhatsApp number (with country code)
+              href="https://wa.me/+61491153284" // 🔁 Replace with actual WhatsApp number (with country code)
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 mt-8 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform transform hover:scale-105 w-fit"
