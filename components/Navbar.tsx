@@ -51,7 +51,7 @@ const Navbar = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="w-11/12 mx-auto px-6 sm:px-10 flex justify-between items-center h-28 md:h-28">
+        <div className="w-full mx-auto px-6 sm:px-10 flex justify-between items-center h-28 md:h-28">
           {/* Logo */}
           <div className="flex items-center py-2">
             <Link href="/">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 text-[var(--primary-color)] font-medium">
+          <ul className="hidden md:flex space-x-8 text-[var(--primary-color)] font-medium pr-5">
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
