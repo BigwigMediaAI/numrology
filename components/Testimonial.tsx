@@ -39,17 +39,17 @@ const testimonials = [
       "I’ve had multiple sessions with Destiny by Nummber, and every time I leave with a new sense of direction and motivation. Their numerology reports are deeply detailed and very accurate.",
   },
   {
-    name: "Priya Kapoor",
+    name: "Michael Fraser",
     message:
       "Thanks to Destiny by Nummber, I made some major life decisions with confidence. Their expert advice based on my birth date and name vibration really made a difference in my personal growth.",
   },
   {
-    name: "Raj Singh",
+    name: "Noah Edwards",
     message:
       "Destiny by Nummber’s guidance completely changed my perspective. I followed their advice for a few months, and I could genuinely see positive changes in my career and relationships.",
   },
   {
-    name: "Neha Gupta",
+    name: "Sophie Wilson",
     message:
       "The consultation was so insightful! Destiny by Nummber explained how my numerology chart connects to my daily life, and it felt like they truly understood my challenges and potential.",
   },
