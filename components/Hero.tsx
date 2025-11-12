@@ -64,7 +64,7 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            At Destiny By Nummbers, we believe numerology is far more than the
+            At Destiny By Numberrs, we believe numerology is far more than the
             study of numbers. It’s the sacred language of the universe that
             reveals the story of who you are and why you are here. Every number
             resonates with planetary energies and vibrates with its own unique

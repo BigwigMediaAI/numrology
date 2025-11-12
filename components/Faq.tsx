@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Are my details kept confidential?",
     answer:
-      "Absolutely. At Destiny By Nummbers, confidentiality is our top priority. Your personal information, birth details, and readings are never shared with anyone.",
+      "Absolutely. At Destiny By Numberrs, confidentiality is our top priority. Your personal information, birth details, and readings are never shared with anyone.",
   },
   {
     question: "What is included in a full consultation?",

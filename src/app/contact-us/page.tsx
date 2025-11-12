@@ -72,11 +72,11 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4">
             {/* Phone Button */}
             <Link
-              href="tel:+61457733000"
+              href="tel:+61491153284"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <Phone className="w-6 h-6" />
-              <span className="text-sm">+61 457 733 000</span>
+              <span className="text-sm">+61 491153284</span>
             </Link>
             <Link
               href="tel:+919871229094"
@@ -88,13 +88,13 @@ export default function ContactPage() {
 
             {/* WhatsApp Button */}
             <Link
-              href="https://wa.me/+61457733000"
+              href="https://wa.me/+61491153284"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <FaWhatsapp className="w-6 h-6 text-green-600" />
-              <span className="text-sm">+61 457 733 000</span>
+              <span className="text-sm">+61 491153284</span>
             </Link>
             {/* WhatsApp Button */}
             <Link
@@ -104,16 +104,16 @@ export default function ContactPage() {
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <FaWhatsapp className="w-6 h-6 text-green-600" />
-              <span className="text-sm">+61 490 405 145</span>
+              <span className="text-sm">+61 490405145</span>
             </Link>
 
             {/* Email Button */}
             <Link
-              href="mailto:destinybynummbers@gmail.com"
+              href="mailto:destinybynumberrs@gmail.com"
               className="bg-[var(--featured)] text-[var(--text)] rounded-md p-4 flex items-center gap-4 shadow-sm transition font-sans"
             >
               <Mail className="w-6 h-6" />
-              <span className="text-sm">destinybynummbers@gmail.com</span>
+              <span className="text-sm">destinybynumberrs@gmail.com</span>
             </Link>
           </div>
         </div>

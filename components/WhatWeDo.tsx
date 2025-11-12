@@ -78,7 +78,7 @@ const WhatWeDo = () => {
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              At Destiny By Nummbers, we begin by decoding your core numbers
+              At Destiny By Numberrs, we begin by decoding your core numbers
               derived from your full name and date of birth revealing your
               unique personality, life path, and purpose. Each session uncovers
               how these energies shape your relationships, career, and personal

@@ -192,7 +192,7 @@ export default function ContactPage() {
             </span>
             <p className="text-lg md:text-xl leading-relaxed italic font-light text-[var(--text)] mt-6 text-justify">
               <strong>Kamal</strong> brings a wealth of experience and insight
-              to <strong>Destiny By Nummbers</strong>. After a distinguished
+              to <strong>Destiny By Numberrs</strong>. After a distinguished
               career in a senior government position, she retired with a
               reputation for leadership, precision, and integrity. Guided by a
               lifelong curiosity about the deeper patterns in life, she embraced

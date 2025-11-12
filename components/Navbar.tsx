@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
-import logo from "../assets/new DBN1.png";
+import logo from "../assets/DBN_logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
               <Image
                 src={logo}
                 alt="Destiny By Nummbers Logo"
-                width={110}
+                width={220}
                 height={110}
                 className="object-contain"
                 priority
