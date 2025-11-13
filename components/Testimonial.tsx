@@ -16,42 +16,42 @@ const testimonials = [
   {
     name: "Pulkit",
     message:
-      "Destiny by Numberrs gave me incredible insights into my life path and career choices. The numerology session helped me understand my strengths and the timing for major decisions. Highly recommend their guidance!",
+      "Destiny by Numberrs helped me look at my life direction from a completely new angle. The session highlighted patterns I never noticed before and gave me clarity on what I should focus on next.",
   },
   {
     name: "Kirti Bedi",
     message:
-      "I was amazed by how accurate the reading was! The team at Destiny by Numberrs explained everything in such a simple yet powerful way. It truly helped me align my goals with my personal numbers.",
+      "The reading felt so personal and meaningful. I loved how clearly everything was explained, and it honestly gave me the confidence to move forward with decisions I had been delaying.",
   },
   {
     name: "Saurav Sharma",
     message:
-      "I never believed in numerology before, but after my consultation with Destiny by Numberrs, I was blown away. The predictions about my business growth and personal energy cycles were spot on!",
+      "I went in unsure, but came out impressed. Their insights about my work cycles and upcoming opportunities matched my real experiences so closely that it genuinely surprised me.",
   },
   {
     name: "Anita Desai",
     message:
-      "Destiny by Numberrs helped me discover clarity during a confusing phase in my life. Their numerology insights about relationships and self-growth were incredibly helpful and eye-opening.",
+      "My session with Destiny by Numberrs came at the perfect time. The guidance I received helped me understand the emotional phase I was going through and how to handle it better.",
   },
   {
     name: "Rahul Verma",
     message:
-      "I’ve had multiple sessions with Destiny by Numberrs, and every time I leave with a new sense of direction and motivation. Their numerology reports are deeply detailed and very accurate.",
+      "Every session feels like I'm uncovering a new layer of myself. Their reports are deep, practical, and always give me something valuable to think about.",
   },
   {
     name: "Michael Fraser",
     message:
-      "Thanks to Destiny by Numberrs, I made some major life decisions with confidence. Their expert advice based on my birth date and name vibration really made a difference in my personal growth.",
+      "Their numerology insights helped me make decisions I had been stuck on for months. The way they broke down the meaning behind my name and birth numbers was incredibly eye-opening.",
   },
   {
     name: "Noah Edwards",
     message:
-      "Destiny by Numberrs’s guidance completely changed my perspective. I followed their advice for a few months, and I could genuinely see positive changes in my career and relationships.",
+      "The guidance I received genuinely shifted how I approach my goals. After applying their suggestions for a while, I noticed real improvements in both my mindset and my career.",
   },
   {
     name: "Sophie Wilson",
     message:
-      "The consultation was so insightful! Destiny by Numberrs explained how my numerology chart connects to my daily life, and it felt like they truly understood my challenges and potential.",
+      "Such a warm and insightful experience. They explained my numerology chart in a way that made everything feel connected, and I left feeling more aware of my strengths and direction.",
   },
 ];
 
