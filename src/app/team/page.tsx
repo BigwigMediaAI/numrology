@@ -125,7 +125,7 @@ export default function ContactPage() {
             <span className="block font-semibold text-[var(--title)] text-lg md:text-xl">
               Amit Paal Siingh (he/him)
             </span>
-            <p className="text-lg md:text-xl leading-relaxed italic font-light text-[var(--text)] mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed font-light text-[var(--text)] mt-6 text-justify">
               <strong>Amit</strong> is a certified numerologist with a rich and
               diverse background. Born in India and having lived in New Zealand
               and Australia since his early twenties, he brings a global
@@ -190,7 +190,7 @@ export default function ContactPage() {
             <span className="block font-semibold text-[var(--title)] text-lg md:text-xl">
               Kamal Chauhan (she/her)
             </span>
-            <p className="text-lg md:text-xl leading-relaxed italic font-light text-[var(--text)] mt-6 text-justify">
+            <p className="text-lg md:text-xl leading-relaxed font-light text-[var(--text)] mt-6 text-justify">
               <strong>Kamal</strong> brings a wealth of experience and insight
               to <strong>Destiny By Numberrs</strong>. After a distinguished
               career in a senior government position, she retired with a
