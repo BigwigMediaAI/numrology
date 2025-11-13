@@ -72,7 +72,7 @@ export default function ContactPage() {
                 Essential Consultation
               </h3>
               <p className=" leading-relaxed text-justify">
-                A personalized session reviewing your key numbers and offering
+                A personalised session reviewing your key numbers and offering
                 practical guidance for career, relationships, and growth.
                 Includes a 1-year life reflection to help you stay aligned.
               </p>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                 Name Correction – Personal & Business
               </h3>
               <p className=" leading-relaxed text-justify">
-                Optimize your personal or business name vibrations to attract
+                Optimise your personal or business name vibrations to attract
                 success, harmony, and prosperity through numerology-based name
                 correction.
               </p>
