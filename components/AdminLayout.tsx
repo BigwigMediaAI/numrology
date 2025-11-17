@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../assets/logo-mysta.png";
+import logo from "../assets/DBN_logo.png";
 import {
   Building,
   Gauge,
@@ -25,7 +25,8 @@ export default function AdminLayout({
   const navItems = [
     { icon: <Gauge size={18} />, label: "Dashboard", to: "/admin" },
 
-    { icon: <NotebookPen size={18} />, label: "Blogs", to: "/admin/blogs" },
+    // { icon: <NotebookPen size={18} />, label: "Blogs", to: "/admin/blogs" },
+    { icon: <NotebookPen size={18} />, label: "leads", to: "/admin/leads" },
   ];
 
   return (
@@ -38,7 +39,7 @@ export default function AdminLayout({
             alt="logo"
             width={40}
             height={40}
-            className="object-contain invert"
+            className="object-contain"
           />
           <span className="text-lg font-semibold tracking-wide">Admin</span>
         </div>
@@ -62,7 +63,7 @@ export default function AdminLayout({
               alt="logo"
               width={40}
               height={40}
-              className="object-contain invert"
+              className="object-contain"
             />
             <span className="text-lg font-semibold tracking-wide">Admin</span>
           </div>
@@ -102,7 +103,7 @@ export default function AdminLayout({
             alt="logo"
             width={140}
             height={100}
-            className="object-contain invert"
+            className="object-contain "
           />
         </div>
 
