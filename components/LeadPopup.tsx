@@ -168,7 +168,7 @@ const LeadPopup: React.FC<LeadPopupProps> = ({ isOpen, onClose }) => {
             <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
               <div className="bg-white text-gray-800 p-8 rounded-2xl shadow-xl w-[90%] max-w-md text-center animate-fadeIn">
                 <h2 className="text-2xl font-bold text-[#b19768] mb-3">
-                  🎉 Submitted Successfully!
+                  🎉 Submitted Successfully !
                 </h2>
                 <p className="text-gray-700">
                   Your query has been submitted. We will get in touch with you
