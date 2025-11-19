@@ -5,27 +5,22 @@ import { FaBook, FaBuilding, FaUser } from "react-icons/fa";
 const Dashboard = () => {
   const [counts, setCounts] = useState({
     leads: 0,
-    blogs: 0,
-    properties: 0,
+    visitors: 0,
   });
 
   useEffect(() => {
     Promise.all([
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/api/lead/all`).then((r) =>
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/api/leads`).then((r) =>
         r.json()
       ),
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/blog/viewblog`).then((r) =>
-        r.json()
-      ),
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/property`).then((r) =>
-        r.json()
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/api/visitors/stats`).then(
+        (r) => r.json()
       ),
     ])
-      .then(([leads, blogs, properties]) => {
+      .then(([leads, visitors]) => {
         setCounts({
           leads: Array.isArray(leads) ? leads.length : 0,
-          blogs: Array.isArray(blogs) ? blogs.length : 0,
-          properties: Array.isArray(properties) ? properties.length : 0,
+          visitors: visitors?.totalVisitors || 0,
         });
       })
       .catch((error) => {
@@ -35,8 +30,7 @@ const Dashboard = () => {
 
   const cards = [
     { title: "Leads", icon: <FaUser />, count: counts.leads },
-    { title: "Blogs", icon: <FaBook />, count: counts.blogs },
-    { title: "Properties", icon: <FaBuilding />, count: counts.properties },
+    { title: "Visitors", icon: <FaBuilding />, count: counts.visitors },
   ];
 
   return (

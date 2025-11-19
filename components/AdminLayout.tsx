@@ -26,7 +26,8 @@ export default function AdminLayout({
     { icon: <Gauge size={18} />, label: "Dashboard", to: "/admin" },
 
     // { icon: <NotebookPen size={18} />, label: "Blogs", to: "/admin/blogs" },
-    { icon: <NotebookPen size={18} />, label: "leads", to: "/admin/leads" },
+    { icon: <Users size={18} />, label: "Leads", to: "/admin/leads" },
+    { icon: <Users2 size={18} />, label: "Visitors", to: "/admin/visitors" },
   ];
 
   return (
@@ -37,8 +38,8 @@ export default function AdminLayout({
           <Image
             src={logo}
             alt="logo"
-            width={40}
-            height={40}
+            width={60}
+            height={60}
             className="object-contain"
           />
           <span className="text-lg font-semibold tracking-wide">Admin</span>
@@ -61,8 +62,8 @@ export default function AdminLayout({
             <Image
               src={logo}
               alt="logo"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
               className="object-contain"
             />
             <span className="text-lg font-semibold tracking-wide">Admin</span>
@@ -101,7 +102,7 @@ export default function AdminLayout({
           <Image
             src={logo}
             alt="logo"
-            width={140}
+            width={200}
             height={100}
             className="object-contain "
           />
