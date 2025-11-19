@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "../../../../components/Button";
+import { Eye, Trash2 } from "lucide-react";
 
 interface Lead {
   _id: string;
@@ -121,12 +122,18 @@ export default function LeadsPage() {
                   </td>
 
                   <td className="px-4 py-3 flex gap-2">
-                    <Button text="View" onClick={() => setSelectedLead(lead)} />
+                    {/* <Button text="View" onClick={() => setSelectedLead(lead)} /> */}
+                    {/* <button
+                      onClick={() => setSelectedLead(lead)}
+                      className="text-[var(--button-color)] px-3 py-2 rounded text-xs cursor-pointer"
+                    >
+                      <Eye />
+                    </button> */}
                     <button
                       onClick={() => deleteLead(lead._id)}
-                      className="bg-red-600 px-3 py-2 rounded text-xs hover:bg-red-700"
+                      className="text-red-600 px-3 py-2 rounded text-xs cursor-pointer"
                     >
-                      Delete
+                      <Trash2 />
                     </button>
                   </td>
                 </tr>
@@ -152,7 +159,7 @@ export default function LeadsPage() {
                 </p>
 
                 <div className="mt-4 flex gap-3">
-                  <Button text="View" onClick={() => setSelectedLead(lead)} />
+                  {/* <Button text="View" onClick={() => setSelectedLead(lead)} /> */}
                   <button
                     onClick={() => deleteLead(lead._id)}
                     className="bg-red-600 px-3 py-2 rounded text-xs hover:bg-red-700"
@@ -192,7 +199,7 @@ export default function LeadsPage() {
       )}
 
       {/* Lead Details Modal */}
-      {selectedLead && (
+      {/* {selectedLead && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-[#1f2937] p-6 w-11/12 md:w-1/2 rounded-lg relative">
             <button
@@ -226,7 +233,7 @@ export default function LeadsPage() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

@@ -5,14 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "../assets/DBN_logo.png";
-import {
-  Building,
-  Gauge,
-  Handshake,
-  NotebookPen,
-  Users,
-  Users2,
-} from "lucide-react";
+import { Gauge, Users } from "lucide-react";
 
 export default function AdminLayout({
   children,
@@ -27,7 +20,7 @@ export default function AdminLayout({
 
     // { icon: <NotebookPen size={18} />, label: "Blogs", to: "/admin/blogs" },
     { icon: <Users size={18} />, label: "Leads", to: "/admin/leads" },
-    { icon: <Users2 size={18} />, label: "Visitors", to: "/admin/visitors" },
+    // { icon: <Users2 size={18} />, label: "Visitors", to: "/admin/visitors" },
   ];
 
   return (
@@ -85,7 +78,7 @@ export default function AdminLayout({
               className={`flex items-center gap-3 px-6 py-3 text-sm font-medium transition-all duration-200 
                 ${
                   pathname === to
-                    ? "bg-[var(--primary-color)] text-white shadow-md"
+                    ? "bg-[var(--button-color)] text-white shadow-md"
                     : "text-gray-300 hover:bg-[#1e1e1e] hover:text-white"
                 }`}
             >
@@ -115,7 +108,7 @@ export default function AdminLayout({
               href={to}
               className={`flex items-center gap-3 px-4 py-2.5 rounded-md transition-all duration-200 ${
                 pathname === to
-                  ? "bg-[var(--primary-color)] text-white shadow-md"
+                  ? "bg-[var(--button-color)] text-white shadow-md"
                   : "text-gray-400 hover:bg-[#1a1a1a] hover:text-white"
               }`}
             >

@@ -5,7 +5,6 @@ import { FaBook, FaBuilding, FaUser } from "react-icons/fa";
 const Dashboard = () => {
   const [counts, setCounts] = useState({
     leads: 0,
-    visitors: 0,
   });
 
   useEffect(() => {
@@ -13,14 +12,10 @@ const Dashboard = () => {
       fetch(`${process.env.NEXT_PUBLIC_API_BASE}/api/leads`).then((r) =>
         r.json()
       ),
-      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/api/visitors/stats`).then(
-        (r) => r.json()
-      ),
     ])
-      .then(([leadsRes, visitorsRes]) => {
+      .then(([leadsRes]) => {
         setCounts({
           leads: Array.isArray(leadsRes.data) ? leadsRes.data.length : 0,
-          visitors: visitorsRes?.totalVisitors || 0,
         });
       })
       .catch((error) => {
@@ -28,10 +23,7 @@ const Dashboard = () => {
       });
   }, []);
 
-  const cards = [
-    { title: "Leads", icon: <FaUser />, count: counts.leads },
-    { title: "Visitors", icon: <FaBuilding />, count: counts.visitors },
-  ];
+  const cards = [{ title: "Leads", icon: <FaUser />, count: counts.leads }];
 
   return (
     <section className="px-4 py-8 space-y-10">

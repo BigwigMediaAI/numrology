@@ -12,14 +12,9 @@ import Testimonials from "../../components/Testimonial";
 import WhatWeDo from "../../components/WhatWeDo";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
-import { trackVisitor } from "../../utils/trackVisitor";
 
 export default function Home() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  useEffect(() => {
-    trackVisitor("home-page");
-  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {

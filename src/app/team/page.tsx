@@ -1,88 +1,14 @@
 // import PhoneInput, { Value } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import { Mail, Phone } from "lucide-react";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import amit from "../../../assets/Untitled design (26).png";
 import kamal from "../../../assets/Untitled design (25).png";
-import { useEffect } from "react";
-import { trackVisitor } from "../../../utils/trackVisitor";
-const teamMembers = [
-  {
-    name: "John Doe",
-    role: "Head Numerologist",
-    image:
-      "https://mysta.peerduck.com/wp-content/uploads/2022/02/adult-man-woman-sit-together-after-practicing-asana-yoga-concept-energy-practices-mixed-media.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Jane Smith",
-    role: "Numerology Expert",
-    image: "https://mysta.peerduck.com/wp-content/uploads/2022/02/w-about.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Mike Johnson",
-    role: "Spiritual Advisor",
-    image:
-      "https://mysta.peerduck.com/wp-content/uploads/2022/02/Group-1035.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "John Doe",
-    role: "Head Numerologist",
-    image:
-      "https://mysta.peerduck.com/wp-content/uploads/2022/02/adult-man-woman-sit-together-after-practicing-asana-yoga-concept-energy-practices-mixed-media.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Jane Smith",
-    role: "Numerology Expert",
-    image: "https://mysta.peerduck.com/wp-content/uploads/2022/02/w-about.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Mike Johnson",
-    role: "Spiritual Advisor",
-    image:
-      "https://mysta.peerduck.com/wp-content/uploads/2022/02/Group-1035.png",
-    socials: {
-      facebook: "#",
-      twitter: "#",
-      linkedin: "#",
-    },
-  },
-  // Add more members as needed
-];
 
 export default function ContactPage() {
-  useEffect(() => {
-    trackVisitor("team-page");
-  }, []);
   return (
     <div className=" min-h-screen bg-[var(--background-color)] py-20 md:py-0">
       <Navbar />
