@@ -6,8 +6,13 @@ import Footer from "../../../components/Footer";
 import banner from "../../../assets/astrology-bg.png";
 import Image from "next/image";
 import bgPattern from "../../../assets/bg.png";
+import { useEffect } from "react";
+import { trackVisitor } from "../../../utils/trackVisitor";
 
 export default function ContactPage() {
+  useEffect(() => {
+    trackVisitor("our-services-page");
+  }, []);
   return (
     <div className="min-h-screen bg-[var(--background-color)] py-20 md:py-0">
       <Navbar />

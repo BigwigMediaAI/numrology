@@ -9,6 +9,8 @@ import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import amit from "../../../assets/Untitled design (26).png";
 import kamal from "../../../assets/Untitled design (25).png";
+import { useEffect } from "react";
+import { trackVisitor } from "../../../utils/trackVisitor";
 const teamMembers = [
   {
     name: "John Doe",
@@ -78,6 +80,9 @@ const teamMembers = [
 ];
 
 export default function ContactPage() {
+  useEffect(() => {
+    trackVisitor("team-page");
+  }, []);
   return (
     <div className=" min-h-screen bg-[var(--background-color)] py-20 md:py-0">
       <Navbar />

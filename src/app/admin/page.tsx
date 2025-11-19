@@ -17,10 +17,10 @@ const Dashboard = () => {
         (r) => r.json()
       ),
     ])
-      .then(([leads, visitors]) => {
+      .then(([leadsRes, visitorsRes]) => {
         setCounts({
-          leads: Array.isArray(leads) ? leads.length : 0,
-          visitors: visitors?.totalVisitors || 0,
+          leads: Array.isArray(leadsRes.data) ? leadsRes.data.length : 0,
+          visitors: visitorsRes?.totalVisitors || 0,
         });
       })
       .catch((error) => {
