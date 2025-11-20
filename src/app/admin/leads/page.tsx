@@ -11,6 +11,7 @@ interface Lead {
   email: string;
   phone: string;
   message: string;
+  marked: boolean;
   createdAt: string;
 }
 
@@ -69,6 +70,28 @@ export default function LeadsPage() {
     }
   };
 
+  const toggleMarked = async (id: string, current: boolean) => {
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE}/api/leads/mark/${id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ marked: !current }),
+        }
+      );
+
+      const data = await res.json();
+      if (data.success) {
+        setLeads((prev) =>
+          prev.map((l) => (l._id === id ? { ...l, marked: !current } : l))
+        );
+      }
+    } catch (error) {
+      console.error("Mark update error:", error);
+    }
+  };
+
   return (
     <div className="min-h-screen text-white p-6">
       <div className="mb-6">
@@ -121,7 +144,7 @@ export default function LeadsPage() {
                     {new Date(lead.createdAt).toLocaleString()}
                   </td>
 
-                  <td className="px-4 py-3 flex gap-2">
+                  <td className="px-4 py-3 flex items-center gap-3">
                     {/* <Button text="View" onClick={() => setSelectedLead(lead)} /> */}
                     {/* <button
                       onClick={() => setSelectedLead(lead)}
@@ -129,6 +152,13 @@ export default function LeadsPage() {
                     >
                       <Eye />
                     </button> */}
+                    <input
+                      type="checkbox"
+                      checked={lead.marked}
+                      onChange={() => toggleMarked(lead._id, lead.marked)}
+                      className="w-5 h-5 cursor-pointer accent-blue-600"
+                    />
+
                     <button
                       onClick={() => deleteLead(lead._id)}
                       className="text-red-600 px-3 py-2 rounded text-xs cursor-pointer"
@@ -159,12 +189,19 @@ export default function LeadsPage() {
                 </p>
 
                 <div className="mt-4 flex gap-3">
+                  <input
+                    type="checkbox"
+                    checked={lead.marked}
+                    onChange={() => toggleMarked(lead._id, lead.marked)}
+                    className="w-5 h-5 cursor-pointer accent-blue-600"
+                  />
+
                   {/* <Button text="View" onClick={() => setSelectedLead(lead)} /> */}
                   <button
                     onClick={() => deleteLead(lead._id)}
-                    className="bg-red-600 px-3 py-2 rounded text-xs hover:bg-red-700"
+                    className="text-red-600 rounded text-xs "
                   >
-                    Delete
+                    <Trash2 />
                   </button>
                 </div>
               </div>

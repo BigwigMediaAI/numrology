@@ -31,11 +31,13 @@ export default function AdminLayout({
           <Image
             src={logo}
             alt="logo"
-            width={60}
+            width={120}
             height={60}
             className="object-contain"
           />
-          <span className="text-lg font-semibold tracking-wide">Admin</span>
+          <span className="hidden md:block text-lg font-semibold tracking-wide">
+            Admin
+          </span>
         </div>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -55,11 +57,13 @@ export default function AdminLayout({
             <Image
               src={logo}
               alt="logo"
-              width={60}
+              width={120}
               height={60}
               className="object-contain"
             />
-            <span className="text-lg font-semibold tracking-wide">Admin</span>
+            <span className="hidden text-lg font-semibold tracking-wide">
+              Admin
+            </span>
           </div>
           <button
             onClick={() => setMobileMenuOpen(false)}
